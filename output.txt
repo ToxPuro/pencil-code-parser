@@ -1,0 +1,22 @@
+llastpoint
+advec_uu
+m
+maxdiffus
+mpoly
+is_vec
+Hmax
+ix
+t_vart
+errors
+Num of static variables written with full depth 10
+ss0
+advec_cs2
+ix
+advec2
+maxdiffus
+phiavg_profile
+cs2top
+t_vart
+nu_tdep
+n
+Num of static variables written with full depth 10

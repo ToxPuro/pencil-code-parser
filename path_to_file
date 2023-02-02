@@ -1,0 +1,5 @@
+something here blablabla
+
+!$parser-command:save-global-state
+Hi
+end

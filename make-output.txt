@@ -1,0 +1,114 @@
+Compiler: gfortran
+GCC version: 9.4.0
+scripts/mkcparam -b noborder_profiles.f90 nochemistry.f90 nochiral.f90 nocosmicray.f90 nocosmicrayflux.f90 density.f90 deriv.f90 nodetonate.f90 nodustdensity.f90 nodustvelocity.f90 entropy.f90 eos_idealgas.f90 nofixed_point.f90 noforcing.f90 gravity_simple.f90 nogpu.f90 grid.f90 noheatflux.f90 hydro.f90 nohyperresi_strict.f90 nohypervisc_strict.f90 noimplicit_diffusion.f90 noimplicit_physics.f90 noinitial_condition.f90 nointerstellar.f90 nolorenz_gauge.f90 nomagnetic.f90 magnetic/nomeanfield.f90 magnetic/nomeanfield_demfdt.f90 noneutraldensity.f90 noneutralvelocity.f90 noNSCBC.f90 noopacity.f90 noparticles.f90 noparticles_adaptation.f90 noparticles_coagulation.f90 noparticles_condensation.f90  noparticles_collisions.f90 noparticles_map.f90 noparticles_density.f90  noparticles_mass.f90 noparticles_number.f90 noparticles_radius.f90 noparticles_potential.f90 noparticles_grad.f90 noparticles_selfgravity.f90 noparticles_sink.f90 noparticles_drag.f90 noparticles_spin.f90 noparticles_stalker.f90 noparticles_lyapunov.f90 noparticles_caustics.f90 noparticles_tetrad.f90 noparticles_stirring.f90 noparticles_diagnos_dv.f90 noparticles_diagnos_state.f90 noparticles_persistence.f90 noparticles_temperature.f90 noparticles_adsorbed.f90 noparticles_surfspec.f90 noparticles_chemistry.f90 nopointmasses.f90 nopoisson.f90 nopolymer.f90 nopower_spectrum.f90 nopscalar.f90 noradiation.f90 noselfgravity.f90 noshear.f90 noshock.f90 nosignal_handling.f90 nosolid_cells.f90 noascalar.f90 noSGS_hydro.f90 nostreamlines.f90  notestfield.f90 notestflow.f90 notestscalar.f90 viscosity.f90 cparam.local nospecial.f90
+${PENCIL_HOME}/utils/pc_identify_revision --reset
+make  start.o run.o start.x run.x
+make[1]: Entering directory '/users/purotouk/pencil-code/samples/conv-slab/src'
+Compiler: gfortran
+GCC version: 9.4.0
+mpif90  -fopenmp     -o cparam.o -c cparam.f90
+mpif90  -fopenmp     -o cdata.o -c cdata.f90
+mpicc  -DFUNDERSC=1 -O1     -o syscalls_ansi.o -c syscalls_ansi.c
+mpif90  -fopenmp       -o syscalls.o -c syscalls.f90
+mpif90  -fopenmp      -o general.o -c general.f90
+mpif90  -fopenmp      -o noyinyang.o -c noyinyang.f90
+mpif90  -fopenmp      -o nompicomm.o -c nompicomm.f90
+mpif90  -fopenmp      -o messages.o -c messages.f90
+mpif90  -fopenmp      -o shared_variables.o -c shared_variables.f90
+mpif90  -fopenmp      -o deriv.o -c deriv.f90
+scripts/mkdummyinc -d file_io_common.f90 -s file_io_f95.f90 -o file_io_common.inc
+mpif90  -fopenmp     -o file_io_f95.o -c file_io_f95.f90
+mpif90    -fopenmp  -c geometrical_types.f90 -o geometrical_types.o
+mpif90  -fopenmp     -o slices_methods.o -c slices_methods.f90
+mpif90  -fopenmp      -o nohdf5_io.o -c nohdf5_io.f90
+mpif90  -fopenmp      -o farray.o -c farray.f90
+mpif90  -fopenmp      -o noyinyang_mpi.o -c noyinyang_mpi.f90
+mpif90  -fopenmp      -o sub.o -c sub.f90
+mpif90  -fopenmp      -o particles_cdata.o -c particles_cdata.f90
+mpif90  -fopenmp     -o io_dist.o -c io_dist.f90
+mpif90  -fopenmp      -o noborder_profiles.o -c noborder_profiles.f90
+mpif90  -fopenmp      -o diagnostics.o -c diagnostics.f90
+mpif90  -fopenmp      -o density_methods.o -c density_methods.f90
+mpif90  -fopenmp      -o gravity_simple.o -c gravity_simple.f90
+mpif90  -fopenmp      -o nofourier.o -c nofourier.f90
+mpif90  -fopenmp      -o eos_idealgas.o -c eos_idealgas.f90
+mpif90  -fopenmp      -o grid.o -c grid.f90
+mpif90  -fopenmp      -o noshear.o -c noshear.f90
+mpif90  -fopenmp      -o initcond.o -c initcond.f90
+mpif90  -fopenmp      -o debug_io_dist.o -c debug_io_dist.f90
+mpif90  -fopenmp      -o noparticles_mpicomm.o -c noparticles_mpicomm.f90
+mpif90  -fopenmp      -o noparticles_sub.o -c noparticles_sub.f90
+mpif90  -fopenmp      -o nospecial.o -c nospecial.f90
+mpif90  -fopenmp      -o magnetic/nomeanfield_demfdt.o -c magnetic/nomeanfield_demfdt.f90
+mpif90  -fopenmp      -o magnetic/nomeanfield.o -c magnetic/nomeanfield.f90
+mpif90  -fopenmp      -o boundcond.o -c boundcond.f90
+mpif90  -fopenmp      -o nodebug.o -c nodebug.f90
+mpif90  -fopenmp      -o nofarray_alloc.o -c nofarray_alloc.f90
+mpif90  -fopenmp      -o filter.o -c filter.f90
+mpif90  -fopenmp      -o nostreamlines.o -c nostreamlines.f90
+mpif90  -fopenmp      -o nofixed_point.o -c nofixed_point.f90
+mpif90  -fopenmp      -o ghost_check.o -c ghost_check.f90
+mpif90  -fopenmp      -o noghostfold.o -c noghostfold.f90
+mpicc  -DFUNDERSC=1 -O1     -o nogsl.o -c nogsl.c
+mpif90  -fopenmp      -o noimplicit_diffusion.o -c noimplicit_diffusion.f90
+mpif90  -fopenmp      -o noinitial_condition.o -c noinitial_condition.f90
+mpif90  -fopenmp      -o nochemistry.o -c nochemistry.f90
+mpif90  -fopenmp      -o nolsode_for_chemistry.o -c nolsode_for_chemistry.f90
+mpif90  -fopenmp      -o noNSCBC.o -c noNSCBC.f90
+mpif90  -fopenmp      -o nopoisson.o -c nopoisson.f90
+mpif90  -fopenmp      -o noweno_transport.o -c noweno_transport.f90
+mpif90  -fopenmp      -o density.o -c density.f90
+mpif90  -fopenmp      -o nointerstellar.o -c nointerstellar.f90
+mpif90  -fopenmp      -o viscosity.o -c viscosity.f90
+mpif90  -fopenmp      -o noforcing.o -c noforcing.f90
+mpif90  -fopenmp      -o nomagnetic.o -c nomagnetic.f90
+mpif90  -fopenmp      -o nocosmicray.o -c nocosmicray.f90
+mpif90  -fopenmp      -o noSGS_hydro.o -c noSGS_hydro.f90
+mpif90  -fopenmp      -o hydro.o -c hydro.f90
+mpif90  -fopenmp      -o persist.o -c persist.f90
+mpif90  -fopenmp      -o nochiral.o -c nochiral.f90
+mpif90  -fopenmp      -o nopower_spectrum.o -c nopower_spectrum.f90
+mpif90  -fopenmp      -o nocosmicrayflux.o -c nocosmicrayflux.f90
+mpif90  -fopenmp      -o nodetonate.o -c nodetonate.f90
+mpif90  -fopenmp      -o noshock.o -c noshock.f90
+mpif90  -fopenmp      -o nopscalar.o -c nopscalar.f90
+mpif90  -fopenmp      -o nodustvelocity.o -c nodustvelocity.f90
+mpif90  -fopenmp      -o nodustdensity.o -c nodustdensity.f90
+mpif90  -fopenmp      -o noimplicit_physics.o -c noimplicit_physics.f90
+mpif90  -fopenmp      -o noopacity.o -c noopacity.f90
+mpif90  -fopenmp      -o entropy.o -c entropy.f90
+mpif90  -fopenmp      -o noheatflux.o -c noheatflux.f90
+mpif90  -fopenmp      -o nohyperresi_strict.o -c nohyperresi_strict.f90
+mpif90  -fopenmp      -o nohypervisc_strict.o -c nohypervisc_strict.f90
+mpif90  -fopenmp      -o nolorenz_gauge.o -c nolorenz_gauge.f90
+mpif90  -fopenmp      -o noneutraldensity.o -c noneutraldensity.f90
+mpif90  -fopenmp      -o noneutralvelocity.o -c noneutralvelocity.f90
+mpif90  -fopenmp      -o noparticles_main.o -c noparticles_main.f90
+mpif90  -fopenmp      -o nopointmasses.o -c nopointmasses.f90
+mpif90  -fopenmp      -o nopolymer.o -c nopolymer.f90
+mpif90  -fopenmp      -o noradiation.o -c noradiation.f90
+mpif90  -fopenmp      -o noselfgravity.o -c noselfgravity.f90
+mpif90  -fopenmp      -o noascalar.o -c noascalar.f90
+mpif90  -fopenmp      -o notestfield.o -c notestfield.f90
+mpif90  -fopenmp      -o notestflow.o -c notestflow.f90
+mpif90  -fopenmp      -o notestscalar.o -c notestscalar.f90
+mpif90  -fopenmp      -o notimeavg.o -c notimeavg.f90
+mpif90  -fopenmp      -o nogpu.o -c nogpu.f90
+mpif90  -fopenmp     -o nostruct_func.o -c nostruct_func.f90
+mpif90  -fopenmp      -o snapshot.o -c snapshot.f90
+mpif90  -fopenmp      -o nosolid_cells.o -c nosolid_cells.f90
+mpif90  -fopenmp      -o equ.o -c equ.f90
+mpif90  -fopenmp      -o timestep.o -c timestep.f90
+mpif90  -fopenmp      -o notestperturb.o -c notestperturb.f90
+mpif90  -fopenmp      -o nosignal_handling.o -c nosignal_handling.f90
+mpif90  -fopenmp     -o param_io.o -c param_io.f90
+mpif90  -fopenmp      -o register.o -c register.f90
+mpif90  -fopenmp      -o slices.o -c slices.f90
+mpif90  -fopenmp      -o nosolid_cells_mpicomm.o -c nosolid_cells_mpicomm.f90
+mpif90  -fopenmp      -o start.o -c start.f90
+mpif90  -fopenmp      -o pencil_check.o -c pencil_check.f90
+mpif90  -fopenmp      -o run.o -c run.f90
+mpif90  cparam.o cdata.o nompicomm.o noborder_profiles.o boundcond.o nodebug.o debug_io_dist.o deriv.o diagnostics.o nofarray_alloc.o farray.o filter.o nofixed_point.o nofourier.o general.o geometrical_types.o ghost_check.o noghostfold.o grid.o nogsl.o noimplicit_diffusion.o initcond.o noinitial_condition.o nohdf5_io.o   io_dist.o file_io_f95.o nolsode_for_chemistry.o messages.o noNSCBC.o persist.o nopower_spectrum.o register.o shared_variables.o nosignal_handling.o slices.o slices_methods.o snapshot.o nosolid_cells_mpicomm.o nosolid_cells.o nostreamlines.o nostruct_func.o sub.o syscalls.o syscalls_ansi.o notestperturb.o notimeavg.o noweno_transport.o noyinyang.o noyinyang_mpi.o magnetic.a noparticles_main.a nochemistry.o nochiral.o nocosmicray.o nocosmicrayflux.o density.o density_methods.o nodetonate.o nodustdensity.o nodustvelocity.o entropy.o eos_idealgas.o noforcing.o gravity_simple.o noheatflux.o hydro.o nohyperresi_strict.o nohypervisc_strict.o noimplicit_physics.o nointerstellar.o nolorenz_gauge.o noneutraldensity.o noneutralvelocity.o noopacity.o nopointmasses.o nopoisson.o nopolymer.o nopscalar.o noradiation.o noselfgravity.o noSGS_hydro.o noshear.o noshock.o nospecial.o noascalar.o  notestfield.o notestflow.o notestscalar.o viscosity.o param_io.o nogpu.o start.o -fopenmp -ldl     -o start.x
+mpif90  cparam.o cdata.o nompicomm.o noborder_profiles.o boundcond.o nodebug.o debug_io_dist.o deriv.o diagnostics.o nofarray_alloc.o farray.o filter.o nofixed_point.o nofourier.o general.o geometrical_types.o ghost_check.o noghostfold.o grid.o nogsl.o noimplicit_diffusion.o initcond.o noinitial_condition.o nohdf5_io.o   io_dist.o file_io_f95.o nolsode_for_chemistry.o messages.o noNSCBC.o persist.o nopower_spectrum.o register.o shared_variables.o nosignal_handling.o slices.o slices_methods.o snapshot.o nosolid_cells_mpicomm.o nosolid_cells.o nostreamlines.o nostruct_func.o sub.o syscalls.o syscalls_ansi.o notestperturb.o notimeavg.o noweno_transport.o noyinyang.o noyinyang_mpi.o magnetic.a noparticles_main.a nochemistry.o nochiral.o nocosmicray.o nocosmicrayflux.o density.o density_methods.o nodetonate.o nodustdensity.o nodustvelocity.o entropy.o eos_idealgas.o noforcing.o gravity_simple.o noheatflux.o hydro.o nohyperresi_strict.o nohypervisc_strict.o noimplicit_physics.o nointerstellar.o nolorenz_gauge.o noneutraldensity.o noneutralvelocity.o noopacity.o nopointmasses.o nopoisson.o nopolymer.o nopscalar.o noradiation.o noselfgravity.o noSGS_hydro.o noshear.o noshock.o nospecial.o noascalar.o  notestfield.o notestflow.o notestscalar.o viscosity.o nogpu.o  timestep.o equ.o pencil_check.o param_io.o run.o -fopenmp -ldl       -o run.x
+make[1]: Leaving directory '/users/purotouk/pencil-code/samples/conv-slab/src'
+${PENCIL_HOME}/utils/pc_identify_revision --write
