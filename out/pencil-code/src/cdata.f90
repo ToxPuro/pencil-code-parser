@@ -170,7 +170,6 @@ real, dimension(3) :: Lxyz=impossible,xyz0=-pi,xyz1=impossible,xyz_star=0.0
 real, dimension(3) :: Lxyz_loc,xyz0_loc,xyz1_loc
 real :: x0, y0, z0, Lx, Ly, Lz, wav1=impossible, wav1z=impossible
 real :: r_int=0.,r_ext=impossible
-!$omp threadprivate(r_ext)
 real :: r_int_border=impossible,r_ext_border=impossible
 real :: r_ref=1.,rsmooth=0.,box_volume=1.0
 real :: Area_xy=1., Area_yz=1., Area_xz=1.
@@ -205,10 +204,7 @@ logical :: lini_t_eq_zero=.false.
 logical :: lini_t_eq_zero_once=.false.
 real, dimension (nx) :: advec_cs2=0.
 real, dimension (nx) :: maxadvec=0., advec2=0., advec2_hypermesh=0.
-!$omp threadprivate(maxadvec)
-!$omp threadprivate(advec2_hypermesh)
 real, dimension (nx) :: maxdiffus=0., maxdiffus2=0., maxdiffus3=0., maxsrc=0.
-!$omp threadprivate(maxdiffus2)
 real, dimension (nx) :: dt1_max
 real, dimension (nx) :: reac_chem, reac_dust
 real                 :: trelax_poly, reac_pchem
@@ -216,8 +212,7 @@ real, dimension (5) :: alpha_ts=0.0,beta_ts=0.0,dt_beta_ts=1.0
 logical :: lfractional_tstep_advance=.false.
 logical :: lfractional_tstep_negative=.true.
 logical :: lfirstpoint=.false., llastpoint=.false.
-!$omp threadprivate(lfirstpoint)
-!$omp threadprivate(lfirstpoint,llastpoint)
+!$omp THREADPRIVATE(lfirstpoint,llastpoint)
 
 logical :: lmaxadvec_sum=.false.,old_cdtv=.false.
 logical :: lmaximal_cdtv=.false., lmaximal_cdt=.false.
@@ -536,7 +531,7 @@ integer :: ighosts_updated=-1
 
 integer :: imn
 integer, target :: lglob=1,m,n
-!$omp threadprivate(m,n)
+!$omp THREADPRIVATE(m,n)
 
 integer, dimension (ny*nz) :: mm,nn
 logical, dimension (ny*nz) :: necessary=.false.
@@ -580,7 +575,7 @@ integer, dimension (:,:), allocatable :: sound_coords_list
 character (len=fmtlen), allocatable :: cform(:),cformv(:),cform_sound(:),  cformxy(:),cformxz(:),cformrz(:),  cformz(:),cformy(:),cformx(:),cformr(:)
 character (len=fmtlen), allocatable :: cname(:),cnamev(:),cname_sound(:),  cnamexy(:),cnamexz(:),cnamerz(:),  cnamez(:),cnamey(:),cnamex(:),cnamer(:)
 logical :: lout=.false.,headt=.false.,headtt=.true.,ldt=.true.,lrmv=.false.
-!$omp threadprivate(headtt)
+!$omp THREADPRIVATE(headtt)
 
 logical :: lfirst=.false.,llast=.false.,ldt_paronly=.false.
 logical :: ldiagnos=.false.,lvideo=.false.,lwrite_prof=.true.,lout_sound=.false.

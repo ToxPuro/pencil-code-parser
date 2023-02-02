@@ -286,7 +286,7 @@ endinterface calc_pencils_linear_density
 logical :: lupdate_mass_source
 real, dimension(nx) :: diffus_diffrho
 real, dimension(nx) :: diffus_diffrho3
-!$omp threadprivate(diffus_diffrho, diffus_diffrho3)
+!$omp THREADPRIVATE(diffus_diffrho)
 
 contains
 !***********************************************************************

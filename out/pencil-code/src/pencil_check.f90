@@ -381,7 +381,11 @@ enddo
 else
 f_other=f
 endif
+!$omp critical
+
 fname=0.0; fweight=0.0
+!$omp end critical
+
 call initialize_pencils(p,penc0)
 !
 
@@ -413,7 +417,11 @@ enddo
 else
 f_other=f
 endif
+!$omp critical
+
 fname=0.0; fweight=0.0
+!$omp end critical
+
 call initialize_pencils(p,penc0)
 !
 
@@ -573,7 +581,11 @@ lout=.false.
 lfirst=.false.
 df=0.0
 fweight=0.0
+!$omp critical
+
 fname=0.0
+!$omp end critical
+
 deallocate(df_ref)
 deallocate(fname_ref)
 deallocate(f_other)

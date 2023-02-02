@@ -1030,8 +1030,7 @@ slc_dat_yz,type(scattered_array),[],False,./pencil-code/src/boundcond.f90,False,
 slc_dat_yz2,type(scattered_array),[],False,./pencil-code/src/boundcond.f90,False,False
 nt_slices,integer,[],False,./pencil-code/src/boundcond.f90,False,False
 sz_slc_chunk,integer,[],False,./pencil-code/src/boundcond.f90,False,False
-dt1_max_array,real,"['ny*nz', 'nx']",False,./pencil-code/src/equ.f90,False,False
-phiavg_profile,real,"['nrcyl', 'nx']",False,./pencil-code/src/diagnostics.f90,True,True
+phiavg_profile,real,"['nrcyl', 'nx']",False,./pencil-code/src/diagnostics.f90,False,False
 dVol_rel1,real,[],False,./pencil-code/src/diagnostics.f90,False,False
 mnamer,integer,[],False,./pencil-code/src/diagnostics.f90,False,False
 ch1davg,character (len=intlen),[],False,./pencil-code/src/diagnostics.f90,False,False
@@ -1370,7 +1369,7 @@ idiag_rho2mxy,integer,[],False,./pencil-code/src/density.f90,False,False
 idiag_sigma,integer,[],False,./pencil-code/src/density.f90,False,False
 lupdate_mass_source,logical,[],False,./pencil-code/src/density.f90,False,False
 diffus_diffrho,real,['nx'],False,./pencil-code/src/density.f90,False,True
-diffus_diffrho3,real,['nx'],False,./pencil-code/src/density.f90,False,True
+diffus_diffrho3,real,['nx'],False,./pencil-code/src/density.f90,False,False
 dust_geometry,character (len=labellen),[],False,./pencil-code/src/nodustvelocity.f90,True,False
 dust_chemistry,character (len=labellen),[],False,./pencil-code/src/nodustvelocity.f90,True,False
 scolld,real,"['ndustspec', 'ndustspec']",False,./pencil-code/src/nodustvelocity.f90,True,False
@@ -1647,7 +1646,7 @@ ssmz,real,['mz'],False,./pencil-code/src/entropy.f90,False,False
 cs2mz,real,['mz'],False,./pencil-code/src/entropy.f90,False,False
 gssmz,real,"['nz', '3']",False,./pencil-code/src/entropy.f90,False,False
 del2ssmz,real,['nz'],False,./pencil-code/src/entropy.f90,False,False
-ssmx,real,['mx'],False,./pencil-code/src/entropy.f90,True,False
+ssmx,real,['mx'],False,./pencil-code/src/entropy.f90,False,False
 gssmx,real,"['nx', '3']",False,./pencil-code/src/entropy.f90,False,False
 cs2mx,real,['nx'],False,./pencil-code/src/entropy.f90,False,False
 del2ssmx,real,['nx'],False,./pencil-code/src/entropy.f90,False,False
@@ -2798,15 +2797,15 @@ ivid_Ma2,integer,[],False,./pencil-code/src/hydro.f90,False,False
 ivid_uu_sph,integer,[],False,./pencil-code/src/hydro.f90,False,False
 ivid_ou,integer,[],False,./pencil-code/src/hydro.f90,False,False
 Omegav,real,['3'],False,./pencil-code/src/hydro.f90,False,False
-Fmax,real,['nx'],False,./pencil-code/src/hydro.f90,False,True
+Fmax,real,['nx'],False,./pencil-code/src/hydro.f90,False,False
 advec_uu,real,['nx'],False,./pencil-code/src/hydro.f90,False,True
 t_vart,real,[],False,./pencil-code/src/hydro.f90,False,False
-prof_amp1,real,['nx'],False,./pencil-code/src/hydro.f90,False,True
-prof_amp2,real,['nx'],False,./pencil-code/src/hydro.f90,False,True
+prof_amp1,real,['nx'],False,./pencil-code/src/hydro.f90,False,False
+prof_amp2,real,['nx'],False,./pencil-code/src/hydro.f90,False,False
 prof_amp3,real,['mz'],False,./pencil-code/src/hydro.f90,False,False
 prof_amp4,real,['my'],False,./pencil-code/src/hydro.f90,False,False
 uumz_prof,real,"['nz', '3']",False,./pencil-code/src/hydro.f90,False,False
-omega_prof,real,"['nx', 'ny']",False,./pencil-code/src/hydro.f90,False,True
+omega_prof,real,"['nx', 'ny']",False,./pencil-code/src/hydro.f90,False,False
 B_ext_inv,real,['3'],False,./pencil-code/src/nomagnetic.f90,True,False
 aamz,real,"['mz', '3']",False,./pencil-code/src/nomagnetic.f90,True,False
 inertial_length,real,[],False,./pencil-code/src/nomagnetic.f90,True,False

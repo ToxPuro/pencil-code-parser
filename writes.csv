@@ -1,261 +1,224 @@
 variable,line_num,filename,call_trace,line
-imn,485,./pencil-code/src/equ.f90,rhs_cpu,"calc_pencils_loop: do imn=1,nyz"
-n,486,./pencil-code/src/equ.f90,rhs_cpu,n=nn(imn)
-m,487,./pencil-code/src/equ.f90,rhs_cpu,m=mm(imn)
-lfirstpoint,488,./pencil-code/src/equ.f90,rhs_cpu,lfirstpoint=(imn==1)
-llastpoint,489,./pencil-code/src/equ.f90,rhs_cpu,llastpoint=(imn==nyz)
-lcoarse_mn,490,./pencil-code/src/equ.f90,rhs_cpu,lcoarse_mn=lcoarse.and.mexts(1)<=m.and.m<=mexts(2)
-lcoarse_mn,492,./pencil-code/src/equ.f90,rhs_cpu,"lcoarse_mn=lcoarse_mn.and.ninds(0,m,n)>0"
-advec_cs2,507,./pencil-code/src/equ.f90,rhs_cpu,advec_cs2=0.0
-maxadvec,508,./pencil-code/src/equ.f90,rhs_cpu,maxadvec=0.
-advec2,509,./pencil-code/src/equ.f90,rhs_cpu,if (lenergy.or.ldensity.or.lmagnetic.or.lradiation.or.lneutralvelocity.or.lcosmicray.or.  (ltestfield_z.and.iuutest>0))  advec2=0.
-advec2_hypermesh,510,./pencil-code/src/equ.f90,rhs_cpu,if (ldensity.or.lviscosity.or.lmagnetic.or.lenergy)  advec2_hypermesh=0.0
-maxdiffus,511,./pencil-code/src/equ.f90,rhs_cpu,maxdiffus=0.
-maxdiffus2,512,./pencil-code/src/equ.f90,rhs_cpu,maxdiffus2=0.
-maxdiffus3,513,./pencil-code/src/equ.f90,rhs_cpu,maxdiffus3=0.
-maxsrc,514,./pencil-code/src/equ.f90,rhs_cpu,maxsrc=0.
-imn,525,./pencil-code/src/equ.f90,rhs_cpu,"mn_loop: do imn=nyz-1,2,-1"
-imn,485,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu,"calc_pencils_loop: do imn=1,nyz"
-n,486,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu,n=nn(imn)
-m,487,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu,m=mm(imn)
-lfirstpoint,488,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu,lfirstpoint=(imn==1)
-llastpoint,489,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu,llastpoint=(imn==nyz)
-lcoarse_mn,490,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu,lcoarse_mn=lcoarse.and.mexts(1)<=m.and.m<=mexts(2)
-lcoarse_mn,492,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu,"lcoarse_mn=lcoarse_mn.and.ninds(0,m,n)>0"
-advec_cs2,507,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu,advec_cs2=0.0
-maxadvec,508,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu,maxadvec=0.
-advec2,509,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu,if (lenergy.or.ldensity.or.lmagnetic.or.lradiation.or.lneutralvelocity.or.lcosmicray.or.  (ltestfield_z.and.iuutest>0))  advec2=0.
-advec2_hypermesh,510,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu,if (ldensity.or.lviscosity.or.lmagnetic.or.lenergy)  advec2_hypermesh=0.0
-maxdiffus,511,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu,maxdiffus=0.
-maxdiffus2,512,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu,maxdiffus2=0.
-maxdiffus3,513,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu,maxdiffus3=0.
-maxsrc,514,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu,maxsrc=0.
-imn,525,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu,"mn_loop: do imn=nyz-1,2,-1"
-scaller,496,./pencil-code/src/messages.f90,rhs_cpu -> rhs_cpu -> timing,if (present(location)) scaller=location
-jdone,1065,./pencil-code/src/boundcond.f90,rhs_cpu -> rhs_cpu -> boundconds_y,jdone=0
-is_vec,1081,./pencil-code/src/boundcond.f90,rhs_cpu -> rhs_cpu -> boundconds_y,is_vec = var_is_vec(j)
-scaller,196,./pencil-code/src/messages.f90,rhs_cpu -> rhs_cpu -> boundconds_y -> bc_pper_y -> fatal_error_local,if (present(location)) scaller=location
-fatal_errors,200,./pencil-code/src/messages.f90,rhs_cpu -> rhs_cpu -> boundconds_y -> bc_pper_y -> fatal_error_local,fatal_errors=fatal_errors+1
-message_stored,213,./pencil-code/src/messages.f90,rhs_cpu -> rhs_cpu -> boundconds_y -> bc_pper_y -> fatal_error_local,"message_stored=trim(scaller)//"": ""//trim(message)"
-message_stored,215,./pencil-code/src/messages.f90,rhs_cpu -> rhs_cpu -> boundconds_y -> bc_pper_y -> fatal_error_local,"message_stored=trim(message_stored)//'; '//trim(scaller)//"": ""//trim(message)"
-jdone,1886,./pencil-code/src/boundcond.f90,rhs_cpu -> rhs_cpu -> boundconds_y -> bc_yy_y,jdone=j+2
-jdone,1894,./pencil-code/src/boundcond.f90,rhs_cpu -> rhs_cpu -> boundconds_y -> bc_yy_y,jdone=0
-scaller,127,./pencil-code/src/messages.f90,rhs_cpu -> rhs_cpu -> boundconds_y -> bc_van3rd_y -> fatal_error,if (present(location)) scaller=location
-errors,131,./pencil-code/src/messages.f90,rhs_cpu -> rhs_cpu -> boundconds_y -> bc_van3rd_y -> fatal_error,errors=errors+1
-n,4755,./pencil-code/src/boundcond.f90,rhs_cpu -> rhs_cpu -> boundconds_y -> bcy_extrap_2_3,"do n=1,size(f,3)"
-n,4768,./pencil-code/src/boundcond.f90,rhs_cpu -> rhs_cpu -> boundconds_y -> bcy_extrap_2_3,"do n=1,size(f,3)"
-scaller,322,./pencil-code/src/messages.f90,rhs_cpu -> rhs_cpu -> boundconds_y -> bc_set_der_y -> warning,if (present(location)) scaller=location
-jdone,1336,./pencil-code/src/boundcond.f90,rhs_cpu -> rhs_cpu -> boundconds_z,jdone=0
-is_vec,1341,./pencil-code/src/boundcond.f90,rhs_cpu -> rhs_cpu -> boundconds_z,is_vec = var_is_vec(j)
-jdone,1990,./pencil-code/src/boundcond.f90,rhs_cpu -> rhs_cpu -> boundconds_z -> bc_yy_z,jdone=j+2
-jdone,2002,./pencil-code/src/boundcond.f90,rhs_cpu -> rhs_cpu -> boundconds_z -> bc_yy_z,jdone=0
-scaller,94,./pencil-code/src/messages.f90,rhs_cpu -> rhs_cpu -> boundconds_z -> bc_ss_flux -> not_implemented,if (present(location)) scaller=location
-errors,97,./pencil-code/src/messages.f90,rhs_cpu -> rhs_cpu -> boundconds_z -> bc_ss_flux -> not_implemented,errors=errors+1
-n,313,./pencil-code/src/density_methods.f90,rhs_cpu -> rhs_cpu -> boundconds_z -> bc_ss_flux -> getderlnrho_z,n=iz
-m,314,./pencil-code/src/density_methods.f90,rhs_cpu -> rhs_cpu -> boundconds_z -> bc_ss_flux -> getderlnrho_z,"do m=1,size(f,2)"
-n,317,./pencil-code/src/density_methods.f90,rhs_cpu -> rhs_cpu -> boundconds_z -> bc_ss_flux -> getderlnrho_z,n=n_save; m=m_save
-m,317,./pencil-code/src/density_methods.f90,rhs_cpu -> rhs_cpu -> boundconds_z -> bc_ss_flux -> getderlnrho_z,n=n_save; m=m_save
-cs2top,3536,./pencil-code/src/eos_idealgas.f90,rhs_cpu -> rhs_cpu -> boundconds_z -> bc_ss_temp_z,"if (lread_oldsnap)  cs2top=cs20*exp(gamma*f(l2,m2,n2,iss)/cp+gamma_m1*(f(l2,m2,n2,ilnrho)-lnrho0))"
-mpoly,3877,./pencil-code/src/eos_idealgas.f90,rhs_cpu -> rhs_cpu -> boundconds_z -> bc_ss_temp3_z,allocate(mpoly); mpoly=impossible
-n,4591,./pencil-code/src/eos_idealgas.f90,rhs_cpu -> rhs_cpu -> boundconds_z -> bc_lnrho_hds_z_iso,n = n1+i
-m,4592,./pencil-code/src/eos_idealgas.f90,rhs_cpu -> rhs_cpu -> boundconds_z -> bc_lnrho_hds_z_iso,"do m = m1,m2"
-n,4686,./pencil-code/src/eos_idealgas.f90,rhs_cpu -> rhs_cpu -> boundconds_z -> bc_lnrho_hds_z_iso,n = n2-i
-m,4687,./pencil-code/src/eos_idealgas.f90,rhs_cpu -> rhs_cpu -> boundconds_z -> bc_lnrho_hds_z_iso,"do m = m1,m2"
-m,7457,./pencil-code/src/boundcond.f90,rhs_cpu -> rhs_cpu -> boundconds_z -> bc_copy_z_noinflow,"do l=1,size(f,1); do m=1,size(f,2)"
-m,7468,./pencil-code/src/boundcond.f90,rhs_cpu -> rhs_cpu -> boundconds_z -> bc_copy_z_noinflow,"do l=1,size(f,1); do m=1,size(f,2)"
-phiavg_profile,2802,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_all_pencils -> calc_phiavg_profile,"phiavg_profile(ir,:) = exp(-0.5*((p%rcyl_mn-r0)/width)**4)"
-nu_tdep,1457,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> calc_all_pencils -> calc_pencils_viscosity,"nu_tdep=nu*max(real(t-nu_tdep_toffset)/nu_tdep_t0,1.)**nu_tdep_exponent"
-nu_tdep,1459,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> calc_all_pencils -> calc_pencils_viscosity,"nu_tdep=nu*max(real(t-nu_tdep_toffset),nu_tdep_t0)**nu_tdep_exponent"
-pnu,1507,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> calc_all_pencils -> calc_pencils_viscosity,"pnu = nu + (nu*(nu_jump-1.))*(step(tmp3,xnu ,widthnu) - step(tmp3,xnu2,widthnu))"
-pnu,1537,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> calc_all_pencils -> calc_pencils_viscosity,pnu = nu*(p%rcyl_mn/xnu)**(-pnlaw)
-pnu,1555,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> calc_all_pencils -> calc_pencils_viscosity,pnu = nu*(p%r_mn/xnu)**(-pnlaw)
-pnu,1598,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> calc_all_pencils -> calc_pencils_viscosity,pnu  = nu + (nu*(nu_jump-1.))*prof+(nu*(nu_jump2-1.))*prof2
-pnu,1631,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> calc_all_pencils -> calc_pencils_viscosity,pnu  = nu + (nu*(nu_jump-1.))*prof
-pnu,1649,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> calc_all_pencils -> calc_pencils_viscosity,pnu=PrM_turb*etat_x*etat_y(m)*etat_z(n)
-pnu,1666,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> calc_all_pencils -> calc_pencils_viscosity,"pnu = nu + (nu*(nu_jump-1.))*step(p%z_mn,znu,-widthnu)"
-advec2_hypermesh,1871,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> calc_all_pencils -> calc_pencils_viscosity,advec2_hypermesh=advec2_hypermesh+advec_hypermesh_uu**2
-advec2_hypermesh,1899,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> calc_all_pencils -> calc_pencils_viscosity,advec2_hypermesh=advec2_hypermesh+advec_hypermesh_uu**2
-advec2_hypermesh,1929,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> calc_all_pencils -> calc_pencils_viscosity,advec2_hypermesh=advec2_hypermesh+advec_hypermesh_uu**2
-ix,7558,./pencil-code/src/sub.f90,rhs_cpu -> rhs_cpu -> calc_all_pencils -> calc_pencils_viscosity -> calc_slope_diff_flux,"do ix=1,nx"
-ix,7575,./pencil-code/src/sub.f90,rhs_cpu -> rhs_cpu -> calc_all_pencils -> calc_pencils_viscosity -> calc_slope_diff_flux,"do ix=1,nx"
-ix,7593,./pencil-code/src/sub.f90,rhs_cpu -> rhs_cpu -> calc_all_pencils -> calc_pencils_viscosity -> calc_slope_diff_flux,"do ix=1,nx"
-ix,7627,./pencil-code/src/sub.f90,rhs_cpu -> rhs_cpu -> calc_all_pencils -> calc_pencils_viscosity -> calc_slope_diff_flux,"do ix=1,nx"
-fname,1711,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_all_pencils -> calc_pencils_viscosity -> max_mn_name,fname(iname)=maxval(a)
-fname,1713,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_all_pencils -> calc_pencils_viscosity -> max_mn_name,"fname(iname)=max(fname(iname),maxval(a))"
-itype_name,1719,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_all_pencils -> calc_pencils_viscosity -> max_mn_name,itype_name(iname)=ilabel_max_sqrt
-itype_name,1721,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_all_pencils -> calc_pencils_viscosity -> max_mn_name,itype_name(iname)=ilabel_max_dt
-itype_name,1723,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_all_pencils -> calc_pencils_viscosity -> max_mn_name,itype_name(iname)=ilabel_max_neg
-itype_name,1725,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_all_pencils -> calc_pencils_viscosity -> max_mn_name,itype_name(iname)=ilabel_max_reciprocal
-itype_name,1727,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_all_pencils -> calc_pencils_viscosity -> max_mn_name,itype_name(iname)=ilabel_max
-n,719,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> calc_modules,n=nn(imn)
-m,720,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> calc_modules,m=mm(imn)
-lfirstpoint,721,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> calc_modules,lfirstpoint=(imn==1)
-llastpoint,722,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> calc_modules,llastpoint=(imn==nyz)
-lcoarse_mn,723,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> calc_modules,lcoarse_mn=lcoarse.and.mexts(1)<=m.and.m<=mexts(2)
-lcoarse_mn,725,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> calc_modules,"lcoarse_mn=lcoarse_mn.and.ninds(0,m,n)>0"
-advec_cs2,729,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> calc_modules,advec_cs2=0.0
-maxadvec,730,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> calc_modules,maxadvec=0.
-advec2,731,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> calc_modules,if (lenergy.or.ldensity.or.lmagnetic.or.lradiation.or.lneutralvelocity.or.lcosmicray.or.  (ltestfield_z.and.iuutest>0))  advec2=0.
-advec2_hypermesh,732,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> calc_modules,if (ldensity.or.lviscosity.or.lmagnetic.or.lenergy)  advec2_hypermesh=0.0
-maxdiffus,733,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> calc_modules,maxdiffus=0.
-maxdiffus2,734,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> calc_modules,maxdiffus2=0.
-maxdiffus3,735,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> calc_modules,maxdiffus3=0.
-maxsrc,736,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> calc_modules,maxsrc=0.
-Fmax,3660,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt,Fmax=tini
-advec_uu,3820,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt,"advec_uu=max(abs(p%uu(:,1))*dline_1(:,1), abs(p%uu(:,2))*dline_1(:,2), abs(p%uu(:,3))*dline_1(:,3))"
-advec_uu,3823,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt,"advec_uu=sum(abs(p%uu_advec)*dline_1,2)"
-advec_uu,3825,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt,"advec_uu=sum(abs(p%uu)*dline_1,2)"
-advec_uu,3837,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt,if (dimensionality<3) advec_uu=sqrt(p%u2*dxyz_2)
-maxadvec,3841,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt,maxadvec=maxadvec+advec_uu
-dt1_max,3928,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt,"dt1_max=max(dt1_max,ftot/(cdt_tauf*ulev))"
-Fmax,3929,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt,"Fmax=max(Fmax,ftot/ulev)"
-maxdiffus,2613,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_viscous_force,"maxdiffus=max(maxdiffus,diffus_nu)"
-maxdiffus2,2614,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_viscous_force,"maxdiffus2=max(maxdiffus2,diffus_nu2)"
-maxdiffus3,2615,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_viscous_force,"maxdiffus3=max(maxdiffus3,diffus_nu3)"
-itype_name,2201,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_viscous_force -> integrate_mn_name,itype_name(iname)=ilabel_integrate
-fnamez,2239,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_viscous_force -> xysum_mn_name_z -> xysum_mn_name_z_npar,"if (lfirstpoint) fnamez(:,:,iname)=0.0"
-fnamez,2249,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_viscous_force -> xysum_mn_name_z -> xysum_mn_name_z_npar,"fnamez(nl,ipz+1,iname)=fnamez(nl,ipz+1,iname)+  x(isum)*a(isum-nghost)"
-fnamez,2254,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_viscous_force -> xysum_mn_name_z -> xysum_mn_name_z_npar,"fnamez(nl,ipz+1,iname)=fnamez(nl,ipz+1,iname)+  a(isum-nghost)"
-fnamex,2351,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_viscous_force -> yzsum_mn_name_x -> yzsum_mn_name_x_mpar,"if (lfirstpoint) fnamex(:,:,iname)=0.0"
-fnamex,2356,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_viscous_force -> yzsum_mn_name_x -> yzsum_mn_name_x_mpar,"fnamex(:,ipx+1,iname)=fnamex(:,ipx+1,iname)+x(l1:l2)**2*sinth(m)*a"
-fnamex,2358,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_viscous_force -> yzsum_mn_name_x -> yzsum_mn_name_x_mpar,"fnamex(:,ipx+1,iname)=fnamex(:,ipx+1,iname)+x(l1:l2)*a"
-fnamex,2360,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_viscous_force -> yzsum_mn_name_x -> yzsum_mn_name_x_mpar,"fnamex(:,ipx+1,iname)=fnamex(:,ipx+1,iname)+a"
-fnamerz,2833,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_viscous_force -> phisum_mn_name_rz,"if (lfirstpoint) fnamerz(:,:,:,iname) = 0."
-fnamerz,2840,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_viscous_force -> phisum_mn_name_rz,"fnamerz(ir,n_nghost,ipz+1,iname)  = fnamerz(ir,n_nghost,ipz+1,iname) + sum(a*phiavg_profile(ir,:))"
-fnamerz,2849,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_viscous_force -> phisum_mn_name_rz,"fnamerz(ir,0,ipz+1,iname)  = fnamerz(ir,0,ipz+1,iname) + sum(1.*phiavg_profile(ir,:))"
-fnamexz,2541,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_2d_diagnostics_hydro -> ysum_mn_name_xz -> ysum_mn_name_xz_npar,"if (lfirstpoint) fnamexz(:,:,iname)=0."
-fnamexz,2548,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_2d_diagnostics_hydro -> ysum_mn_name_xz -> ysum_mn_name_xz_npar,"fnamexz(:,nl,iname) = fnamexz(:,nl,iname)+a*x(l1:l2)"
-fnamexz,2550,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_2d_diagnostics_hydro -> ysum_mn_name_xz -> ysum_mn_name_xz_npar,"fnamexz(:,nl,iname) = fnamexz(:,nl,iname)+a"
-fnamey,2296,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_1d_diagnostics_hydro -> xzsum_mn_name_y -> xzsum_mn_name_y_mpar,"if (lfirstpoint) fnamey(:,:,iname)=0.0"
-fnamey,2307,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_1d_diagnostics_hydro -> xzsum_mn_name_y -> xzsum_mn_name_y_mpar,"fnamey(ml,ipy+1,iname)=fnamey(ml,ipy+1,iname)+  x(isum)*sinth(m)*a(isum-nghost)"
-fnamey,2312,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_1d_diagnostics_hydro -> xzsum_mn_name_y -> xzsum_mn_name_y_mpar,"fnamey(ml,ipy+1,iname)=fnamey(ml,ipy+1,iname)+  a(isum-nghost)"
-fnamer,2485,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_1d_diagnostics_hydro -> phizsum_mn_name_r,"if (lfirstpoint) fnamer(:,iname)=0."
-fnamer,2486,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_1d_diagnostics_hydro -> phizsum_mn_name_r,"if (lfirstpoint.and.iname==nnamer) fnamer(:,iname+1)=0."
-fnamer,2489,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_1d_diagnostics_hydro -> phizsum_mn_name_r,"fnamer(ir,iname) = fnamer(ir,iname) + sum(a*phiavg_profile(ir,:))"
-fnamer,2503,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_1d_diagnostics_hydro -> phizsum_mn_name_r,"fnamer(ir,iname+1)=  fnamer(ir,iname+1) + sum(1.*phiavg_profile(ir,:))*nz"
-fname,3986,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro,"fname(idiag_urmsn)=fname_half(idiag_urmsh,1)"
-fname,3987,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro,"fname(idiag_urmss)=fname_half(idiag_urmsh,2)"
-itype_name,3988,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro,itype_name(idiag_urmsn)=ilabel_sum_sqrt
-itype_name,3989,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro,itype_name(idiag_urmss)=ilabel_sum_sqrt
-fname,4183,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro,"fname(idiag_oumn)=fname_half(idiag_oumh,1)"
-fname,4184,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro,"fname(idiag_oums)=fname_half(idiag_oumh,2)"
-itype_name,4185,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro,itype_name(idiag_oumn)=ilabel_sum
-itype_name,4186,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro,itype_name(idiag_oums)=ilabel_sum
-fname,4192,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro,"fname(idiag_ormsn)=fname_half(idiag_ormsh,1)"
-fname,4193,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro,"fname(idiag_ormss)=fname_half(idiag_ormsh,2)"
-itype_name,4194,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro,itype_name(idiag_ormsn)=ilabel_sum_sqrt
-itype_name,4195,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro,itype_name(idiag_ormss)=ilabel_sum_sqrt
-fname,4347,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro,if (lroot) fname(idiag_nshift)=fname(idiag_nshift)*dt
-fname,2087,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro -> sum_lim_mn_name,fname(iname) = 0.
-fname,2090,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro -> sum_lim_mn_name,fname(iname)=fname(iname)+  x(isum)*x(isum)*sinth(m)*aux(isum-nghost)*dv
-fname,2093,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro -> sum_lim_mn_name,fname(iname)=sum(aux)*dv
-fname,2099,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro -> sum_lim_mn_name,fname(iname)=fname(iname)+  x(isum)*x(isum)*sinth(isum)*aux(isum-nghost)*dv
-fname,2102,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro -> sum_lim_mn_name,fname(iname)=fname(iname)+sum(aux)*dv
-itype_name,2106,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro -> sum_lim_mn_name,itype_name(iname)=ilabel_sum_lim
-fname,1547,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro -> save_name,if (iname/=0) fname(iname)=a
-diffus_diffrho,2644,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> calc_modules -> dlnrho_dt,diffus_diffrho=0.; diffus_diffrho3=0.
-diffus_diffrho3,2644,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> calc_modules -> dlnrho_dt,diffus_diffrho=0.; diffus_diffrho3=0.
-diffus_diffrho,2659,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> calc_modules -> dlnrho_dt,if (ldt_up) diffus_diffrho=diffus_diffrho+diffrho
-diffus_diffrho,2673,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> calc_modules -> dlnrho_dt,if (lfirst.and.ldt) diffus_diffrho=diffus_diffrho+diffrho
-diffus_diffrho,2702,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> calc_modules -> dlnrho_dt,if (ldt_up) diffus_diffrho=diffus_diffrho+diffrho_shock*p%shock
-diffus_diffrho3,2758,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> calc_modules -> dlnrho_dt,if (ldt_up) diffus_diffrho3=diffus_diffrho3+diffrho_hyper3
-diffus_diffrho3,2778,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> calc_modules -> dlnrho_dt,if (ldt_up)  diffus_diffrho3=diffus_diffrho3+diffrho_hyper3*pi4_1*dxmin_pencil**4
-diffus_diffrho3,2809,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> calc_modules -> dlnrho_dt,diffus_diffrho3 = diffus_diffrho3 + diffrho_hyper3_mesh
-advec2_hypermesh,2814,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> calc_modules -> dlnrho_dt,advec2_hypermesh=advec2_hypermesh+advec_hypermesh_rho**2
-diffus_diffrho3,2831,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> calc_modules -> dlnrho_dt,"if (ldt_up) diffus_diffrho3=diffus_diffrho3+  (diffrho_hyper3_aniso(1)*dline_1(:,1)**6 +  diffrho_hyper3_aniso(2)*dline_1(:,2)**6 +  diffrho_hyper3_aniso(3)*dline_1(:,3)**6)/dxyz_6"
-diffus_diffrho3,2839,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> calc_modules -> dlnrho_dt,if (ldt_up) diffus_diffrho3=diffus_diffrho3+diffrho_hyper3
-diffus_diffrho,2857,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> calc_modules -> dlnrho_dt,diffus_diffrho = diffus_diffrho*dxyz_2
-diffus_diffrho3,2859,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> calc_modules -> dlnrho_dt,"diffus_diffrho3 = diffus_diffrho3 * sum(abs(dline_1),2)"
-diffus_diffrho3,2861,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> calc_modules -> dlnrho_dt,diffus_diffrho3 = diffus_diffrho3*dxyz_6
-maxdiffus,2867,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> calc_modules -> dlnrho_dt,"maxdiffus=max(maxdiffus,diffus_diffrho)"
-maxdiffus3,2868,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> calc_modules -> dlnrho_dt,"maxdiffus3=max(maxdiffus3,diffus_diffrho3)"
-Hmax,3272,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt,Hmax = 0.
-advec_cs2,3286,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt,advec_cs2=reduce_cs2*cs2top*dxyz_2
-advec_cs2,3288,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt,advec_cs2=reduce_cs2*p%cs2*dxyz_2
-advec_cs2,3291,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt,advec_cs2=p%cs2*dxyz_2
-diffus_chi,3367,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt,diffus_chi=0.; diffus_chi3=0.
-diffus_chi3,3367,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt,diffus_chi=0.; diffus_chi3=0.
-maxdiffus,3403,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt,"maxdiffus=max(maxdiffus,diffus_chi)"
-maxdiffus3,3404,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt,"maxdiffus3=max(maxdiffus3,diffus_chi3)"
-ss0,3445,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt,"ss0 = abs(df(l1:l2,m,n,iss))"
-dt1_max,3446,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt,"dt1_max=max(dt1_max,ss0*p%cv1/cdts)"
-dt1_max,3448,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt,"dt1_max=max(dt1_max,abs(Hmax/p%ee/cdts))"
-diffus_chi,5580,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond,if (hcond0/=0..or.lread_hcond)  diffus_chi=diffus_chi+gamma*chix*dxyz_2
-diffus_chi,5582,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond,if (chi_t/=0.)  diffus_chi=diffus_chi+chi_t*chit_prof*dxyz_2
-diffus_chi,4934,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_constK,diffus_chi=diffus_chi+gamma*chix*dxyz_2
-diffus_chi,5647,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_sfluct,diffus_chi=diffus_chi+chi_t*dxyz_2
-diffus_chi,4344,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_constchi,diffus_chi=diffus_chi+(gamma*chi)*dxyz_2
-diffus_chi,4346,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_constchi,diffus_chi=diffus_chi+chi*dxyz_2
-diffus_chi,4348,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_constchi,if (chi_t/=0.) diffus_chi = diffus_chi+chi_t*chit_prof*dxyz_2
-diffus_chi,4436,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_cspeed_chi,diffus_chi=diffus_chi+(gamma*thchi+chi_t)*dxyz_2
-diffus_chi,4438,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_cspeed_chi,diffus_chi=diffus_chi+(thchi+chi_t)*dxyz_2
-diffus_chi,4526,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_sqrtrhochi,diffus_chi=diffus_chi+(gamma*rhochi+chi_t)*dxyz_2
-diffus_chi,4528,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_sqrtrhochi,diffus_chi=diffus_chi+(rhochi+chi_t)*dxyz_2
-diffus_chi,4760,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_shock,if (lheatc_shock)  diffus_chi=diffus_chi+exp(-onethird*p%lnrho)*chi_shock*p%shock*p%cp1*dxyz_2
-diffus_chi,4762,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_shock,if (lheatc_shock2)  diffus_chi=diffus_chi+exp(-onethird*p%lnrho)*chi_shock2*p%shock**2*p%cp1*dxyz_2
-diffus_chi,4765,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_shock,if (lheatc_shock)  diffus_chi=diffus_chi+(gamma*chi_shock*p%shock)*dxyz_2
-diffus_chi,4767,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_shock,if (lheatc_shock2)  diffus_chi=diffus_chi+(gamma*chi_shock2*p%shock**2)*dxyz_2
-diffus_chi,4771,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_shock,if (lheatc_shock)  diffus_chi=diffus_chi+(chi_shock*p%shock)*dxyz_2
-diffus_chi,4773,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_shock,if (lheatc_shock2)  diffus_chi=diffus_chi+(chi_shock2*p%shock**2)*dxyz_2
-diffus_chi,4845,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_shock_profr,diffus_chi=diffus_chi+(gamma*pchi_shock*p%shock)*dxyz_2
-diffus_chi,4847,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_shock_profr,diffus_chi=diffus_chi+(pchi_shock*p%shock)*dxyz_2
-diffus_chi3,4565,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_hyper3,if (lfirst.and.ldt) diffus_chi3=diffus_chi3+chi_hyper3*dxyz_6
-dt1_max,5004,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_spitzer,"dt1_max=max(dt1_max,maxval(abs(thdiff)*gamma)/(cdts))"
-diffus_chi,5005,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_spitzer,diffus_chi=diffus_chi+gamma*Kgpara*exp(2.5*p%lnTT-p%lnrho)/p%cp*dxyz_2
-diffus_chi,5226,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_kramers,diffus_chi=diffus_chi+(gamma*chix+chi_t)*dxyz_2
-diffus_chi,5825,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_chit,if (chi_t0/=0..and.(lchit_total .or. lchit_mean))  diffus_chi=diffus_chi+chi_t0*chit_prof*dxyz_2
-diffus_chi,5828,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_chit,if (chi_t1/=0..and.lchit_fluct)  diffus_chi=diffus_chi+chit_prof_fluct*dxyz_2
-diffus_chi,5332,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_smagorinsky,diffus_chi=diffus_chi+(gamma*chix)*dxyz_2
-dt1_max,7624,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> newton_cool,"dt1_max=max(dt1_max,maxval(abs(newton)*gamma)/(cdts))"
-dt1_max,6749,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heat_cool_RTV,"dt1_max=max(dt1_max,tmp)"
-diffus_chi,5045,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_tensor,diffus_chi=diffus_chi+ cosbgT*gamma*Kgpara*exp(-p%lnrho)/p%cp*dxyz_2
-diffus_chi3,4630,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_hyper3_polar,if (lfirst.and.ldt)  diffus_chi3=diffus_chi3+chi_hyper3*pi4_1*dxmin_pencil**4
-diffus_chi3,4669,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_hyper3_mesh,"diffus_chi3 = diffus_chi3 + chi_hyper3_mesh * sum(abs(dline_1),2)"
-advec2_hypermesh,4674,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_hyper3_mesh,advec2_hypermesh=advec2_hypermesh+advec_hypermesh_ss**2
-diffus_chi3,4596,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heatcond_hyper3_aniso,"if (lfirst.and.ldt) diffus_chi3=diffus_chi3+  (chi_hyper3_aniso(1)*dline_1(:,1)**6 +  chi_hyper3_aniso(2)*dline_1(:,2)**6 +  chi_hyper3_aniso(3)*dline_1(:,3)**6)"
-rcool,6328,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravr,if (rcool==0.) rcool=r_ext
-r_ext,6414,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_spherical,r_ext=x(l2)
-r_int,6415,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_spherical,r_int=x(l1)
-rcool,6444,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_spherical,if (rcool==0.0) rcool=r_ext
-rcool,6451,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_spherical,if (rcool==0.0) rcool=r_ext
-rcool2,6452,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_spherical,if (rcool2==0.0) rcool2=r_ext
-rcool,6460,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_spherical,if (rcool==0.0) rcool=r_ext
-rcool2,6461,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_spherical,if (rcool2==0.0) rcool2=r_ext
-rcool,6470,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_spherical,if (rcool==0.0) rcool=r_ext
-rcool,6482,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_spherical,if (rcool==0.0) rcool=r_ext
-rcool,6492,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_spherical,if (rcool==0.0) rcool=r_ext
-rcool,6507,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_spherical,if (rcool==0.0) rcool=r_ext
-rcool,6516,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_spherical,if (rcool==0.0) rcool=r_ext
-rcool,6528,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_spherical,if (rcool==0.0) rcool=r_ext
-r_ext,6567,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_cartesian,r_ext=x(l2)
-r_int,6568,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_cartesian,r_int=x(l1)
-rcool,6597,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_cartesian,if (rcool==0.) rcool=r_ext
-fname,2128,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_diagnostics_energy -> calc_0d_diagnostics_energy -> surf_mn_name,fname(iname)=a
-fname,2130,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_diagnostics_energy -> calc_0d_diagnostics_energy -> surf_mn_name,fname(iname)=fname(iname)+a
-itype_name,2135,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> calc_modules -> denergy_dt -> calc_diagnostics_energy -> calc_0d_diagnostics_energy -> surf_mn_name,itype_name(iname)=ilabel_surf
-t_vart,4910,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> calc_modules -> time_integrals_hydro,t_vart=t_vart+dtcor
-advec2,908,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> set_dt1_max,advec2=advec2+advec_cs2
-maxadvec,909,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> set_dt1_max,if (lenergy.or.ldensity.or.lmagnetic.or.lradiation.or.lneutralvelocity.or.lcosmicray.or.  (ltestfield_z.and.iuutest>0))  maxadvec=maxadvec+sqrt(advec2)
-maxadvec,910,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> set_dt1_max,if (ldensity.or.lhydro.or.lmagnetic.or.lenergy) maxadvec=maxadvec+sqrt(advec2_hypermesh)
-maxadvec,923,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
-maxdiffus,923,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
-maxdiffus2,923,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
-maxdiffus3,923,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
-maxadvec,927,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
-maxdiffus,927,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
-maxdiffus2,927,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
-maxdiffus3,927,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
-maxadvec,934,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
-maxdiffus,934,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
-maxdiffus2,934,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
-maxdiffus3,934,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
-maxadvec,938,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
-maxdiffus,938,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
-maxdiffus2,938,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
-maxdiffus3,938,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
-maxadvec,944,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
-maxdiffus,944,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
-maxdiffus2,944,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
-maxdiffus3,944,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
-dt1_max,947,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> set_dt1_max,"dt1_max=max(dt1_max,dt1_max_loc)"
-dt1_max_array,953,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> set_dt1_max,"dt1_max_array(imn,:) = dt1_max"
+imn,1005,./pencil-code/src/equ.f90,rhs_cpu,"mn_loop: do imn=2,nyz-1"
+imn,1005,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu,"mn_loop: do imn=2,nyz-1"
+n,1072,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop,n=nn(imn)
+m,1073,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop,m=mm(imn)
+lfirstpoint,1074,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop,lfirstpoint=(imn==1)
+llastpoint,1075,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop,llastpoint=(imn==nyz)
+lcoarse_mn,1082,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop,lcoarse_mn=lcoarse.and.mexts(1)<=m.and.m<=mexts(2)
+lcoarse_mn,1084,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop,"lcoarse_mn=lcoarse_mn.and.ninds(0,m,n)>0"
+advec_cs2,1131,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop,advec_cs2=0.0
+maxadvec,1132,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop,maxadvec=0.
+advec2,1133,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop,if (lenergy.or.ldensity.or.lmagnetic.or.lradiation.or.lneutralvelocity.or.lcosmicray.or.  (ltestfield_z.and.iuutest>0))  advec2=0.
+advec2_hypermesh,1134,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop,if (ldensity.or.lviscosity.or.lmagnetic.or.lenergy)  advec2_hypermesh=0.0
+maxdiffus,1135,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop,maxdiffus=0.
+maxdiffus2,1136,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop,maxdiffus2=0.
+maxdiffus3,1137,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop,maxdiffus3=0.
+maxsrc,1138,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop,maxsrc=0.
+headtt,1462,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop,headtt=.false.
+scaller,496,./pencil-code/src/messages.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> timing,if (present(location)) scaller=location
+jdone,1065,./pencil-code/src/boundcond.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_y,jdone=0
+is_vec,1081,./pencil-code/src/boundcond.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_y,is_vec = var_is_vec(j)
+scaller,196,./pencil-code/src/messages.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_y -> bc_pper_y -> fatal_error_local,if (present(location)) scaller=location
+fatal_errors,200,./pencil-code/src/messages.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_y -> bc_pper_y -> fatal_error_local,fatal_errors=fatal_errors+1
+message_stored,213,./pencil-code/src/messages.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_y -> bc_pper_y -> fatal_error_local,"message_stored=trim(scaller)//"": ""//trim(message)"
+message_stored,215,./pencil-code/src/messages.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_y -> bc_pper_y -> fatal_error_local,"message_stored=trim(message_stored)//'; '//trim(scaller)//"": ""//trim(message)"
+jdone,1886,./pencil-code/src/boundcond.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_y -> bc_yy_y,jdone=j+2
+jdone,1894,./pencil-code/src/boundcond.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_y -> bc_yy_y,jdone=0
+scaller,127,./pencil-code/src/messages.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_y -> bc_van3rd_y -> fatal_error,if (present(location)) scaller=location
+errors,131,./pencil-code/src/messages.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_y -> bc_van3rd_y -> fatal_error,errors=errors+1
+n,4755,./pencil-code/src/boundcond.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_y -> bcy_extrap_2_3,"do n=1,size(f,3)"
+n,4768,./pencil-code/src/boundcond.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_y -> bcy_extrap_2_3,"do n=1,size(f,3)"
+scaller,322,./pencil-code/src/messages.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_y -> bc_set_der_y -> warning,if (present(location)) scaller=location
+jdone,1336,./pencil-code/src/boundcond.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_z,jdone=0
+is_vec,1341,./pencil-code/src/boundcond.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_z,is_vec = var_is_vec(j)
+jdone,1990,./pencil-code/src/boundcond.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_z -> bc_yy_z,jdone=j+2
+jdone,2002,./pencil-code/src/boundcond.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_z -> bc_yy_z,jdone=0
+scaller,94,./pencil-code/src/messages.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_z -> bc_ss_flux -> not_implemented,if (present(location)) scaller=location
+errors,97,./pencil-code/src/messages.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_z -> bc_ss_flux -> not_implemented,errors=errors+1
+n,313,./pencil-code/src/density_methods.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_z -> bc_ss_flux -> getderlnrho_z,n=iz
+m,314,./pencil-code/src/density_methods.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_z -> bc_ss_flux -> getderlnrho_z,"do m=1,size(f,2)"
+n,317,./pencil-code/src/density_methods.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_z -> bc_ss_flux -> getderlnrho_z,n=n_save; m=m_save
+m,317,./pencil-code/src/density_methods.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_z -> bc_ss_flux -> getderlnrho_z,n=n_save; m=m_save
+cs2top,3536,./pencil-code/src/eos_idealgas.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_z -> bc_ss_temp_z,"if (lread_oldsnap)  cs2top=cs20*exp(gamma*f(l2,m2,n2,iss)/cp+gamma_m1*(f(l2,m2,n2,ilnrho)-lnrho0))"
+mpoly,3877,./pencil-code/src/eos_idealgas.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_z -> bc_ss_temp3_z,allocate(mpoly); mpoly=impossible
+n,4591,./pencil-code/src/eos_idealgas.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_z -> bc_lnrho_hds_z_iso,n = n1+i
+m,4592,./pencil-code/src/eos_idealgas.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_z -> bc_lnrho_hds_z_iso,"do m = m1,m2"
+n,4686,./pencil-code/src/eos_idealgas.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_z -> bc_lnrho_hds_z_iso,n = n2-i
+m,4687,./pencil-code/src/eos_idealgas.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_z -> bc_lnrho_hds_z_iso,"do m = m1,m2"
+m,7457,./pencil-code/src/boundcond.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_z -> bc_copy_z_noinflow,"do l=1,size(f,1); do m=1,size(f,2)"
+m,7468,./pencil-code/src/boundcond.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> boundconds_z -> bc_copy_z_noinflow,"do l=1,size(f,1); do m=1,size(f,2)"
+phiavg_profile,2794,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> calc_all_pencils -> calc_phiavg_profile,"phiavg_profile(ir,:) = exp(-0.5*((p%rcyl_mn-r0)/width)**4)"
+pnu,1496,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> calc_all_pencils -> calc_pencils_viscosity,"pnu = nu + (nu*(nu_jump-1.))*(step(tmp3,xnu ,widthnu) - step(tmp3,xnu2,widthnu))"
+pnu,1526,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> calc_all_pencils -> calc_pencils_viscosity,pnu = nu*(p%rcyl_mn/xnu)**(-pnlaw)
+pnu,1544,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> calc_all_pencils -> calc_pencils_viscosity,pnu = nu*(p%r_mn/xnu)**(-pnlaw)
+pnu,1587,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> calc_all_pencils -> calc_pencils_viscosity,pnu  = nu + (nu*(nu_jump-1.))*prof+(nu*(nu_jump2-1.))*prof2
+pnu,1620,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> calc_all_pencils -> calc_pencils_viscosity,pnu  = nu + (nu*(nu_jump-1.))*prof
+pnu,1638,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> calc_all_pencils -> calc_pencils_viscosity,pnu=PrM_turb*etat_x*etat_y(m)*etat_z(n)
+pnu,1655,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> calc_all_pencils -> calc_pencils_viscosity,"pnu = nu + (nu*(nu_jump-1.))*step(p%z_mn,znu,-widthnu)"
+advec2_hypermesh,1860,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> calc_all_pencils -> calc_pencils_viscosity,advec2_hypermesh=advec2_hypermesh+advec_hypermesh_uu**2
+advec2_hypermesh,1888,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> calc_all_pencils -> calc_pencils_viscosity,advec2_hypermesh=advec2_hypermesh+advec_hypermesh_uu**2
+advec2_hypermesh,1918,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> calc_all_pencils -> calc_pencils_viscosity,advec2_hypermesh=advec2_hypermesh+advec_hypermesh_uu**2
+fname,1704,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> calc_all_pencils -> calc_pencils_viscosity -> max_mn_name,fname(iname)=maxval(a)
+fname,1706,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> calc_all_pencils -> calc_pencils_viscosity -> max_mn_name,"fname(iname)=max(fname(iname),maxval(a))"
+itype_name,1712,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> calc_all_pencils -> calc_pencils_viscosity -> max_mn_name,itype_name(iname)=ilabel_max_sqrt
+itype_name,1714,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> calc_all_pencils -> calc_pencils_viscosity -> max_mn_name,itype_name(iname)=ilabel_max_dt
+itype_name,1716,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> calc_all_pencils -> calc_pencils_viscosity -> max_mn_name,itype_name(iname)=ilabel_max_neg
+itype_name,1718,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> calc_all_pencils -> calc_pencils_viscosity -> max_mn_name,itype_name(iname)=ilabel_max_reciprocal
+itype_name,1720,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> calc_all_pencils -> calc_pencils_viscosity -> max_mn_name,itype_name(iname)=ilabel_max
+Fmax,3665,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt,Fmax=1./impossible
+advec_uu,3825,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt,"advec_uu=max(abs(p%uu(:,1))*dline_1(:,1), abs(p%uu(:,2))*dline_1(:,2), abs(p%uu(:,3))*dline_1(:,3))"
+advec_uu,3828,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt,"advec_uu=sum(abs(p%uu_advec)*dline_1,2)"
+advec_uu,3830,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt,"advec_uu=sum(abs(p%uu)*dline_1,2)"
+advec_uu,3842,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt,if (dimensionality<3) advec_uu=sqrt(p%u2*dxyz_2)
+maxadvec,3846,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt,maxadvec=maxadvec+advec_uu
+dt1_max,3933,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt,"dt1_max=max(dt1_max,ftot/(cdt_tauf*ulev))"
+Fmax,3934,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt,"Fmax=max(Fmax,ftot/ulev)"
+maxdiffus,2615,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_viscous_force,"maxdiffus=max(maxdiffus,diffus_nu)"
+maxdiffus2,2616,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_viscous_force,"maxdiffus2=max(maxdiffus2,diffus_nu2)"
+maxdiffus3,2617,./pencil-code/src/viscosity.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_viscous_force,"maxdiffus3=max(maxdiffus3,diffus_nu3)"
+itype_name,2193,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_viscous_force -> integrate_mn_name,itype_name(iname)=ilabel_integrate
+fnamez,2231,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_viscous_force -> xysum_mn_name_z -> xysum_mn_name_z_npar,"if (lfirstpoint) fnamez(:,:,iname)=0.0"
+fnamez,2241,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_viscous_force -> xysum_mn_name_z -> xysum_mn_name_z_npar,"fnamez(nl,ipz+1,iname)=fnamez(nl,ipz+1,iname)+  x(isum)*a(isum-nghost)"
+fnamez,2246,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_viscous_force -> xysum_mn_name_z -> xysum_mn_name_z_npar,"fnamez(nl,ipz+1,iname)=fnamez(nl,ipz+1,iname)+  a(isum-nghost)"
+fnamex,2343,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_viscous_force -> yzsum_mn_name_x -> yzsum_mn_name_x_mpar,"if (lfirstpoint) fnamex(:,:,iname)=0.0"
+fnamex,2348,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_viscous_force -> yzsum_mn_name_x -> yzsum_mn_name_x_mpar,"fnamex(:,ipx+1,iname)=fnamex(:,ipx+1,iname)+x(l1:l2)**2*sinth(m)*a"
+fnamex,2350,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_viscous_force -> yzsum_mn_name_x -> yzsum_mn_name_x_mpar,"fnamex(:,ipx+1,iname)=fnamex(:,ipx+1,iname)+x(l1:l2)*a"
+fnamex,2352,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_viscous_force -> yzsum_mn_name_x -> yzsum_mn_name_x_mpar,"fnamex(:,ipx+1,iname)=fnamex(:,ipx+1,iname)+a"
+fnamerz,2825,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_viscous_force -> phisum_mn_name_rz,"if (lfirstpoint) fnamerz(:,:,:,iname) = 0."
+fnamerz,2832,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_viscous_force -> phisum_mn_name_rz,"fnamerz(ir,n_nghost,ipz+1,iname)  = fnamerz(ir,n_nghost,ipz+1,iname) + sum(a*phiavg_profile(ir,:))"
+fnamerz,2841,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_viscous_force -> phisum_mn_name_rz,"fnamerz(ir,0,ipz+1,iname)  = fnamerz(ir,0,ipz+1,iname) + sum(1.*phiavg_profile(ir,:))"
+fnamexz,2533,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_2d_diagnostics_hydro -> ysum_mn_name_xz -> ysum_mn_name_xz_npar,"if (lfirstpoint) fnamexz(:,:,iname)=0."
+fnamexz,2540,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_2d_diagnostics_hydro -> ysum_mn_name_xz -> ysum_mn_name_xz_npar,"fnamexz(:,nl,iname) = fnamexz(:,nl,iname)+a*x(l1:l2)"
+fnamexz,2542,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_2d_diagnostics_hydro -> ysum_mn_name_xz -> ysum_mn_name_xz_npar,"fnamexz(:,nl,iname) = fnamexz(:,nl,iname)+a"
+fnamey,2288,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_1d_diagnostics_hydro -> xzsum_mn_name_y -> xzsum_mn_name_y_mpar,"if (lfirstpoint) fnamey(:,:,iname)=0.0"
+fnamey,2299,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_1d_diagnostics_hydro -> xzsum_mn_name_y -> xzsum_mn_name_y_mpar,"fnamey(ml,ipy+1,iname)=fnamey(ml,ipy+1,iname)+  x(isum)*sinth(m)*a(isum-nghost)"
+fnamey,2304,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_1d_diagnostics_hydro -> xzsum_mn_name_y -> xzsum_mn_name_y_mpar,"fnamey(ml,ipy+1,iname)=fnamey(ml,ipy+1,iname)+  a(isum-nghost)"
+fnamer,2477,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_1d_diagnostics_hydro -> phizsum_mn_name_r,"if (lfirstpoint) fnamer(:,iname)=0."
+fnamer,2478,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_1d_diagnostics_hydro -> phizsum_mn_name_r,"if (lfirstpoint.and.iname==nnamer) fnamer(:,iname+1)=0."
+fnamer,2481,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_1d_diagnostics_hydro -> phizsum_mn_name_r,"fnamer(ir,iname) = fnamer(ir,iname) + sum(a*phiavg_profile(ir,:))"
+fnamer,2495,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_1d_diagnostics_hydro -> phizsum_mn_name_r,"fnamer(ir,iname+1)=  fnamer(ir,iname+1) + sum(1.*phiavg_profile(ir,:))*nz"
+fname,3991,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro,"fname(idiag_urmsn)=fname_half(idiag_urmsh,1)"
+fname,3992,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro,"fname(idiag_urmss)=fname_half(idiag_urmsh,2)"
+itype_name,3993,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro,itype_name(idiag_urmsn)=ilabel_sum_sqrt
+itype_name,3994,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro,itype_name(idiag_urmss)=ilabel_sum_sqrt
+fname,4188,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro,"fname(idiag_oumn)=fname_half(idiag_oumh,1)"
+fname,4189,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro,"fname(idiag_oums)=fname_half(idiag_oumh,2)"
+itype_name,4190,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro,itype_name(idiag_oumn)=ilabel_sum
+itype_name,4191,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro,itype_name(idiag_oums)=ilabel_sum
+fname,4197,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro,"fname(idiag_ormsn)=fname_half(idiag_ormsh,1)"
+fname,4198,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro,"fname(idiag_ormss)=fname_half(idiag_ormsh,2)"
+itype_name,4199,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro,itype_name(idiag_ormsn)=ilabel_sum_sqrt
+itype_name,4200,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro,itype_name(idiag_ormss)=ilabel_sum_sqrt
+fname,4352,./pencil-code/src/hydro.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro,if (lroot) fname(idiag_nshift)=fname(idiag_nshift)*dt
+fname,2079,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro -> sum_lim_mn_name,fname(iname) = 0.
+fname,2082,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro -> sum_lim_mn_name,fname(iname)=fname(iname)+  x(isum)*x(isum)*sinth(m)*aux(isum-nghost)*dv
+fname,2085,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro -> sum_lim_mn_name,fname(iname)=sum(aux)*dv
+fname,2091,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro -> sum_lim_mn_name,fname(iname)=fname(iname)+  x(isum)*x(isum)*sinth(isum)*aux(isum-nghost)*dv
+fname,2094,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro -> sum_lim_mn_name,fname(iname)=fname(iname)+sum(aux)*dv
+itype_name,2098,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro -> sum_lim_mn_name,itype_name(iname)=ilabel_sum_lim
+fname,1540,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> duu_dt -> calc_diagnostics_hydro -> calc_0d_diagnostics_hydro -> save_name,if (iname/=0) fname(iname)=a
+diffus_diffrho,2638,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> dlnrho_dt,diffus_diffrho=0.; diffus_diffrho3=0.
+diffus_diffrho3,2638,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> dlnrho_dt,diffus_diffrho=0.; diffus_diffrho3=0.
+diffus_diffrho,2653,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> dlnrho_dt,if (ldt_up) diffus_diffrho=diffus_diffrho+diffrho
+diffus_diffrho,2667,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> dlnrho_dt,if (lfirst.and.ldt) diffus_diffrho=diffus_diffrho+diffrho
+diffus_diffrho,2696,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> dlnrho_dt,if (ldt_up) diffus_diffrho=diffus_diffrho+diffrho_shock*p%shock
+diffus_diffrho3,2752,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> dlnrho_dt,if (ldt_up) diffus_diffrho3=diffus_diffrho3+diffrho_hyper3
+diffus_diffrho3,2772,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> dlnrho_dt,if (ldt_up)  diffus_diffrho3=diffus_diffrho3+diffrho_hyper3*pi4_1*dxmin_pencil**4
+diffus_diffrho3,2803,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> dlnrho_dt,diffus_diffrho3 = diffus_diffrho3 + diffrho_hyper3_mesh
+advec2_hypermesh,2808,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> dlnrho_dt,advec2_hypermesh=advec2_hypermesh+advec_hypermesh_rho**2
+diffus_diffrho3,2825,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> dlnrho_dt,"if (ldt_up) diffus_diffrho3=diffus_diffrho3+  (diffrho_hyper3_aniso(1)*dline_1(:,1)**6 +  diffrho_hyper3_aniso(2)*dline_1(:,2)**6 +  diffrho_hyper3_aniso(3)*dline_1(:,3)**6)/dxyz_6"
+diffus_diffrho3,2833,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> dlnrho_dt,if (ldt_up) diffus_diffrho3=diffus_diffrho3+diffrho_hyper3
+diffus_diffrho,2851,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> dlnrho_dt,diffus_diffrho = diffus_diffrho*dxyz_2
+diffus_diffrho3,2853,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> dlnrho_dt,"diffus_diffrho3 = diffus_diffrho3 * sum(abs(dline_1),2)"
+diffus_diffrho3,2855,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> dlnrho_dt,diffus_diffrho3 = diffus_diffrho3*dxyz_6
+maxdiffus,2861,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> dlnrho_dt,"maxdiffus=max(maxdiffus,diffus_diffrho)"
+maxdiffus3,2862,./pencil-code/src/density.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> dlnrho_dt,"maxdiffus3=max(maxdiffus3,diffus_diffrho3)"
+Hmax,3267,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt,Hmax = 0.
+advec_cs2,3281,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt,advec_cs2=reduce_cs2*cs2top*dxyz_2
+advec_cs2,3283,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt,advec_cs2=reduce_cs2*p%cs2*dxyz_2
+advec_cs2,3286,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt,advec_cs2=p%cs2*dxyz_2
+diffus_chi,3362,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt,diffus_chi=0.; diffus_chi3=0.
+diffus_chi3,3362,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt,diffus_chi=0.; diffus_chi3=0.
+maxdiffus,3398,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt,"maxdiffus=max(maxdiffus,diffus_chi)"
+maxdiffus3,3399,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt,"maxdiffus3=max(maxdiffus3,diffus_chi3)"
+ss0,3439,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt,"if (lthdiff_Hmax.and.((lfirst.and.ldt).or.  ldiagnos.and.(idiag_dtH/=0.or.idiag_tauhmin/=0))) ss0 = abs(df(l1:l2,m,n,iss))"
+dt1_max,3443,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt,"dt1_max=max(dt1_max,ss0*p%cv1/cdts)"
+dt1_max,3445,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt,"dt1_max=max(dt1_max,abs(Hmax/p%ee/cdts))"
+diffus_chi,5577,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond,if (hcond0/=0..or.lread_hcond)  diffus_chi=diffus_chi+gamma*chix*dxyz_2
+diffus_chi,5579,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond,if (chi_t/=0.)  diffus_chi=diffus_chi+chi_t*chit_prof*dxyz_2
+diffus_chi,4931,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_constK,diffus_chi=diffus_chi+gamma*chix*dxyz_2
+diffus_chi,5644,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_sfluct,diffus_chi=diffus_chi+chi_t*dxyz_2
+diffus_chi,4341,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_constchi,diffus_chi=diffus_chi+(gamma*chi)*dxyz_2
+diffus_chi,4343,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_constchi,diffus_chi=diffus_chi+chi*dxyz_2
+diffus_chi,4345,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_constchi,if (chi_t/=0.) diffus_chi = diffus_chi+chi_t*chit_prof*dxyz_2
+diffus_chi,4433,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_cspeed_chi,diffus_chi=diffus_chi+(gamma*thchi+chi_t)*dxyz_2
+diffus_chi,4435,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_cspeed_chi,diffus_chi=diffus_chi+(thchi+chi_t)*dxyz_2
+diffus_chi,4523,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_sqrtrhochi,diffus_chi=diffus_chi+(gamma*rhochi+chi_t)*dxyz_2
+diffus_chi,4525,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_sqrtrhochi,diffus_chi=diffus_chi+(rhochi+chi_t)*dxyz_2
+diffus_chi,4757,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_shock,if (lheatc_shock)  diffus_chi=diffus_chi+exp(-onethird*p%lnrho)*chi_shock*p%shock*p%cp1*dxyz_2
+diffus_chi,4759,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_shock,if (lheatc_shock2)  diffus_chi=diffus_chi+exp(-onethird*p%lnrho)*chi_shock2*p%shock**2*p%cp1*dxyz_2
+diffus_chi,4762,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_shock,if (lheatc_shock)  diffus_chi=diffus_chi+(gamma*chi_shock*p%shock)*dxyz_2
+diffus_chi,4764,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_shock,if (lheatc_shock2)  diffus_chi=diffus_chi+(gamma*chi_shock2*p%shock**2)*dxyz_2
+diffus_chi,4768,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_shock,if (lheatc_shock)  diffus_chi=diffus_chi+(chi_shock*p%shock)*dxyz_2
+diffus_chi,4770,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_shock,if (lheatc_shock2)  diffus_chi=diffus_chi+(chi_shock2*p%shock**2)*dxyz_2
+diffus_chi,4842,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_shock_profr,diffus_chi=diffus_chi+(gamma*pchi_shock*p%shock)*dxyz_2
+diffus_chi,4844,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_shock_profr,diffus_chi=diffus_chi+(pchi_shock*p%shock)*dxyz_2
+diffus_chi3,4562,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_hyper3,if (lfirst.and.ldt) diffus_chi3=diffus_chi3+chi_hyper3*dxyz_6
+dt1_max,5001,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_spitzer,"dt1_max=max(dt1_max,maxval(abs(thdiff)*gamma)/(cdts))"
+diffus_chi,5002,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_spitzer,diffus_chi=diffus_chi+gamma*Kgpara*exp(2.5*p%lnTT-p%lnrho)/p%cp*dxyz_2
+diffus_chi,5223,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_kramers,diffus_chi=diffus_chi+(gamma*chix+chi_t)*dxyz_2
+diffus_chi,5822,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_chit,if (chi_t0/=0..and.(lchit_total .or. lchit_mean))  diffus_chi=diffus_chi+chi_t0*chit_prof*dxyz_2
+diffus_chi,5825,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_chit,if (chi_t1/=0..and.lchit_fluct)  diffus_chi=diffus_chi+chit_prof_fluct*dxyz_2
+diffus_chi,5329,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_smagorinsky,diffus_chi=diffus_chi+(gamma*chix)*dxyz_2
+dt1_max,7620,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> newton_cool,"dt1_max=max(dt1_max,maxval(abs(newton)*gamma)/(cdts))"
+dt1_max,6745,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heat_cool_RTV,"dt1_max=max(dt1_max,tmp)"
+diffus_chi,5042,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_tensor,diffus_chi=diffus_chi+ cosbgT*gamma*Kgpara*exp(-p%lnrho)/p%cp*dxyz_2
+diffus_chi3,4627,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_hyper3_polar,if (lfirst.and.ldt)  diffus_chi3=diffus_chi3+chi_hyper3*pi4_1*dxmin_pencil**4
+diffus_chi3,4666,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_hyper3_mesh,"diffus_chi3 = diffus_chi3 + chi_hyper3_mesh * sum(abs(dline_1),2)"
+advec2_hypermesh,4671,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_hyper3_mesh,advec2_hypermesh=advec2_hypermesh+advec_hypermesh_ss**2
+diffus_chi3,4593,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heatcond_hyper3_aniso,"if (lfirst.and.ldt) diffus_chi3=diffus_chi3+  (chi_hyper3_aniso(1)*dline_1(:,1)**6 +  chi_hyper3_aniso(2)*dline_1(:,2)**6 +  chi_hyper3_aniso(3)*dline_1(:,3)**6)"
+rcool,6325,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravr,if (rcool==0.) rcool=r_ext
+r_ext,6411,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_spherical,r_ext=x(l2)
+r_int,6412,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_spherical,r_int=x(l1)
+rcool,6440,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_spherical,if (rcool==0.0) rcool=r_ext
+rcool,6447,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_spherical,if (rcool==0.0) rcool=r_ext
+rcool2,6448,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_spherical,if (rcool2==0.0) rcool2=r_ext
+rcool,6456,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_spherical,if (rcool==0.0) rcool=r_ext
+rcool2,6457,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_spherical,if (rcool2==0.0) rcool2=r_ext
+rcool,6466,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_spherical,if (rcool==0.0) rcool=r_ext
+rcool,6478,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_spherical,if (rcool==0.0) rcool=r_ext
+rcool,6488,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_spherical,if (rcool==0.0) rcool=r_ext
+rcool,6503,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_spherical,if (rcool==0.0) rcool=r_ext
+rcool,6512,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_spherical,if (rcool==0.0) rcool=r_ext
+rcool,6524,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_spherical,if (rcool==0.0) rcool=r_ext
+r_ext,6563,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_cartesian,r_ext=x(l2)
+r_int,6564,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_cartesian,r_int=x(l1)
+rcool,6593,./pencil-code/src/entropy.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_heat_cool -> get_heat_cool_gravx_cartesian,if (rcool==0.) rcool=r_ext
+fname,2120,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_diagnostics_energy -> calc_0d_diagnostics_energy -> surf_mn_name,fname(iname)=a
+fname,2122,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_diagnostics_energy -> calc_0d_diagnostics_energy -> surf_mn_name,fname(iname)=fname(iname)+a
+itype_name,2127,./pencil-code/src/diagnostics.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> denergy_dt -> calc_diagnostics_energy -> calc_0d_diagnostics_energy -> surf_mn_name,itype_name(iname)=ilabel_surf
+advec2,1885,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> set_dt1_max,advec2=advec2+advec_cs2
+maxadvec,1886,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> set_dt1_max,if (lenergy.or.ldensity.or.lmagnetic.or.lradiation.or.lneutralvelocity.or.lcosmicray.or.  (ltestfield_z.and.iuutest>0))  maxadvec=maxadvec+sqrt(advec2)
+maxadvec,1887,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> set_dt1_max,if (ldensity.or.lhydro.or.lmagnetic.or.lenergy) maxadvec=maxadvec+sqrt(advec2_hypermesh)
+maxadvec,1960,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
+maxdiffus,1960,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
+maxdiffus2,1960,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
+maxdiffus3,1960,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
+maxadvec,1964,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
+maxdiffus,1964,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
+maxdiffus2,1964,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
+maxdiffus3,1964,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
+maxadvec,1973,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
+maxdiffus,1973,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
+maxdiffus2,1973,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
+maxdiffus3,1973,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
+maxadvec,1977,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
+maxdiffus,1977,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
+maxdiffus2,1977,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
+maxdiffus3,1977,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
+maxadvec,1985,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
+maxdiffus,1985,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
+maxdiffus2,1985,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
+maxdiffus3,1985,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> set_dt1_max,dt1_max_loc=0.; maxadvec=0.; maxdiffus=0.; maxdiffus2=0.; maxdiffus3=0.
+dt1_max,1988,./pencil-code/src/equ.f90,rhs_cpu -> rhs_cpu -> rhs_loop -> set_dt1_max,"dt1_max=max(dt1_max,dt1_max_loc)"

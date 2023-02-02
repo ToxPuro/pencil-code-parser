@@ -54,7 +54,6 @@ implicit none
 include 'energy.h'
 !
 
-public :: ssmx
 real :: entropy_floor = impossible, TT_floor = impossible
 real, dimension(ninit) :: radius_ss=0.1, radius_ss_x=1., ampl_ss=0.0
 real :: widthss=2*epsi, epsilon_ss=0.0
@@ -62,7 +61,6 @@ real :: luminosity=0.0, wheat=0.1, cool=0.0, cool1=0.0, cool2=0.0
 real :: wpres=0.1
 real :: zcool=0.0, zcool1=0.0, zcool2=0.0
 real :: rcool=0.0, rcool1=0.0, rcool2=0.0, ppcool=1.
-!$omp threadprivate(rcool)
 real :: wcool=0.1, wcool1=0.1, wcool2=0.1, deltaT=0.0, cs2cool2=0.0
 real :: TT_int, TT_ext, cs2_int, cs2_ext
 real :: cool_int=0.0, cool_ext=0.0, ampl_TT=0.0
@@ -422,7 +420,6 @@ integer :: idiag_dcoolxy=0
 
 real, dimension(:,:), pointer :: reference_state
 real, dimension (nx) :: Hmax,ss0,diffus_chi,diffus_chi3
-!$omp threadprivate(diffus_chi3)
 !
 
 contains
@@ -4021,12 +4018,20 @@ if (lborder_profiles) call set_border_entropy(f,df,p)
 
 !
 
+if (lthdiff_Hmax.and.((lfirst.and.ldt).or.  ldiagnos.and.(idiag_dtH/=0.or.idiag_tauhmin/=0))) ss0 = abs(df(l1:l2,m,n,iss))
 if (lfirst.and.ldt) then
 if (lthdiff_Hmax) then
-ss0 = abs(df(l1:l2,m,n,iss))
+!$omp critical
+
 dt1_max=max(dt1_max,ss0*p%cv1/cdts)
+!$omp end critical
+
 else
+!$omp critical
+
 dt1_max=max(dt1_max,abs(Hmax/p%ee/cdts))
+!$omp end critical
+
 endif
 endif
 !
@@ -4188,7 +4193,7 @@ call surf_mn_name(TTtop,idiag_TTtop)
 endif
 !
 
-!  Calculate integrated temperature in in limited radial range.
+!  Calculate integrated temperature in limited radial range.
 
 !
 
@@ -6054,7 +6059,11 @@ df(l1:l2,m,n,iss)=df(l1:l2,m,n,iss) + thdiff
 if (lfirst.and.ldt) then
 !
 
+!$omp critical
+
 dt1_max=max(dt1_max,maxval(abs(thdiff)*gamma)/(cdts))
+!$omp end critical
+
 diffus_chi=diffus_chi+gamma*Kgpara*exp(2.5*p%lnTT-p%lnrho)/p%cp*dxyz_2
 endif
 !
@@ -7979,7 +7988,7 @@ prof = exp(-0.5*(x(l1:l2)/wheat)**2) * (2*pi*wheat**2)**(-1.5)
 
 endif
 heat = luminosity*prof
-if (headt .and. lfirst .and. ip<=9)  call output_pencil('heat.dat',heat,1)
+if (headt .and. lfirst .and. ip<=9) call output_pencil('heat.dat',heat,1)
 !
 
 !  Surface cooling: entropy or temperature
@@ -8409,7 +8418,11 @@ df(l1:l2,m,n,iss) = df(l1:l2,m,n,iss)-rtv_cool
 !
 
 if (lfirst.and.ldt) then
+!$omp critical
+
 dt1_max=max(dt1_max,tmp)
+!$omp end critical
+
 endif
 !
 
@@ -9412,7 +9425,11 @@ df(l1:l2,m,n,iss) = df(l1:l2,m,n,iss) + newton
 !
 
 if (lfirst.and.ldt) then
+!$omp critical
+
 dt1_max=max(dt1_max,maxval(abs(newton)*gamma)/(cdts))
+!$omp end critical
+
 endif
 endif
 !

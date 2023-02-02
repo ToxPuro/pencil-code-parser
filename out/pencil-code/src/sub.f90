@@ -46,7 +46,7 @@ public :: inverse_parse_bc
 !
 
 public :: poly
-public :: blob, vecout
+public :: blob, vecout, vecout_finalize
 public :: cubic_step, cubic_der_step, quintic_step, quintic_der_step, erfunc
 public :: sine_step, interp1
 public :: hypergeometric2F1
@@ -5377,21 +5377,33 @@ write(lun) l,m-nghost,n-nghost,vv(l,:)
 nvec=nvec+1
 endif
 enddo
+endsubroutine vecout
+!***********************************************************************
+
+subroutine vecout_finalize(file,lun,nvec)
 !
 
 !  Close file, and write number of vectors to a separate file.
 
 !
 
-if (llastpoint) then
+character (len=*) :: file
+integer :: lun,nvec
+real :: t_sp
+t_sp=t
+!
+
+!  Close file, and write number of vectors to a separate file.
+
+!
+
 close(lun)
 open(lun,FILE=trim(file)//'.num',position='append')
 write(lun,*) t_sp,nvec
 close(lun)
-endif
 !
 
-endsubroutine vecout
+endsubroutine vecout_finalize
 !***********************************************************************
 
 subroutine despike(f,j,retval,factor)
@@ -10270,7 +10282,7 @@ character(LEN=*), optional, intent(in) :: heat_type
 
 real :: nlf, h_slope_limited, one_16, fdif_limit
 type (pencil_case), intent(in) :: p
-integer :: j,k
+integer :: j,k,ix
 logical :: ldiv_4th
 !
 

@@ -65,8 +65,6 @@ public :: init_xaver
 public :: gen_form_legend
 public :: sign_masked_xyaver
 public :: report_undefined_diagnostics
-public :: phiavg_profile
-!$omp threadprivate(phiavg_profile)
 !
 
 interface max_name
@@ -111,11 +109,10 @@ module procedure zsum_mn_name_xy_mpar_vec
 endinterface zsum_mn_name_xy_mpar
 !
 
-real, dimension (nrcyl,nx) :: phiavg_profile=0.0
-!$omp threadprivate(phiavg_profile)
 private
 !
 
+real, dimension (nrcyl,nx) :: phiavg_profile=0.0
 real :: dVol_rel1
 integer :: mnamer
 character (len=intlen) :: ch1davg, ch2davg
@@ -126,14 +123,8 @@ character (len=intlen) :: ch1davg, ch2davg
 !
 
 real, dimension(:,:,:), allocatable :: fnamexy_cap
-!$omp threadprivate(phiavg_profile)
-
 contains
 !***********************************************************************
-
-!
-
-!  
 
 subroutine initialize_diagnostics
 !
@@ -322,7 +313,11 @@ call save_name(one_real*(it-1),idiag_it)
 !
 
 do iname=1,nname
+!$omp critical
+
 if (itype_name(iname)==ilabel_max_dt) fname(iname)=dt*fname(iname)
+!$omp end critical
+
 enddo
 call gen_form_legend(fform,legend)
 !
@@ -421,7 +416,11 @@ if (ldebug) write(*,*) 'exit prints'
 
 !
 
+!$omp critical
+
 where( fname_keep(1:nname)==0. .or.  itype_name(1:nname)>=ilabel_complex ) fname(1:nname)=0.
+!$omp end critical
+
 where( itype_name(1:nname)>=ilabel_complex ) fname_keep(1:nname)=0.
 !
 
@@ -1099,7 +1098,11 @@ real, dimension(nz,nprocz,nnamez) :: fsumz
 
 if (nnamez>0) then
 call mpireduce_sum(fnamez,fsumz,(/nz,nprocz,nnamez/))
+!$omp critical
+
 if (lroot)  fnamez(:,:,1:nnamez)=fsumz(:,:,1:nnamez)/nxygrid
+!$omp end critical
+
 endif
 !
 
@@ -1128,7 +1131,11 @@ real, dimension (ny,nprocy,nnamey) :: fsumy
 
 if (nnamey>0) then
 call mpireduce_sum(fnamey,fsumy,(/ny,nprocy,nnamey/))
+!$omp critical
+
 if (lroot)  fnamey(:,:,1:nnamey)=fsumy(:,:,1:nnamey)/nxzgrid
+!$omp end critical
+
 endif
 !
 
@@ -1157,7 +1164,11 @@ real, dimension (nx,nprocx,nnamex) :: fsumx
 
 if (nnamex>0) then
 call mpireduce_sum(fnamex,fsumx,(/nx,nprocx,nnamex/))
+!$omp critical
+
 if (lroot)  fnamex(:,:,1:nnamex)=fsumx(:,:,1:nnamex)/nyzgrid
+!$omp end critical
+
 endif
 !
 
@@ -1191,7 +1202,11 @@ call mpireduce_sum(fnamer,fsumr,(/nrcyl,nnamer/))
 if (lroot) then
 norm=fsumr(:,nnamer+1)
 do in=1,nnamer
+!$omp critical
+
 fnamer(:,in)=fsumr(:,in)/norm
+!$omp end critical
+
 enddo
 endif
 endif
@@ -1222,7 +1237,11 @@ real, dimension (nx,nz,nnamexz) :: fsumxz
 
 if (nnamexz>0) then
 call mpireduce_sum(fnamexz,fsumxz,(/nx,nz,nnamexz/),idir=2)
+!$omp critical
+
 if (lfirst_proc_y) fnamexz(:,:,1:nnamexz)=fsumxz(:,:,1:nnamexz)/nygrid
+!$omp end critical
+
 endif
 !
 
@@ -1260,7 +1279,11 @@ endif
 call reduce_zsum(fnamexy,fsumxy)
 fac=1./nzgrid_eff
 if (.not.lyang) then
+!$omp critical
+
 if (lfirst_proc_z) fnamexy=fac*fsumxy
+!$omp end critical
+
 elseif (lcaproot) then
 fnamexy_cap=fac*fsumxy
 endif
@@ -1303,7 +1326,11 @@ if (nnamerz>0) then
 call mpireduce_sum(fnamerz,fsumrz,(/nrcyl,nz+1,nprocz,nnamerz/))
 if (lroot) then
 do i=1,nnamerz
+!$omp critical
+
 fnamerz(:,1:nz,:,i)=fsumrz(:,1:nz,:,i)/spread(fsumrz(:,0,:,1),2,nz)
+!$omp end critical
+
 enddo
 endif
 endif
@@ -1980,23 +2007,59 @@ subroutine set_type(iname, lsqrt, llog10, lint, lsum, lmax, lmin, lsurf)
 integer :: iname
 logical, optional :: lsqrt, llog10, lint, lsum, lmax, lmin, lsurf
 if (iname==0) return
+!$omp critical
+
 if (present(lsqrt))  itype_name(iname)=ilabel_sum_sqrt
+!$omp end critical
+
 if (present(lsqrt)) then
+!$omp critical
+
 itype_name(iname)=ilabel_sum_sqrt
+!$omp end critical
+
 elseif (present(llog10)) then
+!$omp critical
+
 itype_name(iname)=ilabel_sum_log10
+!$omp end critical
+
 elseif (present(lint)) then
+!$omp critical
+
 itype_name(iname)=ilabel_integrate
+!$omp end critical
+
 elseif (present(lsurf)) then
+!$omp critical
+
 itype_name(iname)=ilabel_surf
+!$omp end critical
+
 elseif (present(lsum)) then
+!$omp critical
+
 itype_name(iname)=ilabel_sum
+!$omp end critical
+
 elseif (present(lmax)) then
+!$omp critical
+
 itype_name(iname)=ilabel_max
+!$omp end critical
+
 elseif (present(lmin)) then
+!$omp critical
+
 itype_name(iname)=ilabel_max_neg
+!$omp end critical
+
 else
+!$omp critical
+
 itype_name(iname)=ilabel_save
+!$omp end critical
+
 endif
 endsubroutine set_type
 !***********************************************************************
@@ -2018,7 +2081,11 @@ real :: a
 integer :: iname
 !
 
+!$omp critical
+
 if (iname/=0) fname(iname)=a
+!$omp end critical
+
 !
 
 endsubroutine save_name
@@ -2097,12 +2164,24 @@ logical, optional :: lneg
 if (iname==0) return
 if (present(lneg)) then
 if (lneg) then
+!$omp critical
+
 if (a<fname(iname)) fname(iname)=a
+!$omp end critical
+
 else
+!$omp critical
+
 if (a>fname(iname)) fname(iname)=a
+!$omp end critical
+
 endif
 else
+!$omp critical
+
 if (a>fname(iname)) fname(iname)=a
+!$omp end critical
+
 endif
 !
 
@@ -2111,9 +2190,17 @@ endif
 !
 
 if (present(lneg)) then
+!$omp critical
+
 itype_name(iname)=ilabel_max_neg
+!$omp end critical
+
 else
+!$omp critical
+
 itype_name(iname)=ilabel_max
+!$omp end critical
+
 endif
 !
 
@@ -2139,12 +2226,24 @@ logical, intent(in), optional :: lneg, l_dt
 if (iname==0) return
 if (present(lneg)) then
 if (lneg) then
+!$omp critical
+
 if (a<fname(iname)) fname(iname)=a
+!$omp end critical
+
 else
+!$omp critical
+
 if (a>fname(iname)) fname(iname)=a
+!$omp end critical
+
 endif
 else
+!$omp critical
+
 if (a>fname(iname)) fname(iname)=a
+!$omp end critical
+
 endif
 !
 
@@ -2153,11 +2252,23 @@ endif
 !
 
 if (present(lneg)) then
+!$omp critical
+
 itype_name(iname)=ilabel_max_neg
+!$omp end critical
+
 elseif (present(l_dt)) then
+!$omp critical
+
 itype_name(iname)=ilabel_max_dt
+!$omp end critical
+
 else
+!$omp critical
+
 itype_name(iname)=ilabel_max
+!$omp end critical
+
 endif
 !
 
@@ -2184,7 +2295,11 @@ integer, intent(in) :: iname
 !
 
 if (iname==0) return
+!$omp critical
+
 fname(iname)=a
+!$omp end critical
+
 !
 
 !  Set corresponding entry in itype_name.
@@ -2193,7 +2308,11 @@ fname(iname)=a
 
 !
 
+!$omp critical
+
 itype_name(iname)=ilabel_surf
+!$omp end critical
+
 !
 
 endsubroutine sum_name_real
@@ -2221,7 +2340,11 @@ integer, intent(in) :: iname
 !
 
 if (iname==0) return
+!$omp critical
+
 fname(iname)=a
+!$omp end critical
+
 !
 
 !  Set corresponding entry in itype_name.
@@ -2230,7 +2353,11 @@ fname(iname)=a
 
 !
 
+!$omp critical
+
 itype_name(iname)=ilabel_surf
+!$omp end critical
+
 !
 
 endsubroutine sum_name_int
@@ -2264,9 +2391,17 @@ if (iname==0) return
 !
 
 if (lfirstpoint) then
+!$omp critical
+
 fname(iname)=maxval(a)
+!$omp end critical
+
 else
+!$omp critical
+
 fname(iname)=max(fname(iname),maxval(a))
+!$omp end critical
+
 endif
 !
 
@@ -2275,15 +2410,35 @@ endif
 !
 
 if (present(lsqrt)) then
+!$omp critical
+
 itype_name(iname)=ilabel_max_sqrt
+!$omp end critical
+
 elseif (present(l_dt)) then
+!$omp critical
+
 itype_name(iname)=ilabel_max_dt
+!$omp end critical
+
 elseif (present(lneg)) then
+!$omp critical
+
 itype_name(iname)=ilabel_max_neg
+!$omp end critical
+
 elseif (present(lreciprocal)) then
+!$omp critical
+
 itype_name(iname)=ilabel_max_reciprocal
+!$omp end critical
+
 else
+!$omp critical
+
 itype_name(iname)=ilabel_max
+!$omp end critical
+
 endif
 !
 
@@ -2313,7 +2468,11 @@ call sum_mn_name_std(a(1,:),iname,lsqrt,llog10,lint,ipart,lplain)
 else
 call sum_mn_name_real(a(1,:),iname,fname,lsqrt,llog10,lint,ipart,lplain)
 call sum_mn_name_real(a(2,:),iname,fname_keep)
+!$omp critical
+
 if (itype_name(iname) < ilabel_complex )  itype_name(iname)=itype_name(iname)+ilabel_complex
+!$omp end critical
+
 endif
 !
 
@@ -2412,15 +2571,35 @@ if (in_overlap_mask(m,n)) then
 !
 
 if (present(lsqrt)) then
+!$omp critical
+
 itype_name(iname)=ilabel_sum_sqrt
+!$omp end critical
+
 elseif (present(llog10)) then
+!$omp critical
+
 itype_name(iname)=ilabel_sum_log10
+!$omp end critical
+
 elseif (present(lint)) then
+!$omp critical
+
 itype_name(iname)=ilabel_integrate
+!$omp end critical
+
 elseif (present(lplain)) then
+!$omp critical
+
 itype_name(iname)=ilabel_sum_plain
+!$omp end critical
+
 else
+!$omp critical
+
 itype_name(iname)=ilabel_sum
+!$omp end critical
+
 endif
 !
 
@@ -2442,11 +2621,23 @@ endif
 !
 
 if (lspherical_coords) then
+!$omp critical
+
 fname(iname)=qpart*fname(iname)+ppart*sum(r2_weight*sinth_weight(m)*a)
+!$omp end critical
+
 elseif (lcylindrical_coords) then
+!$omp critical
+
 fname(iname)=qpart*fname(iname)+ppart*sum(rcyl_weight*a)
+!$omp end critical
+
 else
+!$omp critical
+
 fname(iname)=qpart*fname(iname)+ppart*sum(a)
+!$omp end critical
+
 endif
 !
 
@@ -2479,21 +2670,45 @@ endif
 
 if (lfirstpoint) then
 if (lcartesian_coords.or.lpipe_coords.or.present(lplain)) then
+!$omp critical
+
 fname(iname)=sum(a_scaled)
+!$omp end critical
+
 elseif (lspherical_coords) then
+!$omp critical
+
 fname(iname)=sum(r2_weight*a_scaled)*sinth_weight(m)
+!$omp end critical
+
 elseif (lcylindrical_coords) then
+!$omp critical
+
 fname(iname)=sum(rcyl_weight*a_scaled)
+!$omp end critical
+
 else
 call fatal_error('sum_mn_name_real','not implemented')
 endif
 else
 if (lcartesian_coords.or.lpipe_coords.or.present(lplain)) then
+!$omp critical
+
 fname(iname)=fname(iname)+sum(a_scaled)
+!$omp end critical
+
 elseif (lspherical_coords) then
+!$omp critical
+
 fname(iname)=fname(iname)+sum(r2_weight*a_scaled)*sinth_weight(m)
+!$omp end critical
+
 elseif (lcylindrical_coords) then
+!$omp critical
+
 fname(iname)=fname(iname)+sum(rcyl_weight*a_scaled)
+!$omp end critical
+
 else
 call fatal_error('sum_mn_name_real','not implemented')
 endif
@@ -2682,14 +2897,22 @@ if (iname/=0) then
 !
 
 if (it/=it_save .or. itsub/=itsub_save) then
+!$omp critical
+
 fname(iname)=0.0
+!$omp end critical
+
 fweight(iname)=0.0
 it_save=it
 itsub_save=itsub
 endif
 !
 
+!$omp critical
+
 fname(iname)  =fname(iname)  +sum(weight*a)
+!$omp end critical
+
 fweight(iname)=fweight(iname)+sum(weight)
 !
 
@@ -2698,9 +2921,17 @@ fweight(iname)=fweight(iname)+sum(weight)
 !
 
 if (present(lsqrt)) then
+!$omp critical
+
 itype_name(iname)=ilabel_sum_weighted_sqrt
+!$omp end critical
+
 else
+!$omp critical
+
 itype_name(iname)=ilabel_sum_weighted
+!$omp end critical
+
 endif
 !
 
@@ -2760,25 +2991,49 @@ enddo
 
 if (lfirstpoint) then
 if (lspherical_coords)then
+!$omp critical
+
 fname(iname) = 0.
+!$omp end critical
+
 do isum=l1,l2
+!$omp critical
+
 fname(iname)=fname(iname)+  x(isum)*x(isum)*sinth(m)*aux(isum-nghost)*dv
+!$omp end critical
+
 enddo
 else
+!$omp critical
+
 fname(iname)=sum(aux)*dv
+!$omp end critical
+
 endif
 else
 if (lspherical_coords)then
 do isum=l1,l2
+!$omp critical
+
 fname(iname)=fname(iname)+  x(isum)*x(isum)*sinth(isum)*aux(isum-nghost)*dv
+!$omp end critical
+
 enddo
 else
+!$omp critical
+
 fname(iname)=fname(iname)+sum(aux)*dv
+!$omp end critical
+
 endif
 endif
 !
 
+!$omp critical
+
 itype_name(iname)=ilabel_sum_lim
+!$omp end critical
+
 !
 
 endif
@@ -2814,9 +3069,17 @@ if (iname>0) then
 !
 
 if (lfirstpoint) then
+!$omp critical
+
 fname(iname)=a
+!$omp end critical
+
 else
+!$omp critical
+
 fname(iname)=fname(iname)+a
+!$omp end critical
+
 endif
 !
 
@@ -2824,7 +3087,11 @@ endif
 
 !
 
+!$omp critical
+
 itype_name(iname)=ilabel_surf
+!$omp end critical
+
 !
 
 endif
@@ -2931,7 +3198,11 @@ call integrate_mn(a,fname(iname))
 
 !
 
+!$omp critical
+
 itype_name(iname)=ilabel_integrate
+!$omp end critical
+
 !
 
 endsubroutine integrate_mn_name
@@ -2990,7 +3261,11 @@ if (iname/=0) then
 
 !
 
+!$omp critical
+
 if (lfirstpoint) fnamez(:,:,iname)=0.0
+!$omp end critical
+
 !
 
 !  n starts with nghost+1=4, so the correct index is n-nghost
@@ -3002,11 +3277,19 @@ if (lav_smallx)  lmax=ixav_max
 if (.not.loutside_avg) then
 if (lspherical_coords.or.lcylindrical_coords)then
 do isum=l1,lmax
+!$omp critical
+
 fnamez(nl,ipz+1,iname)=fnamez(nl,ipz+1,iname)+  x(isum)*a(isum-nghost)
+!$omp end critical
+
 enddo
 else
 do isum=l1,lmax
+!$omp critical
+
 fnamez(nl,ipz+1,iname)=fnamez(nl,ipz+1,iname)+  a(isum-nghost)
+!$omp end critical
+
 enddo
 endif
 endif
@@ -3069,7 +3352,11 @@ if (iname/=0) then
 
 !
 
+!$omp critical
+
 if (lfirstpoint) fnamey(:,:,iname)=0.0
+!$omp end critical
+
 !
 
 !  m starts with mghost+1=4, so the correct index is m-nghost.
@@ -3083,11 +3370,19 @@ if (lav_smallx) lmax=ixav_max
 if (.not.loutside_avg) then
 if (lspherical_coords.and.nxgrid>1)then
 do isum=l1,lmax
+!$omp critical
+
 fnamey(ml,ipy+1,iname)=fnamey(ml,ipy+1,iname)+  x(isum)*sinth(m)*a(isum-nghost)
+!$omp end critical
+
 enddo
 else
 do isum=l1,lmax
+!$omp critical
+
 fnamey(ml,ipy+1,iname)=fnamey(ml,ipy+1,iname)+  a(isum-nghost)
+!$omp end critical
+
 enddo
 endif
 endif
@@ -3145,7 +3440,11 @@ if (iname/=0) then
 
 !
 
+!$omp critical
+
 if (lfirstpoint) fnamex(:,:,iname)=0.0
+!$omp end critical
+
 !
 
 !  Use different volume differentials for different coordinate systems.
@@ -3153,11 +3452,23 @@ if (lfirstpoint) fnamex(:,:,iname)=0.0
 !
 
 if (lspherical_coords) then
+!$omp critical
+
 fnamex(:,ipx+1,iname)=fnamex(:,ipx+1,iname)+x(l1:l2)**2*sinth(m)*a
+!$omp end critical
+
 elseif (lcylindrical_coords) then
+!$omp critical
+
 fnamex(:,ipx+1,iname)=fnamex(:,ipx+1,iname)+x(l1:l2)*a
+!$omp end critical
+
 else
+!$omp critical
+
 fnamex(:,ipx+1,iname)=fnamex(:,ipx+1,iname)+a
+!$omp end critical
+
 endif
 endif
 !
@@ -3193,7 +3504,11 @@ if (iname==0) return
 
 !
 
+!$omp critical
+
 if (lfirstpoint) fnamez(:,:,iname) = 0.0
+!$omp end critical
+
 !
 
 fac=1.0
@@ -3216,7 +3531,11 @@ endif
 !
 
 nl=n-nghost
+!$omp critical
+
 fnamez(nl,ipz+1,iname) = fnamez(nl,ipz+1,iname) + suma
+!$omp end critical
+
 !
 
 endsubroutine xyintegrate_mn_name_z
@@ -3249,7 +3568,11 @@ if (iname==0) return
 
 !
 
+!$omp critical
+
 if (lfirstpoint) fnamey(:,:,iname) = 0.
+!$omp end critical
+
 !
 
 fac = 1.
@@ -3271,7 +3594,11 @@ endif
 
 !
 
+!$omp critical
+
 fnamey(m-nghost,ipy+1,iname) = fnamey(m-nghost,ipy+1,iname) + suma
+!$omp end critical
+
 !
 
 endsubroutine xzintegrate_mn_name_y
@@ -3302,7 +3629,11 @@ if (iname==0) return
 
 !
 
+!$omp critical
+
 if (lfirstpoint) fnamex(:,:,iname) = 0.0
+!$omp end critical
+
 !
 
 fac=1.0
@@ -3318,7 +3649,11 @@ if (.not.lperi(3)) fac = .5*fac
 endif
 !
 
+!$omp critical
+
 fnamex(:,ipx+1,iname) = fnamex(:,ipx+1,iname) + fac*a
+!$omp end critical
+
 !
 
 endsubroutine yzintegrate_mn_name_x
@@ -3348,12 +3683,24 @@ integer :: iname,ir,nnghost
 if (iname==0) return
 !
 
+!$omp critical
+
 if (lfirstpoint) fnamer(:,iname)=0.
+!$omp end critical
+
+!$omp critical
+
 if (lfirstpoint.and.iname==nnamer) fnamer(:,iname+1)=0.
+!$omp end critical
+
 !
 
 do ir=1,nrcyl
+!$omp critical
+
 fnamer(ir,iname) = fnamer(ir,iname) + sum(a*phiavg_profile(ir,:))
+!$omp end critical
+
 enddo
 !
 
@@ -3371,7 +3718,11 @@ if (nnamer==mnamer) call fatal_error('phizsum_mn_name_r',  'no slot for phi-norm
 !
 
 do ir=1,nrcyl
+!$omp critical
+
 fnamer(ir,iname+1)=  fnamer(ir,iname+1) + sum(1.*phiavg_profile(ir,:))*nz
+!$omp end critical
+
 enddo
 endif
 !
@@ -3428,7 +3779,11 @@ if (iname==0) return
 
 !
 
+!$omp critical
+
 if (lfirstpoint) fnamexz(:,:,iname)=0.
+!$omp end critical
+
 !
 
 !  n starts with nghost+1=4, so the correct index is n-nghost.
@@ -3439,9 +3794,17 @@ nl=n-nghost
 !
 
 if (lspherical_coords.or.lcylindrical_coords)then
+!$omp critical
+
 fnamexz(:,nl,iname) = fnamexz(:,nl,iname)+a*x(l1:l2)
+!$omp end critical
+
 else
+!$omp critical
+
 fnamexz(:,nl,iname) = fnamexz(:,nl,iname)+a
+!$omp end critical
+
 endif
 !
 
@@ -3513,11 +3876,19 @@ integer :: ml,ind,i,j
 if (iname==0) return
 !
 
+!$omp critical
+
 if (lfirstpoint) fnamexy(iname,:,:)=0.
+!$omp end critical
+
 ml=m-nghost
 ind=iname
 do i=1,size(arr,2); do j=1,size(arr,3)
+!$omp critical
+
 fnamexy(ind,:,ml)=fnamexy(ind,:,ml)+arr(:,i,j)
+!$omp end critical
+
 ind=ind+1
 enddo; enddo
 endsubroutine zsum_mn_name_xy_arr2
@@ -3545,10 +3916,18 @@ integer :: ml,i
 if (iname==0) return
 !
 
+!$omp critical
+
 if (lfirstpoint) fnamexy(iname,:,:)=0.
+!$omp end critical
+
 ml=m-nghost
 do i=iname,iname+size(arr,2)-1
+!$omp critical
+
 fnamexy(i,:,ml)=fnamexy(i,:,ml)+arr(:,i)
+!$omp end critical
+
 enddo
 endsubroutine zsum_mn_name_xy_arr
 !***********************************************************************
@@ -3733,7 +4112,11 @@ integer :: ml
 if (iname==0) return
 !
 
+!$omp critical
+
 if (lfirstpoint) fnamexy(iname,:,:)=0.
+!$omp end critical
+
 if (lyang) then
 !
 
@@ -3752,7 +4135,11 @@ else
 ! 
 
 ml=m-nghost
+!$omp critical
+
 fnamexy(iname,:,ml)=fnamexy(iname,:,ml)+a
+!$omp end critical
+
 endif
 !
 
@@ -3833,7 +4220,11 @@ if (iname /= 0) then
 
 !      if (lfirstpoint) fnamerz(:,:,ipz+1,iname) = 0.
 
+!$omp critical
+
 if (lfirstpoint) fnamerz(:,:,:,iname) = 0.
+!$omp end critical
+
 !
 
 !  n starts with nghost+1=4, so the correct index is n-nghost
@@ -3842,7 +4233,11 @@ if (lfirstpoint) fnamerz(:,:,:,iname) = 0.
 
 n_nghost=n-nghost
 do ir=1,nrcyl
+!$omp critical
+
 fnamerz(ir,n_nghost,ipz+1,iname)  = fnamerz(ir,n_nghost,ipz+1,iname) + sum(a*phiavg_profile(ir,:))
+!$omp end critical
+
 enddo
 !
 
@@ -3854,7 +4249,11 @@ enddo
 
 if (iname==1 .and. n_nghost==1) then
 do ir=1,nrcyl
+!$omp critical
+
 fnamerz(ir,0,ipz+1,iname)  = fnamerz(ir,0,ipz+1,iname) + sum(1.*phiavg_profile(ir,:))
+!$omp end critical
+
 enddo
 endif
 !
@@ -4071,7 +4470,11 @@ if (stat>0) call fatal_error('allocate_fnames',  'Could not allocate memory for 
 if (ldebug) print*, 'allocate_fnames    : allocated memory for '//  'fname   with nname   =', nnamel
 allocate(fname_keep(nnamel),stat=stat)
 if (stat>0) call fatal_error('allocate_fnames',  'Could not allocate memory for fname_keep')
+!$omp critical
+
 fname=0.0
+!$omp end critical
+
 fname_keep=0.0
 !
 
@@ -4084,7 +4487,11 @@ cform=''
 allocate(itype_name(nnamel),stat=stat)
 if (stat>0) call fatal_error('allocate_fnames',  'Could not allocate memory for itype_name')
 if (ldebug) print*, 'allocate_fnames    : allocated memory for '//  'itype_name with nname   =', nnamel
+!$omp critical
+
 itype_name=ilabel_save
+!$omp end critical
+
 endsubroutine allocate_fnames
 !***********************************************************************
 
@@ -4161,7 +4568,11 @@ cnamez=''
 allocate(fnamez(nz,nprocz,nnamel),stat=stat)
 if (stat>0) call fatal_error('allocate_xyaverages',  'Could not allocate memory for fnamez')
 if (ldebug) print*, 'allocate_xyaverages: allocated memory for '//  'fnamez  with nnamez  =', nnamel
+!$omp critical
+
 fnamez=0.0
+!$omp end critical
+
 !
 
 allocate(cformz(nnamel),stat=stat)
@@ -4201,7 +4612,11 @@ cnamey=''
 allocate(fnamey(ny,nprocy,nnamel),stat=stat)
 if (stat>0) call fatal_error('allocate_xzaverages',  'Could not allocate memory for fnamey', .true.)
 if (ldebug) print*, 'allocate_xzaverages: allocated memory for '//  'fnamey  with nnamey  =', nnamel
+!$omp critical
+
 fnamey=0.0
+!$omp end critical
+
 !
 
 allocate(cformy(nnamel),stat=stat)
@@ -4241,7 +4656,11 @@ cnamex=''
 allocate(fnamex(nx,nprocx,nnamel),stat=stat)
 if (stat>0) call fatal_error('allocate_yzaverages',  'Could not allocate memory for fnamex')
 if (ldebug) print*, 'allocate_yzaverages: allocated memory for '//  'fnamex  with nnamex  =', nnamel
+!$omp critical
+
 fnamex=0.0
+!$omp end critical
+
 !
 
 allocate(cformx(nnamel),stat=stat)
@@ -4282,7 +4701,11 @@ mnamer=nnamel+1
 allocate(fnamer(nrcyl,mnamer),stat=stat)
 if (stat>0) call fatal_error('allocate_phizaverages',  'Could not allocate memory for fnamer')
 if (ldebug) print*, 'allocate_phizaverages: allocated memory for '//  'fnamer  with nnamer+1 =', mnamer
+!$omp critical
+
 fnamer=0.0
+!$omp end critical
+
 !
 
 allocate(cformr(nnamel),stat=stat)
@@ -4322,7 +4745,11 @@ cnamexz=''
 allocate(fnamexz(nx,nz,nnamel),stat=stat)
 if (stat>0) call fatal_error('allocate_yaverages',  'Could not allocate memory for fnamexz')
 if (ldebug) print*, 'allocate_yaverages : allocated memory for '//  'fnamexz with nnamexz =', nnamel
+!$omp critical
+
 fnamexz=0.0
+!$omp end critical
+
 !
 
 allocate(cformxz(nnamel),stat=stat)
@@ -4395,7 +4822,11 @@ if (lyinyang) call initialize_zaver_yy(nyl,nycap)
 allocate(fnamexy(nnamel,nx,nyl),stat=stat)
 if (stat>0) call fatal_error('allocate_zaverages_data',  'Could not allocate memory for fnamexy')
 if (ldebug) print*, 'allocate_zaverages_data: allocated memory for '//  'fnamexy with nnamexy =', nnamel
+!$omp critical
+
 fnamexy=0.
+!$omp end critical
+
 if (lcaproot) then
 allocate(fnamexy_cap(nnamel,nx,nycap),stat=stat)
 if (stat>0) call fatal_error('allocate_zaverages_data',  'Could not allocate memory for fnamexy_cap')
@@ -4434,7 +4865,11 @@ cnamerz=''
 allocate(fnamerz(nrcyl,0:nz,nprocz,nnamel),stat=stat)
 if (stat>0) call fatal_error('allocate_phiaverages',  'Could not allocate memory for fnamerz')
 if (ldebug) print*, 'allocate_phiaverages : allocated memory for '//  'fnamerz with nnamerz =', nnamel
+!$omp critical
+
 fnamerz=0.0
+!$omp end critical
+
 !
 
 allocate(cformrz(nnamel),stat=stat)
@@ -4490,7 +4925,11 @@ call mpiallreduce_sum_int(ncount,nsum,nz,IXYPLANE)
 
 !
 
+!$omp critical
+
 where (nsum>0)  fnamez(:,ipz,idiag)=fnamez(:,ipz,idiag)/nsum*nxygrid
+!$omp end critical
+
 ncount=0
 endif
 endif
@@ -4783,8 +5222,6 @@ enddo
 !
 
 endfunction name_is_present
-subroutine load_mpi_vals
-end subroutine load_mpi_vals
 !***********************************************************************
 
 endmodule Diagnostics

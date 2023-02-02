@@ -73,7 +73,6 @@ character (len=labellen) :: nnewton_type='none'
 character (len=labellen) :: div_sld_visc='2nd'
 real :: nnewton_tscale=0.0,nnewton_step_width=0.0
 real, dimension(nx) :: xmask_vis=0, pnu=0.0
-!$omp threadprivate(pnu)
 real, dimension(2) :: vis_xaver_range=(/-max_real,max_real/)
 real, dimension(:), pointer :: etat_x, detat_x
 real, dimension(:), pointer :: etat_y, detat_y
@@ -748,6 +747,9 @@ if (lstratz .and. lthermal_energy) call get_stratz(z, eth0z=eth0z)
 !
 
 if (lroot.and.ip<14) print*,'xmask_vis=',xmask_vis
+!
+
+if (lvisc_nu_profx.and.lvisc_nu_profr.and.lroot)  call fatal_error("calc_pencils_viscosity",'You are using both radial and horizontal '//  'profiles for a viscosity jump. Are you sure this is reasonable?' )
 !
 
 endsubroutine initialize_viscosity
@@ -1531,22 +1533,9 @@ endif
 
 !  Viscous force: nu(t)*(del2u+graddivu/3+2S.glnrho) [correct for nu=const].
 
-!  The following allows us to let nu change with time, t-nu_tdep_toffset.
-
-!  The nu_tdep_toffset is used in cosmology where time starts at t=1.
-
-!  lresi_nu_tdep_t0_norm is not the default because of backward compatbility.
-
-!  The default is problematic because then nu_tdep /= nu for t < nu_tdep_t0.
-
 !
 
 if (lvisc_nu_tdep .or. lvisc_hyper3_simplified_tdep) then
-if (lvisc_nu_tdep_t0_norm) then
-nu_tdep=nu*max(real(t-nu_tdep_toffset)/nu_tdep_t0,1.)**nu_tdep_exponent
-else
-nu_tdep=nu*max(real(t-nu_tdep_toffset),nu_tdep_t0)**nu_tdep_exponent
-endif
 p%fvisc=p%fvisc+2*nu_tdep*p%sglnrho+nu_tdep*(p%del2u+1./3.*p%graddivu)
 if (lpencil(i_visc_heat)) p%visc_heat=p%visc_heat+2*nu_tdep*p%sij2
 if (lfirst .and. ldt) p%diffus_total=p%diffus_total+nu_tdep
@@ -1598,12 +1587,6 @@ tmp3=p%r_mn
 else
 tmp3=p%rcyl_mn
 endif
-endif
-if (lvisc_nu_profx.and.lvisc_nu_profr) then
-print*,'You are using both radial and horizontal '
-print*,'profiles for a viscosity jump. Are you sure '
-print*,'this is reasonable? Better stop and check.'
-call fatal_error("calc_pencils_viscosity","")
 endif
 pnu = nu + (nu*(nu_jump-1.))*(step(tmp3,xnu ,widthnu) - step(tmp3,xnu2,widthnu))
 tmp4 = (nu*(nu_jump-1.))*(der_step(tmp3,xnu ,widthnu)-der_step(tmp3,xnu2,widthnu))
@@ -2646,6 +2629,25 @@ enddo; enddo
 call update_ghosts(f,inusmag)
 !
 
+endif
+!
+
+!  The following allows us to let nu change with time, t-nu_tdep_toffset.
+
+!  The nu_tdep_toffset is used in cosmology where time starts at t=1.
+
+!  lresi_nu_tdep_t0_norm is not the default because of backward compatbility.
+
+!  The default is problematic because then nu_tdep /= nu for t < nu_tdep_t0.
+
+!
+
+if (lvisc_nu_tdep .or. lvisc_hyper3_simplified_tdep) then
+if (lvisc_nu_tdep_t0_norm) then
+nu_tdep=nu*max(real(t-nu_tdep_toffset)/nu_tdep_t0,1.)**nu_tdep_exponent
+else
+nu_tdep=nu*max(real(t-nu_tdep_toffset),nu_tdep_t0)**nu_tdep_exponent
+endif
 endif
 !
 

@@ -2209,7 +2209,7 @@ endif
 endsubroutine pencil_interdep_grid
 !***********************************************************************
 
-subroutine calc_pencils_grid_std(f,p)
+subroutine calc_pencils_grid_std(p)
 !
 
 ! Envelope adjusting calc_pencils_hydro_pencpar to the standard use with
@@ -2222,21 +2222,19 @@ subroutine calc_pencils_grid_std(f,p)
 
 !
 
-real, dimension (mx,my,mz,mfarray) :: f
 type (pencil_case) :: p
 !
 
-intent(in) :: f
 intent(inout) :: p
 !
 
-call calc_pencils_grid_pencpar(f,p,lpencil)
+call calc_pencils_grid_pencpar(p,lpencil)
 !
 
 endsubroutine calc_pencils_grid_std
 !***********************************************************************
 
-subroutine calc_pencils_grid_pencpar(f,p,lpenc_loc)
+subroutine calc_pencils_grid_pencpar(p,lpenc_loc)
 !
 
 !  Calculate Grid/geometry related pencils. Uses arbitrary pencil mask lpenc_loc.
@@ -2251,12 +2249,10 @@ subroutine calc_pencils_grid_pencpar(f,p,lpenc_loc)
 
 !
 
-real, dimension (mx,my,mz,mfarray) :: f
 type (pencil_case) :: p
 logical, dimension(npencils) :: lpenc_loc
 !
 
-intent(in) :: f
 intent(inout) :: p
 intent(in) :: lpenc_loc
 !
@@ -2361,9 +2357,6 @@ else
 call fatal_error('calc_pencils_grid',  'co-latitudinal unit vector not implemented for '// 'non-cartesian coordinates')
 endif
 endif
-!
-
-call keep_compiler_quiet(f)
 !
 
 endsubroutine calc_pencils_grid_pencpar

@@ -223,7 +223,7 @@ integer, parameter :: root=0
 
 !
 
-integer, parameter :: ilabel_max=-1,ilabel_sum=1,ilabel_save=11
+integer, parameter :: ilabel_max=-1,ilabel_sum=1,ilabel_save=0
 integer, parameter :: ilabel_max_sqrt=-2,ilabel_sum_sqrt=2
 integer, parameter :: ilabel_sum_log10=10
 integer, parameter :: ilabel_max_dt=-3,ilabel_max_neg=-4

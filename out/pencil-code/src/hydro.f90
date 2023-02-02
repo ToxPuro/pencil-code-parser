@@ -751,7 +751,7 @@ real, dimension(:,:), pointer :: reference_state
 real, dimension(3) :: Omegav=0.
 real, dimension(nx) :: Fmax,advec_uu=0.
 real :: t_vart=0.
-!$omp threadprivate(advec_uu, Fmax, prof_amp1, prof_amp2, omega_prof)
+!$omp THREADPRIVATE(advec_uu)
 
 !
 
@@ -1545,6 +1545,12 @@ if (ldensity)  call get_shared_variable('lrelativistic_eos', lrelativistic_eos)
 if (lmagnetic.and.lconservative) call get_shared_variable('B_ext2',B_ext2)
 !
 
+if (ltime_integrals) then
+if (lvart_in_shear_frame)  call fatal_error('initialize_hydro',  'lvart_in_shear_frame is no longer supported in hydro. uut etc. are always  in lab frame. lshear_frame_correlation=T now transforms both uu and uut.')
+endif
+if (lfargo_advection.and..not.lfargoadvection_as_shift) then
+if (lroot) call not_implemented("hydro_after_timestep","Fargo advection without Fourier shift")
+endif
 endsubroutine initialize_hydro
 !***********************************************************************
 
@@ -4206,7 +4212,7 @@ real, dimension (nx,3,3) :: puij_Schur
 integer :: i, j, ju
 !
 
-Fmax=tini
+Fmax=1./impossible
 !
 
 !  Identify module and boundary conditions.
@@ -4575,7 +4581,11 @@ if (lborder_profiles) call set_border_hydro(f,df,p)
 if (lfirst.and.ldt.and.lcdt_tauf) then
 do j=1,3
 ftot=abs(df(l1:l2,m,n,iux+j-1))
+!$omp critical
+
 dt1_max=max(dt1_max,ftot/(cdt_tauf*ulev))
+!$omp end critical
+
 Fmax=max(Fmax,ftot/ulev)
 enddo
 endif
@@ -4644,10 +4654,26 @@ endif
 if (idiag_urmsh/=0) then
 if (lequatory) call sum_mn_name_halfy(p%u2,idiag_urmsh)
 if (lequatorz) call sum_mn_name_halfz(p%u2,idiag_urmsh)
+!$omp critical
+
 fname(idiag_urmsn)=fname_half(idiag_urmsh,1)
+!$omp end critical
+
+!$omp critical
+
 fname(idiag_urmss)=fname_half(idiag_urmsh,2)
+!$omp end critical
+
+!$omp critical
+
 itype_name(idiag_urmsn)=ilabel_sum_sqrt
+!$omp end critical
+
+!$omp critical
+
 itype_name(idiag_urmss)=ilabel_sum_sqrt
+!$omp end critical
+
 endif
 if (idiag_urmsx/=0) call sum_mn_name(p%u2*xmask_hyd,idiag_urmsx,lsqrt=.true.)
 if (idiag_urmsz/=0) call sum_mn_name(p%u2*zmask_hyd(n-n1+1),idiag_urmsz,lsqrt=.true.)
@@ -4849,19 +4875,51 @@ if (idiag_oxurms/=0) call sum_mn_name(p%oxu2,idiag_oxurms,lsqrt=.true.)
 if (idiag_oumh/=0) then
 if (lequatory) call sum_mn_name_halfy(p%ou,idiag_oumh)
 if (lequatorz) call sum_mn_name_halfz(p%ou,idiag_oumh)
+!$omp critical
+
 fname(idiag_oumn)=fname_half(idiag_oumh,1)
+!$omp end critical
+
+!$omp critical
+
 fname(idiag_oums)=fname_half(idiag_oumh,2)
+!$omp end critical
+
+!$omp critical
+
 itype_name(idiag_oumn)=ilabel_sum
+!$omp end critical
+
+!$omp critical
+
 itype_name(idiag_oums)=ilabel_sum
+!$omp end critical
+
 endif
 call sum_mn_name(p%o2,idiag_orms,lsqrt=.true.)
 if (idiag_ormsh/=0) then
 if (lequatory) call sum_mn_name_halfy(p%o2,idiag_ormsh)
 if (lequatorz) call sum_mn_name_halfz(p%o2,idiag_ormsh)
+!$omp critical
+
 fname(idiag_ormsn)=fname_half(idiag_ormsh,1)
+!$omp end critical
+
+!$omp critical
+
 fname(idiag_ormss)=fname_half(idiag_ormsh,2)
+!$omp end critical
+
+!$omp critical
+
 itype_name(idiag_ormsn)=ilabel_sum_sqrt
+!$omp end critical
+
+!$omp critical
+
 itype_name(idiag_ormss)=ilabel_sum_sqrt
+!$omp end critical
+
 endif
 !
 
@@ -5043,7 +5101,11 @@ elseif (lcorr_zero_dt) then
 ! 
 
 lcorr_zero_dt=.false.
+!$omp critical
+
 if (lroot) fname(idiag_nshift)=fname(idiag_nshift)*dt
+!$omp end critical
+
 endif
 endsubroutine calc_0d_diagnostics_hydro
 !*******************************************************************************
@@ -5562,9 +5624,6 @@ subroutine time_integrals_hydro(f,p)
 
 !
 
-use SharedVariables, only: put_shared_variable
-!
-
 real, dimension (mx,my,mz,mfarray) :: f
 type (pencil_case) :: p
 !
@@ -5573,7 +5632,7 @@ intent(inout) :: f
 intent(in) :: p
 !
 
-real :: fact_cos,fact_sin,t_cor=0.
+real :: fact_cos,fact_sin
 logical :: lreset_vart=.false.
 !
 
@@ -5588,27 +5647,7 @@ fact_sin=sin(omega_fourier*t)
 if (ltime_integrals_always .or. dtcor<=0.) then
 if (it==1) lreset_vart=.true.
 else
-if (t>t_vart) then
-lreset_vart=.true.
-t_cor=t
-call put_shared_variable('t_cor',t_cor,caller='time_integrals_hydro')
-!
-
-!  If uut and oot are updated, write t to file and advance t_var.
-
-!  These only happen at the last point in the mn loop.
-
-!
-
-if (llastpoint) then
-if (lroot) then
-open(1,file=trim(datadir)//'/tvart.dat',status='unknown',position='append')
-write(1,'(4f14.7)') t_cor
-close (1)
-endif
-t_vart=t_vart+dtcor
-endif
-endif
+if (t>t_vart) lreset_vart=.true.
 endif
 !
 
@@ -5632,7 +5671,6 @@ else
 if (iuust/=0) f(l1:l2,m,n,iuxst:iuzst)=0.
 if (ioost/=0) f(l1:l2,m,n,ioxst:iozst)=0.
 if (lreset_vart) then
-if (lvart_in_shear_frame)  call fatal_error('time_integrals_hydro', 'lvart_in_shear_frame is no longer supported in hydro. uut etc. are always  &in lab frame. lshear_frame_correlation=T now transforms both uu and uut.')
 if (iuxt/=0)              f(l1:l2,m,n,iuxt:iuzt)  =f(l1:l2,m,n,iux:iuz)
 if (ioxt/=0 .and. iox/=0) f(l1:l2,m,n,ioxt:iozt)  =f(l1:l2,m,n,iox:ioz)
 endif
@@ -5641,6 +5679,32 @@ lreset_vart=.false.
 !
 
 endsubroutine time_integrals_hydro
+!***********************************************************************
+
+subroutine update_for_time_integrals_hydro
+use SharedVariables, only: put_shared_variable
+!
+
+real :: t_cor=0.
+if (.not.(ltime_integrals_always .or. dtcor<=0.)) then
+if (t>t_vart) then
+t_cor=t
+call put_shared_variable('t_cor',t_cor,caller='update_for_time_integrals')
+!
+
+!  If uut and oot are updated, write t to file and advance t_var after leaving the mn-loop.
+
+!
+
+if (lroot) then
+open(1,file=trim(datadir)//'/tvart.dat',status='unknown',position='append')
+write(1,'(4f14.7)') t_cor
+close(1)
+endif
+t_vart=t_vart+dtcor
+endif
+endif
+endsubroutine update_for_time_integrals_hydro
 !***********************************************************************
 
 subroutine hydro_after_boundary(f)
@@ -8066,7 +8130,7 @@ subroutine hydro_after_timestep(f,df,dt_sub)
 !
 
 use Boundcond, only: update_ghosts
-use Sub, only: div
+use Sub, only: div, vecout_finalize
 use Poisson, only: inverse_laplacian, inverse_laplacian_fft_z
 !
 
@@ -8079,7 +8143,7 @@ logical :: lwrite_debug=.false.
 integer :: iorder_z=2
 !
 
-fargo: if (lfargo_advection) then
+if (lfargo_advection) then
 !
 
 !  Call update ghosts as derivatives are needed.
@@ -8089,15 +8153,10 @@ fargo: if (lfargo_advection) then
 call update_ghosts(f)
 !
 
-fourier: if (lfargoadvection_as_shift) then
+if (lfargoadvection_as_shift) then
 call fourier_shift_fargo(f,df,dt_sub)
 else
-if (lroot) then
-print*,'Fargo advection without Fourier shift'
-print*,'is not functional.'
-call fatal_error("hydro_after_timestep","")
 endif
-endif fourier
 !
 
 !  To disable radial advection, intended for tests in cylindrical coordinates
@@ -8110,7 +8169,7 @@ df(:,:,:,iux) = 0.
 endif
 !
 
-endif fargo
+endif
 if (lhelmholtz_decomp) then
 if (it==1) call warning("hydro_after_timestep","Helmholtz decomposition under development")
 if (.true.) then
@@ -8142,6 +8201,7 @@ endif
 if (lwrite_debug) write(32) f(l1:l2,4,n1:n2,iphiuu)
 endif
 endif
+if (othresh_per_orms/=0) call vecout_finalize(trim(directory)//'/ovec',41,novec)
 !
 
 endsubroutine hydro_after_timestep

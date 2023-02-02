@@ -332,9 +332,9 @@ class Parser:
         lines = self.get_lines(filename, include_comments=True)
         res = []
         for (line,count) in lines:
-            is_threadprivate_declaration = "!$omp" in line and "threadprivate" in line
+            is_threadprivate_declaration = "!$omp" in line and "threadprivate" in line.lower()
             if is_threadprivate_declaration:
-                variable_names = [variable.strip() for variable in re.search("threadprivate\((.+)\)",line).group(1).split(",")]
+                variable_names = [variable.strip() for variable in re.search("threadprivate\((.+)\)",line.lower()).group(1).split(",")]
                 for variable in variable_names:
                     if variable in self.static_variables:
                         self.static_variables[variable]["threadprivate"] = True
@@ -521,29 +521,49 @@ class Parser:
             contents = self.get_lines(file,include_comments=True)
             in_module_declaration = True
             in_type = False
-            for (line,count) in contents:
+            for i,(line,count) in enumerate(contents):
                 res_contents.append(line)
-                writes = self.get_writes_from_line(line,count)
+                if line[0] != "!":
+                    writes = self.get_writes_from_line(line,count)
 
-                #handle conditional write and where writes
-                if "if" in line or line.split("(")[0].strip() == "where":
-                    for variable in variables:
-                        if variable in [write[0] for write in writes]:
-                            last_line = res_contents[-1]
-                            res_contents[-1] = "!$omp critical\n"
-                            res_contents.append(last_line)
-                            res_contents.append("!$omp end critical\n")
-                else:
-                    for variable in variables:
-                        if variable in [write[0] for write in writes]:
-                            last_line = res_contents[-1]
-                            res_contents[-1] = "!$omp critical\n"
-                            res_contents.append(last_line)
-                            res_contents.append("!$omp end critical\n")
-                            #If one one's the more performant omp atomic
-                            #last_line = res_contents[-1]
-                            #res_contents[-1] = "!$omp atomic\n"
-                            #res_contents.append(last_line)
+                    #handle where writes
+                    if "if" in line or line.split("(")[0].strip() == "where":
+                        for variable in variables:
+                            if variable in [write[0] for write in writes]:
+                                last_line = res_contents[-1]
+                                res_contents[-1] = "!$omp critical\n"
+                                res_contents.append(last_line)
+                                res_contents.append("!$omp end critical\n")
+                    #handle do loop writes
+                    elif re.match("do\s+.=.+,\s?",line.split(";")[0]) and len(line.split(";"))==2:
+                        for variable in variables:
+                            if variable in [write[0] for write in writes]:
+                                res_contents[-1] = (f"{line.split(';')[0]}\n")
+                                res_contents.append("!$omp critical\n")
+                                res_contents.append(f"{line.split(';')[1]}\n")
+                                res_contents.append("!$omp end critical\n")
+                                #let's see if there is a corresponding enddo
+                                current_index = i+1
+                                no_end_do = True
+                                iter_line = contents[current_index][0]
+                                while no_end_do and not re.match("do\s+.=.+,\s?",iter_line):
+                                    no_end_do = not (re.match("enddo",iter_line) or re.match("end do",iter_line))
+                                    current_index += 1
+                                    iter_line = contents[current_index][0]
+                                if no_end_do:
+                                    res_contents.append("enddo")
+                                
+                    else:
+                        for variable in variables:
+                            if variable in [write[0] for write in writes]:
+                                last_line = res_contents[-1]
+                                res_contents[-1] = "!$omp critical\n"
+                                res_contents.append(last_line)
+                                res_contents.append("!$omp end critical\n")
+                                #If one one's the more performant omp atomic
+                                #last_line = res_contents[-1]
+                                #res_contents[-1] = "!$omp atomic\n"
+                                #res_contents.append(last_line)
 
             with open(f"./out/{file}","w") as f:
                 f.write("\n".join(res_contents))
@@ -620,19 +640,17 @@ def main():
    # for (line,count) in lines:
    #     print(line)
 
-    #static_writes = parser.parse_subroutine_in_file(filename, subroutime_name)
-    #parser.save_static_variables()
-    #parser.save_static_writes(static_writes)
-    static_writes = parser.read_static_writes()
+    static_writes = parser.parse_subroutine_in_file(filename, subroutime_name)
+    parser.save_static_variables()
+    parser.save_static_writes(static_writes)
+    #static_writes = parser.read_static_writes()
     variables = list(set([x["variable"] for x in static_writes]))
-    variables = list(set(variables) - set(variables[:len(variables)//2]))
-    variables = list(set(variables) - set(["fname","fnamer","fnamex","fnamey","fnamez","fnamexy","fnamexz","fnamerz","itype_name","dt1_max_array","dt1_max"]))
-    variables = variables[:len(variables)//2]
+    variables = list(set(variables) - set(["imn","fname","fnamer","fnamex","fnamey","fnamez","fnamexy","fnamexz","fnamerz","itype_name","dt1_max_array","dt1_max","f","df","p"]))
     for variable in variables:
         print(variable)
-    #parser.make_variables_threadprivate(variables)
-    #print(f"Num of static variables written with full depth {len(variables)}")
-    #parser.add_atomic_declarations(["fname","fnamer","fnamex","fnamey","fnamez","fnamexy","fnamexz","fnamerz","itypename"])
+    parser.make_variables_threadprivate(variables)
+    print(f"Num of static variables written with full depth {len(variables)}")
+    parser.add_atomic_declarations(["fname","fnamer","fnamex","fnamey","fnamez","fnamexy","fnamexz","fnamerz","itype_name","dt1_max"])
 
     #filename = "./pencil-code/src/entropy.f90"
     #subroutine_name = "calc_heat_cool"

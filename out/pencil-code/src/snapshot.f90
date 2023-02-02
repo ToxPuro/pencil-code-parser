@@ -62,11 +62,13 @@ subroutine wsnap_down(a,flist)
 use General, only: get_range_no, indgen
 use Boundcond, only: boundconds_x, boundconds_y, boundconds_z
 use General, only: safe_character_assign
-use IO, only: output_snap, log_filename_to_file, lun_output, wgrid
+use IO, only: output_snap, output_snap_finalize, log_filename_to_file, lun_output, wgrid
 use HDF5_IO, only: wdim, initialize_hdf5
 use Sub, only: read_snaptime, update_snaptime
 use Grid, only: save_grid, coords_aux
 use Messages, only: warning
+use Persist, only: output_persistent
+use Mpicomm, only: periodic_bdry_x, periodic_bdry_y,  periodic_bdry_z
 !
 
 real, dimension (:,:,:,:) :: a
@@ -78,7 +80,7 @@ integer, save :: nsnap
 logical, save :: lfirst_call=.true.
 character (len=fnlen) :: file
 character (len=intlen) :: ch
-integer :: ndx, ndy, ndz, isx, isy, isz, ifx, ify, ifz, iax, iay, iaz,  iex, iey, iez, l2s, l2is, m2s, m2is, n2s, n2is, nv1, nv2
+integer :: ndx, ndy, ndz, isx, isy, isz, ifx, ify, ifz, ifirstx, ifirsty, ifirstz,  ilastx, ilasty, ilastz, l2s, l2is, m2s, m2is, n2s, n2is, nv1, nv2
 real, dimension(:,:,:,:), allocatable :: buffer
 integer, dimension(nghost) :: inds
 real, dimension(nghost) :: dxs_ghost, dys_ghost, dzs_ghost
@@ -91,7 +93,7 @@ call safe_character_assign(file,trim(datadir)//'/tsnap_down.dat')
 
 !
 
-if (lfirst_call)  call read_snaptime(file,tsnap,nsnap,dsnap_down,t)
+if (lfirst_call) call read_snaptime(file,tsnap,nsnap,dsnap_down,t)
 !
 
 !  Check whether we want to output snapshot. If so, then
@@ -156,9 +158,9 @@ ifx = firstind(1); ify = firstind(2); ifz = firstind(3)
 
 !
 
-iax = nghost+1 ;   iay = nghost+1 ;   iaz = nghost+1
-iex = iax+ndx-1;   iey = iay+ndy-1;   iez = iaz+ndz-1
-!       print*, 'iproc=', iproc, ifx, iex, ndx, ify, iey, ndy, ifz, iez, ndz
+ifirstx = nghost+1 ;   ifirsty = nghost+1 ;   ifirstz = nghost+1
+ilastx = ifirstx+ndx-1;   ilasty = ifirsty+ndy-1;   ilastz = ifirstz+ndz-1
+!       print*, 'iproc=', iproc, ifx, ilastx, ndx, ify, ilasty, ndy, ifz, ilastz, ndz
 
 !
 
@@ -166,7 +168,7 @@ iex = iax+ndx-1;   iey = iay+ndy-1;   iez = iaz+ndz-1
 
 !
 
-buffer(iax:iex,iay:iey,iaz:iez,:) = a(ifx:l2:isx,ify:m2:isy,ifz:n2:isz,nv1:nv2)
+buffer(ifirstx:ilastx,ifirsty:ilasty,ifirstz:ilastz,:) = a(ifx:l2:isx,ify:m2:isy,ifz:n2:isz,nv1:nv2)
 !
 
 !  Generate ghost zone data
@@ -190,10 +192,11 @@ call save_grid
 !
 
 if (any(.not.lequidist))  call warning('wsnap_down','BCs not correctly set for non-equidistant grids')
-if (any(lperi))  call warning('wsnap_down','periodic BCs not correctly set')
-x(iax:iex) = x(ifx:l2:isx)
-y(iay:iey) = y(ify:m2:isy)
-z(iaz:iez) = z(ifz:n2:isz)
+!
+
+x(ifirstx:ilastx) = x(ifx:l2:isx)
+y(ifirsty:ilasty) = y(ify:m2:isy)
+z(ifirstz:ilastz) = z(ifz:n2:isz)
 dx=isx*dx;  dy=isy*dy; dz=isz*dz
 !
 
@@ -204,22 +207,22 @@ dx=isx*dx;  dy=isy*dy; dz=isz*dz
 inds = indgen(nghost)
 if (lfirst_proc_x.or.llast_proc_x) then
 dxs_ghost = dx*inds
-if (lfirst_proc_x) x(iax-1:1:-1      ) = x(iax)-dxs_ghost
-if (llast_proc_x ) x(iex+1:iex+nghost) = x(iex)+dxs_ghost
+if (lfirst_proc_x) x(ifirstx-1:1:-1      ) = x(ifirstx)-dxs_ghost
+if (llast_proc_x ) x(ilastx+1:ilastx+nghost) = x(ilastx)+dxs_ghost
 endif
 !
 
 if (lfirst_proc_y.or.llast_proc_y) then
 dys_ghost = dy*inds
-if (lfirst_proc_y) y(iay-1:1:-1      ) = y(iay)-dys_ghost
-if (llast_proc_y ) y(iey+1:iey+nghost) = y(iey)+dys_ghost
+if (lfirst_proc_y) y(ifirsty-1:1:-1      ) = y(ifirsty)-dys_ghost
+if (llast_proc_y ) y(ilasty+1:ilasty+nghost) = y(ilasty)+dys_ghost
 endif
 !
 
 if (lfirst_proc_z.or.llast_proc_z) then
 dzs_ghost = dz*inds
-if (lfirst_proc_z) z(iaz-1:1:-1      ) = z(iaz)-dzs_ghost
-if (llast_proc_z ) z(iez+1:iez+nghost) = z(iez)+dzs_ghost
+if (lfirst_proc_z) z(ifirstz-1:1:-1      ) = z(ifirstz)-dzs_ghost
+if (llast_proc_z ) z(ilastz+1:ilastz+nghost) = z(ilastz)+dzs_ghost
 endif
 dx_1=1./dx; dy_1=1./dy; dz_1=1./dz
 dx_tilde=0.; dz_tilde=0.; dz_tilde=0.
@@ -230,8 +233,8 @@ if (lfirst_call) then
 
 !
 
-call wgrid('grid_down.dat',iex+nghost,iey+nghost,iez+nghost,lwrite=.true.)
-call wdim('dim_down.dat', iex+nghost, iey+nghost, iez+nghost,  ceiling(float(nxgrid)/isx)+2*nghost, ceiling(float(nygrid)/isy)+2*nghost, ceiling(float(nzgrid)/isz)+2*nghost,  mvar_down, maux_down)
+call wgrid('grid_down.dat',ilastx+nghost,ilasty+nghost,ilastz+nghost,lwrite=.true.)
+call wdim('dim_down.dat', ilastx+nghost, ilasty+nghost, ilastz+nghost,  ceiling(float(nxgrid)/isx)+2*nghost, ceiling(float(nygrid)/isy)+2*nghost, ceiling(float(nzgrid)/isz)+2*nghost,  mvar_down, maux_down)
 lfirst_call=.false.
 endif
 !
@@ -240,7 +243,7 @@ endif
 
 !
 
-call coords_aux(x(1:iex+nghost), y(1:iey+nghost),z(1:iez+nghost))
+call coords_aux(x(1:ilastx+nghost), y(1:ilasty+nghost),z(1:ilastz+nghost))
 !
 
 !  For each direction at boundary: save upper index limit and inner start index for
@@ -249,23 +252,29 @@ call coords_aux(x(1:iex+nghost), y(1:iey+nghost),z(1:iez+nghost))
 
 !
 
-!  fred: Temporarily switched off until boundary conditions correctly
-
-!  implemented on coarse mesh. ghost zones not required for time correlations.
-
-!
-
 if (lfirst_proc_x.or.llast_proc_x) then
-l2s=l2; l2is=l2i; l2=iex; l2i=l2-nghost+1
+l2s=l2; l2is=l2i; l2=ilastx; l2i=l2-nghost+1
+if (lperi(1).and.nprocx>1) then
+call periodic_bdry_x(buffer,nv1,nv2)
+else
 call boundconds_x(buffer)
 endif
+endif
 if (lfirst_proc_y.or.llast_proc_y) then
-m2s=m2; m2is=m2i; m2=iey; m2i=m2-nghost+1
+m2s=m2; m2is=m2i; m2=ilasty; m2i=m2-nghost+1
+if (lperi(2).and.nprocy>1) then
+call periodic_bdry_y(buffer,nv1,nv2)
+else
 call boundconds_y(buffer)
 endif
+endif
 if (lfirst_proc_z.or.llast_proc_z) then
-n2s=n2; n2is=n2i; n2=iez; n2i=n2-nghost+1
+n2s=n2; n2is=n2i; n2=ilastz; n2i=n2-nghost+1
+if (lperi(3).and.nprocz>1) then
+call periodic_bdry_z(buffer,nv1,nv2)
+else
 call boundconds_z(buffer)
+endif
 endif
 !
 
@@ -276,7 +285,9 @@ endif
 call initialize_hdf5(ndown,ngrid_down,mvar_down,maux_down)
 call safe_character_assign(file,'VARd'//ch)
 call output_snap(buffer,nv1,nv2,file)
-close(lun_output)
+if (lpersist) call output_persistent(file)
+call output_snap_finalize
+if (present(flist)) call log_filename_to_file(file,flist)
 if (lfirst_proc_x.or.llast_proc_x) then
 l2=l2s; l2i=l2is
 endif

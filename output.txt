@@ -1,22 +1,2836 @@
+rcool2
+advec2_hypermesh
+fatal_errors
 llastpoint
-advec_uu
-m
-maxdiffus
 mpoly
-is_vec
-Hmax
-ix
-t_vart
+diffus_chi
 errors
-Num of static variables written with full depth 10
-ss0
-advec_cs2
-ix
-advec2
+diffus_diffrho
+message_stored
+Hmax
+phiavg_profile
+n
+lfirstpoint
 maxdiffus
+maxdiffus3
+r_int
+diffus_chi3
+ss0
+is_vec
+headtt
+lcoarse_mn
+advec_cs2
+maxadvec
+m
+jdone
+diffus_diffrho3
+scaller
+advec2
+advec_uu
+Fmax
+maxsrc
+rcool
+pnu
+maxdiffus2
+r_ext
+cs2top
+Num of static variables written with full depth 36
+do n=n1,n2
+advec2
+maxdiffus2
+cs2top
+Fmax
+fatal_errors
+jdone
+llastpoint
+maxadvec
+advec_uu
+is_vec
+phiavg_profile
+message_stored
+pnu
+diffus_diffrho
+rcool2
+maxdiffus3
+n
+Hmax
+diffus_chi
+advec_cs2
+r_ext
+rcool
+m
+diffus_diffrho3
+maxdiffus
+headtt
+advec2_hypermesh
+lcoarse_mn
+scaller
+diffus_chi3
+errors
+ss0
+lfirstpoint
+mpoly
+maxsrc
+r_int
+Num of static variables written with full depth 36
+lfirstpoint
+advec2
+jdone
+maxdiffus3
+maxdiffus
+scaller
+n
+m
+Hmax
+fatal_errors
+maxdiffus2
+llastpoint
+rcool2
+advec_cs2
+diffus_chi
+diffus_diffrho
+diffus_chi3
+diffus_diffrho3
+message_stored
+lcoarse_mn
+is_vec
+errors
+ss0
+headtt
+phiavg_profile
+pnu
+rcool
+advec2_hypermesh
+cs2top
+r_ext
+maxadvec
+advec_uu
+Fmax
+mpoly
+maxsrc
+r_int
+Num of static variables written with full depth 36
+is_vec
+maxdiffus2
+diffus_chi
+lfirstpoint
+maxadvec
+message_stored
+mpoly
+advec_uu
+phiavg_profile
+llastpoint
+advec2
+diffus_diffrho
+ss0
+diffus_chi3
+errors
+pnu
+fatal_errors
+maxsrc
+r_ext
+r_int
+n
+headtt
+cs2top
+rcool
+scaller
+Fmax
+advec2_hypermesh
+Hmax
+diffus_diffrho3
+rcool2
+advec_cs2
+m
+maxdiffus3
+jdone
+maxdiffus
+lcoarse_mn
+Num of static variables written with full depth 36
+scaller
+maxsrc
+is_vec
+maxdiffus
+errors
+diffus_diffrho
+maxdiffus3
+advec_uu
+maxdiffus2
+lcoarse_mn
+Fmax
+ss0
+diffus_diffrho3
+n
+cs2top
+diffus_chi
+diffus_chi3
+r_ext
+phiavg_profile
+Hmax
+m
+llastpoint
+advec2_hypermesh
+headtt
+message_stored
+maxadvec
+advec_cs2
+lfirstpoint
+jdone
+rcool2
+mpoly
+r_int
+pnu
+rcool
+fatal_errors
+advec2
+Num of static variables written with full depth 36
+diffus_chi3
+r_int
+diffus_diffrho
+rcool2
+ss0
+lcoarse_mn
+fatal_errors
+maxdiffus
+message_stored
+maxdiffus3
+maxdiffus2
+advec2_hypermesh
+llastpoint
+advec_cs2
+rcool
+mpoly
+maxsrc
+m
+jdone
+cs2top
+errors
+n
+is_vec
+diffus_chi
+scaller
+lfirstpoint
+Fmax
+headtt
+maxadvec
+r_ext
+advec2
+diffus_diffrho3
+advec_uu
+pnu
+phiavg_profile
+Hmax
+Num of static variables written with full depth 36
+Fmax
+maxdiffus2
+jdone
+diffus_diffrho
+r_ext
+pnu
+phiavg_profile
+headtt
+lcoarse_mn
+maxdiffus
+rcool
+Hmax
+ss0
+rcool2
+advec2
+fatal_errors
+diffus_chi
+advec_cs2
+n
+mpoly
+lfirstpoint
+maxdiffus3
+is_vec
+llastpoint
+message_stored
+cs2top
+diffus_chi3
+diffus_diffrho3
+advec2_hypermesh
+advec_uu
+errors
+r_int
+scaller
+maxadvec
+maxsrc
+m
+Num of static variables written with full depth 36
+fatal_errors
+n
+maxsrc
+ss0
+rcool2
+advec2_hypermesh
+r_ext
+pnu
+m
+mpoly
+maxadvec
+advec2
+cs2top
+diffus_chi3
+advec_cs2
+phiavg_profile
+r_int
+lcoarse_mn
+is_vec
+advec_uu
+headtt
+message_stored
+diffus_diffrho3
+errors
+diffus_diffrho
+maxdiffus
+llastpoint
+jdone
+maxdiffus2
+lfirstpoint
+rcool
+Fmax
+diffus_chi
+scaller
+Hmax
+maxdiffus3
+Num of static variables written with full depth 36
+jdone
+scaller
+llastpoint
+mpoly
+advec_cs2
+lfirstpoint
+ss0
+r_ext
+maxdiffus
+message_stored
+diffus_diffrho3
+diffus_chi3
+diffus_chi
+maxdiffus2
+phiavg_profile
+diffus_diffrho
+maxdiffus3
+rcool2
+advec2_hypermesh
+maxadvec
+maxsrc
+is_vec
+errors
+rcool
+advec2
+m
+headtt
+cs2top
+lcoarse_mn
+Fmax
+advec_uu
+Hmax
+fatal_errors
+n
+r_int
+pnu
+Num of static variables written with full depth 36
+do i=1,nghost; f(l1-i,:,:,iss)=2*f(l1,:,:,iss)-f(l1+i,:,:,iss); enddo elseif (ltemperature) then
+do i=1,nghost; f(l1-i,:,:,iss)=2*f(l1,:,:,iss)-f(l1+i,:,:,iss); enddo f(l1,:,:,ilnTT) = log(cs2bot/gamma_m1)
+do i=1,nghost; f(l1-i,:,:,ilnTT)=2*f(l1,:,:,ilnTT)-f(l1+i,:,:,ilnTT); enddo endif
+do i=1,nghost; f(l1-i,:,:,ilnTT)=2*f(l1,:,:,ilnTT)-f(l1+i,:,:,ilnTT); enddo !
+
+do i=1,nghost; f(l1-i,:,:,ilnTT)=2*f(l1,:,:,ilnTT)-f(l1+i,:,:,ilnTT); enddo !  top boundary
+
+do i=1,nghost; f(l1-i,:,:,ilnTT)=2*f(l1,:,:,ilnTT)-f(l1+i,:,:,ilnTT); enddo !
+
+do i=1,nghost; f(l1-i,:,:,ilnTT)=2*f(l1,:,:,ilnTT)-f(l1+i,:,:,ilnTT); enddo case ('top')
+do i=1,nghost; f(l1-i,:,:,ilnTT)=2*f(l1,:,:,ilnTT)-f(l1+i,:,:,ilnTT); enddo if (ldebug) print*, 'bc_ss_temp_x: set x top temperature: cs2top=',cs2top
+do i=1,nghost; f(l1-i,:,:,ilnTT)=2*f(l1,:,:,ilnTT)-f(l1+i,:,:,ilnTT); enddo if (cs2top<=0.) print*, 'bc_ss_temp_x: cannot have cs2top<=0'
+do i=1,nghost; f(l1-i,:,:,ilnTT)=2*f(l1,:,:,ilnTT)-f(l1+i,:,:,ilnTT); enddo !
+
+do i=1,nghost; f(l1-i,:,:,ilnTT)=2*f(l1,:,:,ilnTT)-f(l1+i,:,:,ilnTT); enddo if (lentropy .and. .not. pretend_lnTT) then
+do i=1,nghost; f(l1-i,:,:,ilnTT)=2*f(l1,:,:,ilnTT)-f(l1+i,:,:,ilnTT); enddo !
+
+do i=1,nghost; f(l1-i,:,:,ilnTT)=2*f(l1,:,:,ilnTT)-f(l1+i,:,:,ilnTT); enddo tmp = 2*cv*log(cs2top/cs20)
+do i=1,nghost; f(l1-i,:,:,ilnTT)=2*f(l1,:,:,ilnTT)-f(l1+i,:,:,ilnTT); enddo call getlnrho(f(l2,:,:,ilnrho),TOP,lnrho_yz)
+do i=1,nghost; f(l1-i,:,:,ilnTT)=2*f(l1,:,:,ilnTT)-f(l1+i,:,:,ilnTT); enddo f(l2,:,:,iss) = 0.5*tmp - (cp-cv)*(lnrho_yz - lnrho0)
+do i=1,nghost; f(l1-i,:,:,ilnTT)=2*f(l1,:,:,ilnTT)-f(l1+i,:,:,ilnTT); enddo !
+
+do i=1,nghost; f(l1-i,:,:,ilnTT)=2*f(l1,:,:,ilnTT)-f(l1+i,:,:,ilnTT); enddo if (lreference_state)  f(l2,:,:,iss) = f(l2,:,:,iss) - reference_state(TOP,iref_s)
+do i=1,nghost; f(l1-i,:,:,ilnTT)=2*f(l1,:,:,ilnTT)-f(l1+i,:,:,ilnTT); enddo !
+
+do i=1,nghost; f(l1-i,:,:,ilnTT)=2*f(l1,:,:,ilnTT)-f(l1+i,:,:,ilnTT); enddo !  Distinguish cases for linear and logarithmic density
+
+do i=1,nghost; f(l1-i,:,:,ilnTT)=2*f(l1,:,:,ilnTT)-f(l1+i,:,:,ilnTT); enddo !
+
+do i=1,nghost; f(l1-i,:,:,ilnTT)=2*f(l1,:,:,ilnTT)-f(l1+i,:,:,ilnTT); enddo if (ldensity_nolog) then
+do i=1,nghost; f(l2+i,:,:,iss)=2*f(l2,:,:,iss)-f(l2-i,:,:,iss); enddo elseif (ltemperature) then
+do i=1,nghost; f(l2+i,:,:,iss)=2*f(l2,:,:,iss)-f(l2-i,:,:,iss); enddo f(l2,:,:,ilnTT) = log(cs2top/gamma_m1)
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo endif
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo !
+
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo case default
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo call fatal_error('bc_ss_temp_x','invalid argument')
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo endselect
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo !
+
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo endsubroutine bc_ss_temp_x
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo !***********************************************************************
+
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo subroutine bc_ss_temp_y(f,topbot)
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo !
+
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo !  boundary condition for entropy: constant temperature
+
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo !
+
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo !   3-aug-2002/wolf: coded
+
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo !  26-aug-2003/tony: distributed across ionization modules
+
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo !
+
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo character (len=3) :: topbot
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo real, dimension (:,:,:,:) :: f
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo real :: tmp
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo integer :: i
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo real, dimension(mx,mz) :: lnrho_xz
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo real, dimension(:,:), pointer :: reference_state
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo !
+
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo if (lreference_state)  call get_shared_variable('reference_state',reference_state,caller='bc_ss_temp_y')
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo !
+
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo if (ldebug) print*,'bc_ss_temp_y: cs20,cs0=',cs20,cs0
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo !
+
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo !  Constant temperature/sound speed for entropy, i.e. antisymmetric
+
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo !  ln(cs2) relative to cs2top/cs2bot.
+
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo !  This assumes that the density is already set (ie density _must_ register
+
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo !  first!)
+
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo !
+
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo !  check whether we want to do top or bottom (this is precessor dependent)
+
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo !
+
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo select case (topbot)
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo !
+
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo !  bottom boundary
+
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo !
+
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo case ('bot')
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo if (ldebug) print*,  'bc_ss_temp_y: set y bottom temperature - cs2bot=',cs2bot
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo if (cs2bot<=0.) print*, 'bc_ss_temp_y: cannot have cs2bot<=0'
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo !
+
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo tmp = 2*cv*log(cs2bot/cs20)
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo call getlnrho(f(:,m1,:,ilnrho),lnrho_xz)
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo !
+
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo f(:,m1,:,iss) = 0.5*tmp - (cp-cv)*(lnrho_xz-lnrho0)
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo if (lreference_state)  f(l1:l2,m1,:,iss) = f(l1:l2,m1,:,iss) - spread(reference_state(:,iref_s),2,mz)
+do i=1,nghost; f(l2+i,:,:,ilnTT)=2*f(l2,:,:,ilnTT)-f(l2-i,:,:,ilnTT); enddo !
+
+do i=1,nghost; f(:,:,n1-i,iss)=2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo endif
+do i=1,nghost; f(:,:,n1-i,iss)=2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo elseif (ltemperature) then
+do i=1,nghost; f(:,:,n1-i,iss)=2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo if (ltemperature_nolog) then
+do i=1,nghost; f(:,:,n1-i,iss)=2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo f(:,:,n1,iTT)   = cs2bot/gamma_m1
+do i=1,nghost; f(:,:,n1-i,iss)=2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo else
+do i=1,nghost; f(:,:,n1-i,iss)=2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo f(:,:,n1,ilnTT) = log(cs2bot/gamma_m1)
+do i=1,nghost; f(:,:,n1-i,iss)=2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo endif
+do i=1,nghost; f(:,:,n1-i,iss)=2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo if (loptest(lone_sided)) then
+do i=1,nghost; f(:,:,n1-i,iss)=2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo call set_ghosts_for_onesided_ders(f,topbot,ilnTT,3,.true.)
+do i=1,nghost; f(:,:,n1-i,iss)=2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo else
+do i=1,nghost; f(:,:,n1-i,ilnTT)=2*f(:,:,n1,ilnTT)-f(:,:,n1+i,ilnTT); enddo endif
+do i=1,nghost; f(:,:,n1-i,ilnTT)=2*f(:,:,n1,ilnTT)-f(:,:,n1+i,ilnTT); enddo endif
+do i=1,nghost; f(:,:,n1-i,ilnTT)=2*f(:,:,n1,ilnTT)-f(:,:,n1+i,ilnTT); enddo !
+
+do i=1,nghost; f(:,:,n1-i,ilnTT)=2*f(:,:,n1,ilnTT)-f(:,:,n1+i,ilnTT); enddo !  top boundary
+
+do i=1,nghost; f(:,:,n1-i,ilnTT)=2*f(:,:,n1,ilnTT)-f(:,:,n1+i,ilnTT); enddo !
+
+do i=1,nghost; f(:,:,n1-i,ilnTT)=2*f(:,:,n1,ilnTT)-f(:,:,n1+i,ilnTT); enddo case ('top')
+do i=1,nghost; f(:,:,n1-i,ilnTT)=2*f(:,:,n1,ilnTT)-f(:,:,n1+i,ilnTT); enddo if (ldebug) print*,  'bc_ss_temp_z: set z top temperature: cs2top=',cs2top
+do i=1,nghost; f(:,:,n1-i,ilnTT)=2*f(:,:,n1,ilnTT)-f(:,:,n1+i,ilnTT); enddo if (cs2top<=0.) print*,  'bc_ss_temp_z: cannot have cs2top = ', cs2top, ' <= 0'
+do i=1,nghost; f(:,:,n1-i,ilnTT)=2*f(:,:,n1,ilnTT)-f(:,:,n1+i,ilnTT); enddo !DM+PC next two lines need to be looked into.
+
+do i=1,nghost; f(:,:,n1-i,ilnTT)=2*f(:,:,n1,ilnTT)-f(:,:,n1+i,ilnTT); enddo !AB: This was implemented in revision: 17029 dhruba.mitra, but it works!
+
+do i=1,nghost; f(:,:,n1-i,ilnTT)=2*f(:,:,n1,ilnTT)-f(:,:,n1+i,ilnTT); enddo if (lread_oldsnap)  cs2top=cs20*exp(gamma*f(l2,m2,n2,iss)/cp+gamma_m1*(f(l2,m2,n2,ilnrho)-lnrho0))
+do i=1,nghost; f(:,:,n1-i,ilnTT)=2*f(:,:,n1,ilnTT)-f(:,:,n1+i,ilnTT); enddo !
+
+do i=1,nghost; f(:,:,n1-i,ilnTT)=2*f(:,:,n1,ilnTT)-f(:,:,n1+i,ilnTT); enddo if (lentropy .and. .not. pretend_lnTT) then
+do i=1,nghost; f(:,:,n1-i,ilnTT)=2*f(:,:,n1,ilnTT)-f(:,:,n1+i,ilnTT); enddo tmp = 2*cv*log(cs2top/cs20)
+do i=1,nghost; f(:,:,n1-i,ilnTT)=2*f(:,:,n1,ilnTT)-f(:,:,n1+i,ilnTT); enddo call getlnrho(f(:,:,n2,ilnrho),lnrho_xy)
+do i=1,nghost; f(:,:,n1-i,ilnTT)=2*f(:,:,n1,ilnTT)-f(:,:,n1+i,ilnTT); enddo f(:,:,n2,iss) = 0.5*tmp - (cp-cv)*(lnrho_xy-lnrho0)
+do i=1,nghost; f(:,:,n1-i,ilnTT)=2*f(:,:,n1,ilnTT)-f(:,:,n1+i,ilnTT); enddo if (lreference_state)  f(l1:l2,:,n2,iss) = f(l1:l2,:,n2,iss) - spread(reference_state(:,iref_s),2,my)
+do i=1,nghost; f(:,:,n1-i,ilnTT)=2*f(:,:,n1,ilnTT)-f(:,:,n1+i,ilnTT); enddo !
+
+do i=1,nghost; f(:,:,n1-i,ilnTT)=2*f(:,:,n1,ilnTT)-f(:,:,n1+i,ilnTT); enddo if (loptest(lone_sided)) then
+do i=1,nghost; f(:,:,n1-i,ilnTT)=2*f(:,:,n1,ilnTT)-f(:,:,n1+i,ilnTT); enddo call set_ghosts_for_onesided_ders(f,topbot,iss,3,.true.)
+do i=1,nghost; f(:,:,n1-i,ilnTT)=2*f(:,:,n1,ilnTT)-f(:,:,n1+i,ilnTT); enddo else
+do i=1,nghost; f(:,:,n1-i,ilnTT)=2*f(:,:,n1,ilnTT)-f(:,:,n1+i,ilnTT); enddo !
+
+do i=1,nghost; f(:,:,n1-i,ilnTT)=2*f(:,:,n1,ilnTT)-f(:,:,n1+i,ilnTT); enddo !  Distinguish cases for linear and logarithmic density
+
+do i=1,nghost; f(:,:,n1-i,ilnTT)=2*f(:,:,n1,ilnTT)-f(:,:,n1+i,ilnTT); enddo !
+
+do i=1,nghost; f(:,:,n1-i,ilnTT)=2*f(:,:,n1,ilnTT)-f(:,:,n1+i,ilnTT); enddo if (ldensity_nolog) then
+do i=1,nghost; f(:,:,n2+i,iss)=2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo endif
+do i=1,nghost; f(:,:,n2+i,iss)=2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo elseif (ltemperature) then
+do i=1,nghost; f(:,:,n2+i,iss)=2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo if (ltemperature_nolog) then
+do i=1,nghost; f(:,:,n2+i,iss)=2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo f(:,:,n2,iTT)   = cs2top/gamma_m1
+do i=1,nghost; f(:,:,n2+i,iss)=2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo else
+do i=1,nghost; f(:,:,n2+i,iss)=2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo f(:,:,n2,ilnTT) = log(cs2top/gamma_m1)
+do i=1,nghost; f(:,:,n2+i,iss)=2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo endif
+do i=1,nghost; f(:,:,n2+i,iss)=2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo if (loptest(lone_sided)) then
+do i=1,nghost; f(:,:,n2+i,iss)=2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo call set_ghosts_for_onesided_ders(f,topbot,ilnTT,3,.true.)
+do i=1,nghost; f(:,:,n2+i,iss)=2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo else
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo endif
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo endif
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !
+
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo case default
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo call fatal_error('bc_ss_temp_z','invalid argument')
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo endselect
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !
+
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo endsubroutine bc_ss_temp_z
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !***********************************************************************
+
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo subroutine bc_lnrho_temp_z(f,topbot)
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !
+
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !  boundary condition for lnrho *and* ss: constant temperature
+
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !
+
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !  27-sep-2002/axel: coded
+
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !  19-aug-2005/tobi: distributed across ionization modules
+
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !
+
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo use Gravity, only: gravz
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !
+
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo character (len=3) :: topbot
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo real, dimension (:,:,:,:) :: f
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo real :: tmp
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo integer :: i
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo real, dimension(mx,my) :: lnrho_xy
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo real, dimension(:,:), pointer :: reference_state
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !
+
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo if (lreference_state)  call get_shared_variable('reference_state',reference_state,caller='bc_lnrho_temp_z')
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !
+
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo if (ldebug) print*,'bc_lnrho_temp_z: cs20,cs0=',cs20,cs0
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !
+
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !  Constant temperature/sound speed for entropy, i.e. antisymmetric
+
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !  ln(cs2) relative to cs2top/cs2bot.
+
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !  This assumes that the density is already set (ie density _must_ register
+
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !  first!)
+
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !
+
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !  check whether we want to do top or bottom (this is processor dependent)
+
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !
+
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo select case (topbot)
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !
+
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !  bottom boundary
+
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !
+
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo case ('bot')
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo if (ldebug) print*,  'bc_lnrho_temp_z: set z bottom temperature: cs2bot=',cs2bot
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo if (cs2bot<=0. .and. lroot) print*,  'bc_lnrho_temp_z: cannot have cs2bot<=0'
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo tmp = 2*cv*log(cs2bot/cs20)
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !
+
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !  set boundary value for entropy, then extrapolate ghost pts by antisymmetry
+
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !
+
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo call getlnrho(f(:,:,n1,ilnrho),lnrho_xy)
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo f(:,:,n1,iss) = 0.5*tmp - (cp-cv)*(lnrho_xy-lnrho0)
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo if (lreference_state)  f(l1:l2,:,n1,iss) = f(l1:l2,:,n1,iss) - spread(reference_state(:,iref_s),2,my)
+do i=1,nghost; f(:,:,n2+i,ilnTT)=2*f(:,:,n2,ilnTT)-f(:,:,n2-i,ilnTT); enddo !
+
+do i=1,nghost; f(:,:,n1-i,iss) = 2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo !
+
+do i=1,nghost; f(:,:,n1-i,iss) = 2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo !  set density in the ghost zones so that dlnrho/dz + ds/dz = gz/cs2bot
+
+do i=1,nghost; f(:,:,n1-i,iss) = 2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo !  for the time being, we don't worry about lnrho0 (assuming that it is 0)
+
+do i=1,nghost; f(:,:,n1-i,iss) = 2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo !
+
+do i=1,nghost; f(:,:,n1-i,iss) = 2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo tmp=-gravz/cs2bot
+do i=1,nghost; f(:,:,n2+i,iss) = 2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo !
+
+do i=1,nghost; f(:,:,n2+i,iss) = 2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo !  set density in the ghost zones so that dlnrho/dz + ds/dz = gz/cs2top
+
+do i=1,nghost; f(:,:,n2+i,iss) = 2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo !  for the time being, we don't worry about lnrho0 (assuming that it is 0)
+
+do i=1,nghost; f(:,:,n2+i,iss) = 2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo !
+
+do i=1,nghost; f(:,:,n2+i,iss) = 2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo tmp=gravz/cs2top
+do i=1,nghost; f(:,:,n2+i,iss)=2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo !
+
+do i=1,nghost; f(:,:,n2+i,iss)=2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo !  set density value such that pressure is constant at the bottom
+
+do i=1,nghost; f(:,:,n2+i,iss)=2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo !
+
+do i=1,nghost; f(:,:,n2+i,iss)=2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo f(:,:,n2,ilnrho)=lnrho_top+cp1*(ss_top-f(:,:,n2,iss))
+do i=1,nghost; f(:,:,n2+i,iss)=2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo else
+do i=1,nghost; f(:,:,n2+i,iss)=2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo f(:,:,n2,ilnrho)=lnrho_top
+do i=1,nghost; f(:,:,n2+i,iss)=2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo endif
+do i=1,nghost; f(:,:,n2+i,iss)=2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo !
+
+do i=1,nghost; f(:,:,n2+i,iss)=2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo !  make density antisymmetric about boundary
+
+do i=1,nghost; f(:,:,n2+i,iss)=2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo !  another possibility might be to enforce hydrostatics
+
+do i=1,nghost; f(:,:,n2+i,iss)=2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo !  ie to set dlnrho/dz=-g/cs^2, assuming zero entropy gradient
+
+do i=1,nghost; f(:,:,n2+i,iss)=2*f(:,:,n2,iss)-f(:,:,n2-i,iss); enddo !
+
+do i=1,nghost; f(:,:,n1-i,iss)=2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo !
+
+do i=1,nghost; f(:,:,n1-i,iss)=2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo !  set density value such that pressure is constant at the bottom
+
+do i=1,nghost; f(:,:,n1-i,iss)=2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo !
+
+do i=1,nghost; f(:,:,n1-i,iss)=2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo f(:,:,n1,ilnrho)=lnrho_bot+ss_bot-f(:,:,n1,iss)
+do i=1,nghost; f(:,:,n1-i,iss)=2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo else
+do i=1,nghost; f(:,:,n1-i,iss)=2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo f(:,:,n1,ilnrho)=lnrho_bot
+do i=1,nghost; f(:,:,n1-i,iss)=2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo endif
+do i=1,nghost; f(:,:,n1-i,iss)=2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo !
+
+do i=1,nghost; f(:,:,n1-i,iss)=2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo !  make density antisymmetric about boundary
+
+do i=1,nghost; f(:,:,n1-i,iss)=2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo !  another possibility might be to enforce hydrostatics
+
+do i=1,nghost; f(:,:,n1-i,iss)=2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo !  ie to set dlnrho/dz=-g/cs^2, assuming zero entropy gradient
+
+do i=1,nghost; f(:,:,n1-i,iss)=2*f(:,:,n1,iss)-f(:,:,n1+i,iss); enddo !
+
+do i=1,nghost; f(l1-i,:,:,j)=2*f(l1,:,:,j)+sgn*f(l1+i,:,:,j); enddo else
+do i=1,nghost; f(l1-i,:,:,j)=              sgn*f(l1+i,:,:,j); enddo if (sgn<0) f(l1,:,:,j) = 0.
+do i=1,nghost; f(l1-i,:,:,j)=              sgn*f(l1+i,:,:,j); enddo endif
+do i=1,nghost; f(l1-i,:,:,j)=              sgn*f(l1+i,:,:,j); enddo !
+
+do i=1,nghost; f(l1-i,:,:,j)=              sgn*f(l1+i,:,:,j); enddo case ('top')
+do i=1,nghost; f(l1-i,:,:,j)=              sgn*f(l1+i,:,:,j); enddo if (present(val)) f(l2,:,:,j)=val(j)
+do i=1,nghost; f(l1-i,:,:,j)=              sgn*f(l1+i,:,:,j); enddo if (relative) then
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo else
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo if (sgn<0) f(l2,:,:,j) = 0.
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo endif
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo case default
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo print*, "bc_sym_x: ", topbot, " should be 'top' or 'bot'"
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo endselect
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo endsubroutine bc_sym_x
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !***********************************************************************
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo subroutine bc_cpc_x(f,topbot,j)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  This condition gives A"+A'/R=0.
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  We compute the A1 point using a 2nd-order formula,
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  i.e. A1 = - (1-dx/2R)*A_(-1)/(1+x/2R).
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  Next, we compute A2 using a 4th-order formula,
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  and finally A3 using a 6th-order formula.
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  this can not be used in the setup for -a ..a with cpc on both sides,
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  for both sides A=0 on the boundary does for example not allow a constant Bz
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  removed this restriction in cpp
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  note that for A!=0 boundary conditions for Aphi and Az are not the same,
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  hence cpz
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  11-nov-09/axel+koen: coded
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo character (len=bclen) :: topbot
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo real, dimension (:,:,:,:) :: f
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo real, dimension (size(f,2),size(f,3)) :: extra1,extra2
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo integer :: i,j
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo real :: dxR
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo select case (topbot)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo case ('bot')
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo dxR=-dx/x(l1)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo i=-0; f(l2+i,:,:,j)=0.
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo i=-1; f(l2+i,:,:,j)=-(1.-.5*dxR)*f(l2-i,:,:,j)/(1.+.5*dxR)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo extra1=(1.+.5*dxR)*f(l2+i,:,:,j)+(1.-.5*dxR)*f(l2-i,:,:,j)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo i=-2; f(l2+i,:,:,j)=(-(1.-   dxR)*f(l2-i,:,:,j)+16.*extra1)/(1.+dxR)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo extra2=(1.+dxR)*f(l2+i,:,:,j)+(1.-dxR)*f(l2-i,:,:,j)-10.*extra1
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo i=-3; f(l2+i,:,:,j)=(-(2.-3.*dxR)*f(l2-i,:,:,j)+27.*extra2)/(2.+3.*dxR)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo case ('top')
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo dxR=-dx/x(l2)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo i=0; f(l2+i,:,:,j)=0.
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo i=1; f(l2+i,:,:,j)=-(1.-.5*dxR)*f(l2-i,:,:,j)/(1.+.5*dxR)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo extra1=(1.+.5*dxR)*f(l2+i,:,:,j)+(1.-.5*dxR)*f(l2-i,:,:,j)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo i=2; f(l2+i,:,:,j)=(-(1.-   dxR)*f(l2-i,:,:,j)+16.*extra1)/(1.+dxR)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo extra2=(1.+dxR)*f(l2+i,:,:,j)+(1.-dxR)*f(l2-i,:,:,j)-10.*extra1
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo i=3; f(l2+i,:,:,j)=(-(2.-3.*dxR)*f(l2-i,:,:,j)+27.*extra2)/(2.+3.*dxR)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo case default
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo print*, "bc_cpc_x: ", topbot, " should be 'top' or 'bot'"
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo endselect
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo endsubroutine bc_cpc_x
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !***********************************************************************
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo subroutine bc_cpz_x(f,topbot,j)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  This condition gives R(RA)"-(RA)'=0, i e perfect conductor condition
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  for Az in cylindrical coordinates.
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  We compute the A1 point using a 2nd-order formula,
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  Next, we compute A2 using a 4th-order formula,
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  and finally A3 using a 6th-order formula.
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  28-feb-11/koen: coded
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo character (len=bclen) :: topbot
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo real, dimension (:,:,:,:) :: f
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo real, dimension (size(f,2),size(f,3)) :: f1_co,f2_co
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo integer :: i,j
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo real :: dxR
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo select case (topbot)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo case ('bot')
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo dxR=dx/x(l1)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo i=-1; f(l1+i,:,:,j)=(f(l1,:,:,j)*2+f(l1-i,:,:,j)*(dxR/2-1))/(dxR/2+1)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo f1_co=(1+dxR/2)*f(l1+i,:,:,j)+(1-dxR/2)*f(l1-i,:,:,j)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo i=-2; f(l1+i,:,:,j)=(-30*f(l1,:,:,j)+16*f1_co+(dxR-1)*f(l1-i,:,:,j))/(dxR+1)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo f2_co=(1+dxR)*f(l1+i,:,:,j)+(1-dxR)*f(l1-i,:,:,j)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo i=-3; f(l1+i,:,:,j)=(490*f(l1,:,:,j)-270*f1_co+27*f2_co+(3*dxR-2)*f(l1-i,:,:,j))/(3*dxR+2)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo case ('top')
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo dxR=dx/x(l2)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo i=1; f(l2+i,:,:,j)=(f(l2,:,:,j)*(2+dxR**2)+f(l2-i,:,:,j)*(dxR/2-1))/(dxR/2+1)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo f1_co=(1+dxR/2)*f(l2+i,:,:,j)+(1-dxR/2)*f(l2-i,:,:,j)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo i=2; f(l2+i,:,:,j)=(-30*f(l2,:,:,j)+16*f1_co+(dxR-1)*f(l2-i,:,:,j))/(dxR+1)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo f2_co=(1+dxR)*f(l2+i,:,:,j)+(1-dxR)*f(l2-i,:,:,j)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo i=3; f(l2+i,:,:,j)=(490*f(l2,:,:,j)-270*f1_co+27*f2_co+(3*dxR-2)*f(l2-i,:,:,j))/(3*dxR+2)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo case default
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo print*, "bc_cpz_x: ", topbot, " should be 'top' or 'bot'"
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo endselect
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo endsubroutine bc_cpz_x
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !***********************************************************************
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo subroutine bc_cpp_x(f,topbot,j)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  This condition gives RA"+A'=0, i e perfect conductor condition
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  for Aphi in cylindrical coordinates.
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  We compute the A1 point using a 2nd-order formula,
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  i.e. A1 = - (1-dx/2R)*A_(-1)/(1+x/2R).
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  Next, we compute A2 using a 4th-order formula,
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  and finally A3 using a 6th-order formula.
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  28-feb-11/koen: coded
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo character (len=bclen) :: topbot
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo real, dimension (:,:,:,:) :: f
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo real, dimension (size(f,2),size(f,3)) :: f1_co,f2_co
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo integer :: i,j
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo real :: dxR
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo select case (topbot)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo case ('bot')
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo dxR=dx/x(l1)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo i=-1; f(l1+i,:,:,j)=(f(l1,:,:,j)*(2+dxR**2)+f(l1-i,:,:,j)*(dxR/2-1))/(dxR/2+1)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo f1_co=(1+dxR/2)*f(l1+i,:,:,j)+(1-dxR/2)*f(l1-i,:,:,j)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo i=-2; f(l1+i,:,:,j)=((-30+12*dxR**2)*f(l1,:,:,j)+16*f1_co+(dxR-1)*f(l1-i,:,:,j))/(dxR+1)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo f2_co=(1+dxR)*f(l1+i,:,:,j)+(1-dxR)*f(l1-i,:,:,j)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo i=-3; f(l1+i,:,:,j)=((490+180*dxR**2)*f(l1,:,:,j)-270*f1_co+27*f2_co+(3*dxR-2)*f(l1-i,:,:,j))/(3*dxR+2)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo case ('top')
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo dxR=dx/x(l2)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo i=1; f(l2+i,:,:,j)=(f(l2,:,:,j)*(2+dxR**2)+f(l2-i,:,:,j)*(dxR/2-1))/(dxR/2+1)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo f1_co=(1+dxR/2)*f(l2+i,:,:,j)+(1-dxR/2)*f(l2-i,:,:,j)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo i=2; f(l2+i,:,:,j)=((-30+12*dxR**2)*f(l2,:,:,j)+16*f1_co+(dxR-1)*f(l2-i,:,:,j))/(dxR+1)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo f2_co=(1+dxR)*f(l2+i,:,:,j)+(1-dxR)*f(l2-i,:,:,j)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo i=3; f(l2+i,:,:,j)=((490+180*dxR**2)*f(l2,:,:,j)-270*f1_co+27*f2_co+(3*dxR-2)*f(l2-i,:,:,j))/(3*dxR+2)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo case default
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo print*, "bc_cpp_x: ", topbot, " should be 'top' or 'bot'"
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo endselect
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo endsubroutine bc_cpp_x
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !!***********************************************************************
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !    subroutine bc_spr_x(f,topbot,j)
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !!
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !!  This condition sets values for A_phi and A_theta at the radial boundary.
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !!  It solves  A"+2A'/R=0 and A=0 at the boundary.
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !!  We compute the A1 point using a 2nd-order formula,
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !!  Next, we compute A2 using a 4th-order formula,
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !!  and finally A3 using a 6th-order formula.
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !!  Has to be used togehter with 's' for A_r.
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !!
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !!  15-may-13/joern: coded
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !!
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !      character (len=bclen) :: topbot
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !      real, dimension (:,:,:,:) :: f
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !      integer :: j
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !      real :: tmp
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !!
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !      select case (topbot)
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !!
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !      case ('bot')               ! bottom boundary
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !        tmp=x(l1)*dx_1(l1)
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !!
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !        f(l1,:,:,j)  =0
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !        f(l1-1,:,:,j)=(f(l1+1,:,:,j)*(-tmp+1))/(tmp+1)
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !        f(l1-2,:,:,j)=(f(l1-1,:,:,j)*16*(tmp-1) &
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !                      +f(l1+1,:,:,j)*16*(tmp+1) &
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !                      +f(l1+2,:,:,j)*(-tmp-2))/(tmp-2)
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !        f(l1-3,:,:,j)=(f(l1-2,:,:,j)*27*(0.5*tmp-1) &
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !                      +f(l1-1,:,:,j)*135*(-tmp+1) &
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !                      +f(l1+1,:,:,j)*135*(-tmp-1) &
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !                      +f(l1+2,:,:,j)*27*(0.5*tmp+1) &
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !                      +f(l1+3,:,:,j)*(-tmp-3))/(tmp-3)
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !!
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !      case ('top')               ! top boundary
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !        tmp=x(l2)*dx_1(l2)
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !!
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !        f(l2,:,:,j)  =0
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !        f(l2+1,:,:,j)=(f(l2-1,:,:,j)*(tmp+1))/(-tmp+1)
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !        f(l2+2,:,:,j)=(f(l2+1,:,:,j)*16*(tmp+1) &
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !                      +f(l2-1,:,:,j)*16*(tmp-1) &
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !                      +f(l2-2,:,:,j)*(tmp-2))/(-tmp-2)
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !        f(l2+3,:,:,j)=(f(l2+2,:,:,j)*27*(0.5*tmp+1) &
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !                      +f(l2+1,:,:,j)*135*(-tmp-1) &
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !                      +f(l2-1,:,:,j)*135*(-tmp+1) &
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !                      +f(l2-2,:,:,j)*27*(0.5*tmp-1) &
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !                      +f(l2-3,:,:,j)*(-tmp+3))/(tmp+3)
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !!
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !      case default
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !        print*, "bc_spr_x: ", topbot, " should be 'top' or 'bot'"
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !!
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !      endselect
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !!
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !    endsubroutine bc_spr_x
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !!***********************************************************************
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo subroutine bc_spr_x(f,topbot,j)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  This condition sets values for A_phi and A_theta at the radial boundary.
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  It solves  A"+2A'/R=0 and A=0 at the boundary (A stands for A_phi or A_theta).
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  Has to be used together with 's' for A_r.
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  09-may-16/fred: coded
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo character (len=bclen) :: topbot
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo real, dimension (:,:,:,:) :: f
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo integer :: ix,j
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo if (.not.lspherical_coords)  call fatal_error('bc_spr_x','only implemented for spherical coordinates')
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo select case (topbot)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo case ('bot')
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo f(l1,:,:,j) = 0.
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo do ix=1,nghost
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo f(l1-ix,:,:,j) = -f(l1+ix,:,:,j)*x(l1+ix)/x(l1-ix)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo enddo
+do i=1,nghost; f(l1-i,:,:,j)=2*f(l1,:,:,j)+sgn*f(l1+i,:,:,j); enddo else
+do i=1,nghost; f(l1-i,:,:,j)=              sgn*f(l1+i,:,:,j); enddo endif
+do i=1,nghost; f(l1-i,:,:,j)=              sgn*f(l1+i,:,:,j); enddo !
+
+do i=1,nghost; f(l1-i,:,:,j)=              sgn*f(l1+i,:,:,j); enddo case ('top')
+do i=1,nghost; f(l1-i,:,:,j)=              sgn*f(l1+i,:,:,j); enddo if (present(val)) f(l2,m1:m2,n1:n2,j)=val(j)
+do i=1,nghost; f(l1-i,:,:,j)=              sgn*f(l1+i,:,:,j); enddo if (relative) then
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo else
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo endif
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo case default
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo print*, "bc_symset_x: ", topbot, " should be 'top' or 'bot'"
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo endselect
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo endsubroutine bc_symset_x
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !***********************************************************************
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo subroutine bc_symderset_x(f,topbot,j,val)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  This routine works like bc_sym_y, but sets the derivative value
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !  30-may-11/axel: coded
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo character (len=bclen) :: topbot
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo real, dimension (:,:,:,:) :: f
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo real, dimension (:) :: val
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo integer :: i,j
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo select case (topbot)
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=              sgn*f(l2-i,:,:,j); enddo case ('bot')
+do i=1,nghost; f(l1-i,:,:,j)=f(l1+i,:,:,j)-dx2_bound(-i)*val(j); enddo !
+
+do i=1,nghost; f(l1-i,:,:,j)=f(l1+i,:,:,j)-dx2_bound(-i)*val(j); enddo case ('top')
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j)+dx2_bound( i)*val(j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j)+dx2_bound( i)*val(j); enddo case default
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j)+dx2_bound( i)*val(j); enddo print*, "bc_symderset_x: ", topbot, " should be 'top' or 'bot'"
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j)+dx2_bound( i)*val(j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j)+dx2_bound( i)*val(j); enddo endselect
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j)+dx2_bound( i)*val(j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j)+dx2_bound( i)*val(j); enddo endsubroutine bc_symderset_x
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j)+dx2_bound( i)*val(j); enddo !***********************************************************************
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j)+dx2_bound( i)*val(j); enddo subroutine bc_symset0der_x(f,topbot,j)
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j)+dx2_bound( i)*val(j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j)+dx2_bound( i)*val(j); enddo !  This routine works like bc_sym_x, but sets the function value to what
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j)+dx2_bound( i)*val(j); enddo !  it should be for vanishing one-sided derivative.
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j)+dx2_bound( i)*val(j); enddo !  This is the routine to be used as regularity condition on the axis.
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j)+dx2_bound( i)*val(j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j)+dx2_bound( i)*val(j); enddo !  12-nov-09/axel+koen: coded
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j)+dx2_bound( i)*val(j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j)+dx2_bound( i)*val(j); enddo character (len=bclen) :: topbot
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j)+dx2_bound( i)*val(j); enddo real, dimension (:,:,:,:) :: f
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j)+dx2_bound( i)*val(j); enddo integer :: i,j,i1=1,i2=2,i3=3,i4=4,i5=5,i6=6
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j)+dx2_bound( i)*val(j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j)+dx2_bound( i)*val(j); enddo select case (topbot)
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j)+dx2_bound( i)*val(j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j)+dx2_bound( i)*val(j); enddo !  bottom (left end of the domain)
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j)+dx2_bound( i)*val(j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j)+dx2_bound( i)*val(j); enddo case ('bot')
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j)+dx2_bound( i)*val(j); enddo f(l1,m1:m2,n1:n2,j)=(360.*f(l1+i1,m1:m2,n1:n2,j)  -450.*f(l1+i2,m1:m2,n1:n2,j)  +400.*f(l1+i3,m1:m2,n1:n2,j)  -225.*f(l1+i4,m1:m2,n1:n2,j)  +72.*f(l1+i5,m1:m2,n1:n2,j)  -10.*f(l1+i6,m1:m2,n1:n2,j))/147.
+do i=1,nghost; f(l1-i,:,:,j)=f(l1+i,:,:,j); enddo !
+
+do i=1,nghost; f(l1-i,:,:,j)=f(l1+i,:,:,j); enddo !  top (right end of the domain)
+
+do i=1,nghost; f(l1-i,:,:,j)=f(l1+i,:,:,j); enddo !
+
+do i=1,nghost; f(l1-i,:,:,j)=f(l1+i,:,:,j); enddo case ('top')
+do i=1,nghost; f(l1-i,:,:,j)=f(l1+i,:,:,j); enddo f(l2,m1:m2,n1:n2,j)=(360.*f(l2-i1,m1:m2,n1:n2,j)  -450.*f(l2-i2,m1:m2,n1:n2,j)  +400.*f(l2-i3,m1:m2,n1:n2,j)  -225.*f(l2-i4,m1:m2,n1:n2,j)  +72.*f(l2-i5,m1:m2,n1:n2,j)  -10.*f(l2-i6,m1:m2,n1:n2,j))/147.
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo case default
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo print*, "bc_symset0der_x: ", topbot, " should be 'top' or 'bot'"
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo endselect
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo endsubroutine bc_symset0der_x
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo !***********************************************************************
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo subroutine bc_slope_x(f,slope,topbot,j,rel,val)
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo ! FIXME: Documentation is missing => Axel?
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo ! WARNING: the code for "rel=.true." is currently nowhere used.
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo !  25-feb-07/axel: adapted from bc_sym_x
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo character (len=bclen) :: topbot
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo real, dimension (:,:,:,:) :: f
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo real, dimension (:), optional :: val
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo real, dimension (:) :: slope
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo integer :: i,j
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo logical, optional :: rel
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo logical :: relative
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo if (present(rel)) then; relative=rel; else; relative=.false.; endif
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo select case (topbot)
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo case ('bot')
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo if (present(val)) f(l1,m1:m2,n1:n2,j)=val(j)
+do i=1,nghost; f(l2+i,:,:,j)=f(l2-i,:,:,j); enddo if (relative) then
+do i=1,nghost; f(:,m1-i,:,j)=2*f(:,m1,:,j)+sgn*f(:,m1+i,:,j); enddo else
+do i=1,nghost; f(:,m1-i,:,j)=              sgn*f(:,m1+i,:,j); enddo if (sgn<0) f(:,m1,:,j) = 0.
+do i=1,nghost; f(:,m1-i,:,j)=              sgn*f(:,m1+i,:,j); enddo endif
+do i=1,nghost; f(:,m1-i,:,j)=              sgn*f(:,m1+i,:,j); enddo !
+
+do i=1,nghost; f(:,m1-i,:,j)=              sgn*f(:,m1+i,:,j); enddo case ('top')
+do i=1,nghost; f(:,m1-i,:,j)=              sgn*f(:,m1+i,:,j); enddo if (present(val)) f(:,m2,:,j)=val(j)
+do i=1,nghost; f(:,m1-i,:,j)=              sgn*f(:,m1+i,:,j); enddo if (present(val2)) f(:,m2,:,j)=f(:,m2,:,j)+val2(j)*spread(x**2,2,size(f,3))
+do i=1,nghost; f(:,m1-i,:,j)=              sgn*f(:,m1+i,:,j); enddo if (present(val4)) f(:,m2,:,j)=f(:,m2,:,j)+val4(j)*spread(x**4,2,size(f,3))
+do i=1,nghost; f(:,m1-i,:,j)=              sgn*f(:,m1+i,:,j); enddo if (relative) then
+do i=1,nghost; f(:,m2+i,:,j)=2*f(:,m2,:,j)+sgn*f(:,m2-i,:,j); enddo else
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo if (sgn<0) f(:,m2,:,j) = 0.
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo endif
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo case default
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo print*, "bc_sym_y: ", topbot, " should be 'top' or 'bot'"
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo endselect
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo endsubroutine bc_sym_y
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo !***********************************************************************
+
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo subroutine bc_stratified_y(f,topbot,j)
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo !  Boundary condition that maintains hydrostatic equilibrium in the meriodional direction.
+
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo !  This boundary is coded only for spherical coordinates.
+
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo !  06-oct-13/wlad: coded
+
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo use EquationOfState, only: cs0
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo character (len=bclen) :: topbot
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo real, dimension (:,:,:,:) :: f
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo real, dimension(size(f,1)) :: rad,za,zg,H,lnrho
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo integer :: i,in,j
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo if (.not.(j==irho.or.j==ilnrho))  call fatal_error("bc_stratified_y","This boundary condition is specific for density")
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo if (.not.lspherical_coords)  call fatal_error("bc_stratified_y","This boudary condition is for spherical coordinates only")
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo rad=x
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo select case (topbot)
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo case ('bot')
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo za=rad*costh(m1)
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo H=cs0*rad
+do i=1,nghost; f(:,m1-i,:,j)=2*f(:,m1,:,j)+sgn*f(:,m1+i,:,j); enddo else
+do i=1,nghost; f(:,m1-i,:,j)=              sgn*f(:,m1+i,:,j); enddo endif
+do i=1,nghost; f(:,m1-i,:,j)=              sgn*f(:,m1+i,:,j); enddo !
+
+do i=1,nghost; f(:,m1-i,:,j)=              sgn*f(:,m1+i,:,j); enddo case ('top')
+do i=1,nghost; f(:,m1-i,:,j)=              sgn*f(:,m1+i,:,j); enddo if (present(val)) f(l1:l2,m2,n1:n2,j)=val(j)
+do i=1,nghost; f(:,m1-i,:,j)=              sgn*f(:,m1+i,:,j); enddo if (relative) then
+do i=1,nghost; f(:,m2+i,:,j)=2*f(:,m2,:,j)+sgn*f(:,m2-i,:,j); enddo else
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo endif
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo case default
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo print*, "bc_symset_y: ", topbot, " should be 'top' or 'bot'"
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo endselect
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo endsubroutine bc_symset_y
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo !***********************************************************************
+
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo subroutine bc_symderset_y(f,topbot,j,val)
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo !  This routine works like bc_sym_y, but sets the derivative value
+
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo !  30-may-11/axel: coded
+
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo character (len=bclen) :: topbot
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo real, dimension (:,:,:,:) :: f
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo real, dimension (:) :: val
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo integer :: i,j
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo select case (topbot)
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=              sgn*f(:,m2-i,:,j); enddo case ('bot')
+do i=1,nghost; f(:,m1-i,:,j)=f(:,m1+i,:,j)-dy2_bound(-i)*val(j); enddo !
+
+do i=1,nghost; f(:,m1-i,:,j)=f(:,m1+i,:,j)-dy2_bound(-i)*val(j); enddo case ('top')
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*val(j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*val(j); enddo case default
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*val(j); enddo print*, "bc_symderset_y: ", topbot, " should be 'top' or 'bot'"
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*val(j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*val(j); enddo endselect
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*val(j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*val(j); enddo endsubroutine bc_symderset_y
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*val(j); enddo !***********************************************************************
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*val(j); enddo subroutine bc_csymderset_y(f,topbot,j,val)
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*val(j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*val(j); enddo !  This routine works like bc_sym_y, but sets the derivative value
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*val(j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*val(j); enddo !  30-may-11/axel: coded
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*val(j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*val(j); enddo character (len=bclen) :: topbot
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*val(j); enddo real, dimension (:,:,:,:) :: f
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*val(j); enddo real, dimension (size(f,1),size(f,3)) :: derval
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*val(j); enddo real, dimension (:) :: val
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*val(j); enddo integer :: i,j
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*val(j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*val(j); enddo derval=spread((xyz1(1)-x)*val(j),2,size(f,3))
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*val(j); enddo select case (topbot)
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*val(j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*val(j); enddo case ('bot')
+do i=1,nghost; f(:,m1-i,:,j)=f(:,m1+i,:,j)-dy2_bound(-i)*derval; enddo !
+
+do i=1,nghost; f(:,m1-i,:,j)=f(:,m1+i,:,j)-dy2_bound(-i)*derval; enddo case ('top')
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*derval; enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*derval; enddo case default
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*derval; enddo print*, "bc_csymderset_y: ", topbot, " should be 'top' or 'bot'"
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*derval; enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*derval; enddo endselect
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*derval; enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*derval; enddo endsubroutine bc_csymderset_y
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*derval; enddo !***********************************************************************
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*derval; enddo subroutine bc_symset0der_y(f,topbot,j)
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*derval; enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*derval; enddo !  This routine works like bc_sym_y, but sets the function value to what
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*derval; enddo !  it should be for vanishing one-sided derivative.
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*derval; enddo !  This is the routine to be used as regularity condition on the axis.
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*derval; enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*derval; enddo !  19-nov-09/axel: adapted from bc_symset0der_x
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*derval; enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*derval; enddo character (len=bclen) :: topbot
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*derval; enddo real, dimension (:,:,:,:) :: f
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*derval; enddo integer :: i,j,i1=1,i2=2,i3=3,i4=4,i5=5,i6=6
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*derval; enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*derval; enddo select case (topbot)
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*derval; enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*derval; enddo !  bottom (left end of the domain)
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*derval; enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*derval; enddo case ('bot')
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j)+dy2_bound(i)*derval; enddo f(:,m1,:,j)=(360.*f(:,m1+i1,:,j)  -450.*f(:,m1+i2,:,j)  +400.*f(:,m1+i3,:,j)  -225.*f(:,m1+i4,:,j)  +72.*f(:,m1+i5,:,j)  -10.*f(:,m1+i6,:,j))/147.
+do i=1,nghost; f(:,m1-i,:,j)=f(:,m1+i,:,j); enddo !
+
+do i=1,nghost; f(:,m1-i,:,j)=f(:,m1+i,:,j); enddo !  top (right end of the domain)
+
+do i=1,nghost; f(:,m1-i,:,j)=f(:,m1+i,:,j); enddo !
+
+do i=1,nghost; f(:,m1-i,:,j)=f(:,m1+i,:,j); enddo case ('top')
+do i=1,nghost; f(:,m1-i,:,j)=f(:,m1+i,:,j); enddo f(:,m2,:,j)=(360.*f(:,m2-i1,:,j)  -450.*f(:,m2-i2,:,j)  +400.*f(:,m2-i3,:,j)  -225.*f(:,m2-i4,:,j)  +72.*f(:,m2-i5,:,j)  -10.*f(:,m2-i6,:,j))/147.
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo case default
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo print*, "bc_symset0der_y: ", topbot, " should be 'top' or 'bot'"
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo endselect
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo endsubroutine bc_symset0der_y
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !***********************************************************************
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo subroutine bc_spt_y(f,topbot,j)
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !  This condition sets values for A_r or/and A_phi at the theta boundary.
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !  It solves A"+\cot(theta)A'=0 and A=0 at the boundary.
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !  We compute the A1 point using a 2nd-order formula,
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !  Next, we compute A2 using a 4th-order formula,
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !  and finally A3 using a 6th-order formula.
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !  is has to be used togehter with 'sse' with 'fbcy_top' or 'fbcy_bot'
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !  where A_theta=0
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !  23-may-13/joern: coded
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo character (len=bclen) :: topbot
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo real, dimension (:,:,:,:) :: f
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo real :: tmp
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo integer :: j
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo select case (topbot)
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo case ('bot')
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo tmp=cotth(m1)/dy_1(m1)
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo f(:,m1,:,j)  =0
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo f(:,m1-1,:,j)=(f(:,m1+1,:,j)*(-1-0.5*tmp))/(1-0.5*tmp)
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo f(:,m1-2,:,j)=(f(:,m1-1,:,j)*8*(2-tmp)  +f(:,m1+1,:,j)*8*(2+tmp)  +f(:,m1+2,:,j)*(-1-tmp))/(1-tmp)
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo f(:,m1-3,:,j)=(f(:,m1-2,:,j)*13.5*(1-tmp)  +f(:,m1-1,:,j)*135*(-1+0.5*tmp)  +f(:,m1+1,:,j)*135*(-1-0.5*tmp)  +f(:,m1+2,:,j)*13.5*(1+tmp)  +f(:,m1+3,:,j)*(-1-1.5*tmp))/(1-1.5*tmp)
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo case ('top')
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo tmp=cotth(m2)/dy_1(m2)
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo f(:,m2,:,j)  =0
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo f(:,m2+1,:,j)=(f(:,m2-1,:,j)*(-1-0.5*tmp))/(1-0.5*tmp)
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo f(:,m2+2,:,j)=(f(:,m2+1,:,j)*8*(2-tmp)  +f(:,m2+1,:,j)*8*(2+tmp)  +f(:,m2+2,:,j)*(-1-tmp))/(1-tmp)
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo f(:,m2+3,:,j)=(f(:,m2+2,:,j)*13.5*(1-tmp)  +f(:,m2+1,:,j)*135*(-1+0.5*tmp)  +f(:,m2-1,:,j)*135*(-1-0.5*tmp)  +f(:,m2-2,:,j)*13.5*(1+tmp)  +f(:,m2-3,:,j)*(-1-1.5*tmp))/(1-1.5*tmp)
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo case default
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo print*, "bc_spt_y: ", topbot, " should be 'top' or 'bot'"
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo endselect
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo endsubroutine bc_spt_y
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !***********************************************************************
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo subroutine bc_sym_z(f,sgn,topbot,j,rel,val,val2,val4)
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !  Symmetry boundary conditions.
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !  (f,-1,topbot,j)            --> antisymmetry             (f  =0)
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !  (f,+1,topbot,j)            --> symmetry                 (f' =0)
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !  (f,-1,topbot,j,REL=.true.) --> generalized antisymmetry (f''=0)
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !  Don't combine rel=T and sgn=1, that wouldn't make much sense.
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !  11-nov-02/wolf: coded
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !  10-apr-05/axel: added val argument
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo character (len=bclen) :: topbot
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo real, dimension (:,:,:,:) :: f
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo real, dimension (:), optional :: val,val2,val4
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo integer :: sgn,i,j
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo logical, optional :: rel
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo logical :: relative
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo if (present(rel)) then; relative=rel; else; relative=.false.; endif
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo select case (topbot)
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo case ('bot')
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo if (present(val)) f(:,:,n1,j)=val(j)
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo if (present(val2)) f(:,:,n1,j)=f(:,:,n1,j)+val2(j)*spread(x**2,2,size(f,2))
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo if (present(val4)) f(:,:,n1,j)=f(:,:,n1,j)+val4(j)*spread(x**4,2,size(f,2))
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2-i,:,j); enddo if (relative) then
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); if (.false..and.j==3) then
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); !if (i==1) print*, f(4,4:9,n1,j)
+
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); !if (i==1) print*, f(4,4:23,n1-1,j)
+
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); if (any(f(4:131,4:131,n1-i,j)/=f(4:131,4:131,n1+i,j)))  print'(a,i2,1x,e20.12)','boundcond ghost:i=', i, maxval(abs(f(4:131,4:131,n1-i,j)-f(4:131,4:131,n1+i,j)))
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); if (any(f(4:131,4:131,n1-i,j)/=f(4:131,4:131,n1,j)))  print'(a,i2,1x,e20.12)','boundcond bound-:i=', i, maxval(abs(f(4:131,4:131,n1-i,j)-f(4:131,4:131,n1,j)))
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); if (any(f(4:131,4:131,n1+i,j)/=f(4:131,4:131,n1,j)))  print'(a,i2,1x,e20.12)','boundcond bound+:i=', i, maxval(abs(f(4:131,4:131,n1+i,j)-f(4:131,4:131,n1,j)))
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); endif
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); enddo
+do i=1,nghost; f(:,:,n1-i,j)=              sgn*f(:,:,n1+i,j); enddo if (sgn<0) f(:,:,n1,j) = 0.
+do i=1,nghost; f(:,:,n1-i,j)=              sgn*f(:,:,n1+i,j); enddo endif
+do i=1,nghost; f(:,:,n1-i,j)=              sgn*f(:,:,n1+i,j); enddo !
+
+do i=1,nghost; f(:,:,n1-i,j)=              sgn*f(:,:,n1+i,j); enddo case ('top')
+do i=1,nghost; f(:,:,n1-i,j)=              sgn*f(:,:,n1+i,j); enddo if (present(val)) f(:,:,n2,j)=val(j)
+do i=1,nghost; f(:,:,n1-i,j)=              sgn*f(:,:,n1+i,j); enddo if (present(val2)) f(:,:,n2,j)=f(:,:,n2,j)+val2(j)*spread(x**2,2,size(f,2))
+do i=1,nghost; f(:,:,n1-i,j)=              sgn*f(:,:,n1+i,j); enddo if (present(val4)) f(:,:,n2,j)=f(:,:,n2,j)+val4(j)*spread(x**4,2,size(f,2))
+do i=1,nghost; f(:,:,n1-i,j)=              sgn*f(:,:,n1+i,j); enddo if (relative) then
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2,j)+(f(:,:,n2,j)+sgn*f(:,:,n2-i,j)); enddo
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo if (sgn<0) f(:,:,n2,j) = 0.
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo endif
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo case default
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo print*, "bc_sym_z: ", topbot, " should be 'top' or 'bot'"
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo endselect
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo endsubroutine bc_sym_z
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !***********************************************************************
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo subroutine bc_sf_x(f,sgn,topbot,j)
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !  Symmetric/antisymmetric boundary conditions with respect to the interface.
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !  i.e. where the reflection plane is between the last mesh point and first
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !  ghost point
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !    sgn = +1  -->  symmetric
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !    sgn = -1  -->  antisymmetric
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !  12-nov-16/ccyang: coded
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo real, dimension(:,:,:,:), intent(inout) :: f
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo integer, intent(in) :: sgn, j
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo character(3), intent(in) :: topbot
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo integer :: i
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo select case(topbot)
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo case('bot')
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo forall (i=1:nghost) f(l1-i,:,:,j) = real(sgn) * f(l1+i-1,:,:,j)
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo case('top')
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo forall (i=1:nghost) f(l2+i,:,:,j) = real(sgn) * f(l2-i+1,:,:,j)
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo case default
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo print *, 'bc_sf_x: unknown input; topbot = ', topbot
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo endselect
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo endsubroutine bc_sf_x
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !***********************************************************************
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo subroutine bc_sf_y(f,sgn,topbot,j)
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !  Symmetric/antisymmetric boundary conditions with respect to the interface.
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !  i.e. where the reflection plane is between the last mesh point and first
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !  ghost point
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !    sgn = +1  -->  symmetric
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !    sgn = -1  -->  antisymmetric
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !  12-nov-16/ccyang: coded
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo real, dimension(:,:,:,:), intent(inout) :: f
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo integer, intent(in) :: sgn, j
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo character(3), intent(in) :: topbot
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo integer :: i
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo select case(topbot)
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo case('bot')
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo forall (i=1:nghost) f(:,m1-i,:,j) = real(sgn) * f(:,m1+i-1,:,j)
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo case('top')
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo forall (i=1:nghost) f(:,m2+i,:,j) = real(sgn) * f(:,m2-i+1,:,j)
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo case default
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo print *, 'bc_sf_y: unknown input; topbot = ', topbot
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo endselect
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo endsubroutine bc_sf_y
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !***********************************************************************
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo subroutine bc_sf_z(f,sgn,topbot,j)
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !  Symmetric/antisymmetric boundary conditions with respect to the interface.
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !  i.e. where the reflection plane is between the last mesh point and first
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !  ghost point
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !    sgn = +1  -->  symmetric
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !    sgn = -1  -->  antisymmetric
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !  14-feb-09/ccyang: coded
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo real, dimension(:,:,:,:), intent(inout) :: f
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo integer, intent(in) :: sgn, j
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo character(3), intent(in) :: topbot
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo integer :: i
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo select case(topbot)
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo case('bot')
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo forall (i=1:nghost) f(:,:,n1-i,j) = real(sgn) * f(:,:,n1+i-1,j)
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo case('top')
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo forall (i=1:nghost) f(:,:,n2+i,j) = real(sgn) * f(:,:,n2-i+1,j)
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo case default
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo print *, 'bc_sf_z: unknown input; topbot = ', topbot
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo endselect
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo endsubroutine bc_sf_z
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !***********************************************************************
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo subroutine bc_symset0der_z(f,topbot,j)
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !  This routine works like bc_sym_z, but sets the function value to what
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !  it should be for vanishing one-sided derivative.
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !  This is the routine to be used as regularity condition on the axis.
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !  22-nov-09/axel: adapted from bc_symset0der_y
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo character (len=bclen) :: topbot
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo real, dimension (:,:,:,:) :: f
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo integer :: i,j,i1=1,i2=2,i3=3,i4=4,i5=5,i6=6
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo select case (topbot)
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !  bottom (left end of the domain)
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo case ('bot')
+do i=1,nghost; f(:,:,n2+i,j)=              sgn*f(:,:,n2-i,j); enddo f(:,:,n1,j)=(360.*f(:,:,n1+i1,j)  -450.*f(:,:,n1+i2,j)  +400.*f(:,:,n1+i3,j)  -225.*f(:,:,n1+i4,j)  +72.*f(:,:,n1+i5,j)  -10.*f(:,:,n1+i6,j))/147.
+do i=1,nghost; f(:,:,n1-i,j)=f(:,:,n1+i,j); enddo !
+
+do i=1,nghost; f(:,:,n1-i,j)=f(:,:,n1+i,j); enddo !  top (right end of the domain)
+
+do i=1,nghost; f(:,:,n1-i,j)=f(:,:,n1+i,j); enddo !
+
+do i=1,nghost; f(:,:,n1-i,j)=f(:,:,n1+i,j); enddo case ('top')
+do i=1,nghost; f(:,:,n1-i,j)=f(:,:,n1+i,j); enddo f(:,:,n2,j)=(360.*f(:,:,n2-i1,j)  -450.*f(:,:,n2-i2,j)  +400.*f(:,:,n2-i3,j)  -225.*f(:,:,n2-i4,j)  +72.*f(:,:,n2-i5,j)  -10.*f(:,:,n2-i6,j))/147.
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo case default
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo print*, "bc_symset0der_z: ", topbot, " should be 'top' or 'bot'"
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo endselect
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo endsubroutine bc_symset0der_z
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !***********************************************************************
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo subroutine bc_set_der_x(f,topbot,j,val)
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !  Sets the derivative on the boundary to a given value.
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !  14-may-2006/tobi: coded
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo character (len=bclen), intent (in) :: topbot
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo real, dimension (:,:,:,:), intent (inout) :: f
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo integer, intent (in) :: j
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo real, intent (in) :: val
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo integer :: i
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo select case (topbot)
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo case ('bot')
+do i=1,nghost; f(l1-i,:,:,j) = f(l1+i,:,:,j) - dx2_bound(-i)*val; enddo !
+
+do i=1,nghost; f(l1-i,:,:,j) = f(l1+i,:,:,j) - dx2_bound(-i)*val; enddo case ('top')
+do i=1,nghost; f(l2+i,:,:,j) = f(l2-i,:,:,j) + dx2_bound(i)*val; enddo !
+
+do i=1,nghost; f(l2+i,:,:,j) = f(l2-i,:,:,j) + dx2_bound(i)*val; enddo case default
+do i=1,nghost; f(l2+i,:,:,j) = f(l2-i,:,:,j) + dx2_bound(i)*val; enddo call warning('bc_set_der_x',topbot//" should be 'top' or 'bot'")
+do i=1,nghost; f(l2+i,:,:,j) = f(l2-i,:,:,j) + dx2_bound(i)*val; enddo !
+
+do i=1,nghost; f(l2+i,:,:,j) = f(l2-i,:,:,j) + dx2_bound(i)*val; enddo endselect
+do i=1,nghost; f(l2+i,:,:,j) = f(l2-i,:,:,j) + dx2_bound(i)*val; enddo !
+
+do i=1,nghost; f(l2+i,:,:,j) = f(l2-i,:,:,j) + dx2_bound(i)*val; enddo endsubroutine bc_set_der_x
+do i=1,nghost; f(l2+i,:,:,j) = f(l2-i,:,:,j) + dx2_bound(i)*val; enddo !***********************************************************************
+
+do i=1,nghost; f(l2+i,:,:,j) = f(l2-i,:,:,j) + dx2_bound(i)*val; enddo subroutine bc_fix_x(f,topbot,j,val)
+do i=1,nghost; f(l2+i,:,:,j) = f(l2-i,:,:,j) + dx2_bound(i)*val; enddo !
+
+do i=1,nghost; f(l2+i,:,:,j) = f(l2-i,:,:,j) + dx2_bound(i)*val; enddo !  Sets the value of f, particularly:
+
+do i=1,nghost; f(l2+i,:,:,j) = f(l2-i,:,:,j) + dx2_bound(i)*val; enddo !    A_{\alpha}= <val>
+
+do i=1,nghost; f(l2+i,:,:,j) = f(l2-i,:,:,j) + dx2_bound(i)*val; enddo !  on the boundary to a given value
+
+do i=1,nghost; f(l2+i,:,:,j) = f(l2-i,:,:,j) + dx2_bound(i)*val; enddo !
+
+do i=1,nghost; f(l2+i,:,:,j) = f(l2-i,:,:,j) + dx2_bound(i)*val; enddo !  27-apr-2007/dhruba: coded
+
+do i=1,nghost; f(l2+i,:,:,j) = f(l2-i,:,:,j) + dx2_bound(i)*val; enddo !
+
+do i=1,nghost; f(l2+i,:,:,j) = f(l2-i,:,:,j) + dx2_bound(i)*val; enddo character (len=bclen), intent (in) :: topbot
+do i=1,nghost; f(l2+i,:,:,j) = f(l2-i,:,:,j) + dx2_bound(i)*val; enddo real, dimension (:,:,:,:), intent (inout) :: f
+do i=1,nghost; f(l2+i,:,:,j) = f(l2-i,:,:,j) + dx2_bound(i)*val; enddo integer, intent (in) :: j
+do i=1,nghost; f(l2+i,:,:,j) = f(l2-i,:,:,j) + dx2_bound(i)*val; enddo !
+
+do i=1,nghost; f(l2+i,:,:,j) = f(l2-i,:,:,j) + dx2_bound(i)*val; enddo real, intent (in) :: val
+do i=1,nghost; f(l2+i,:,:,j) = f(l2-i,:,:,j) + dx2_bound(i)*val; enddo integer :: i
+do i=1,nghost; f(l2+i,:,:,j) = f(l2-i,:,:,j) + dx2_bound(i)*val; enddo !
+
+do i=1,nghost; f(l2+i,:,:,j) = f(l2-i,:,:,j) + dx2_bound(i)*val; enddo select case (topbot)
+do i=1,nghost; f(l2+i,:,:,j) = f(l2-i,:,:,j) + dx2_bound(i)*val; enddo !
+
+do i=1,nghost; f(l2+i,:,:,j) = f(l2-i,:,:,j) + dx2_bound(i)*val; enddo case ('bot')
+do i=1,nghost; f(l1-i,:,:,j)=val; enddo case ('top')
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo case default
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo call warning('bc_fix_x',topbot//" should be 'top' or 'bot'")
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo endselect
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo endsubroutine bc_fix_x
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo !***********************************************************************
+
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo subroutine bc_file_x(f,topbot,j)
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo !  Sets the value of f from a file
+
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo !   9-jan-2008/axel+nils+natalia: coded
+
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo character (len=bclen), intent (in) :: topbot
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo real, dimension (:,:,:,:), intent (inout) :: f
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo integer, intent (in) :: j
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo real, dimension (:,:,:,:), allocatable :: bc_file_x_array
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo integer :: i,lbc0,lbc1,lbc2,stat,iszx,io_code
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo real :: lbc,frac
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo logical, save :: lbc_file_x=.true.
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo if (ldownsampling) then
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo call warning('bc_file_x','Not available for downsampling')
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo return
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo endif
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo !  Allocate memory for large array.
+
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo allocate(bc_file_x_array(mx,my,mz,mvar),stat=stat)
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo if (stat>0) call fatal_error('bc_file_x',  'Could not allocate memory for bc_file_x_array')
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo if (lbc_file_x) then
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo if (lroot) then
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo print*,'opening bc_file_x.dat'
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo open(9,file=trim(directory_dist)//'/bc_file_x.dat',form='unformatted')
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo read(9,iostat=io_code) bc_file_x_array
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo if (io_code < 0) then
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo if (lroot) print*,'need file with dimension: ',mx,my,mz,mvar
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo deallocate(bc_file_x_array)
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo call stop_it("boundary file bc_file_x.dat has incorrect size")
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo endif
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo close(9)
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo endif
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo lbc_file_x=.false.
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo endif
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo iszx=size(f,1)
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo select case (topbot)
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo !  x - Udrift_bc*t = dx * (ix - Udrift_bc*t/dx)
+
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo case ('bot')
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo lbc=Udrift_bc*t*dx_1(1)+1.
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo lbc0=int(lbc)
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo frac=mod(lbc,real(lbc0))
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo lbc1=iszx+mod(-lbc0,iszx)
+do i=1,nghost; f(l2+i,:,:,j)=val; enddo lbc2=iszx+mod(-lbc0-1,iszx)
+do i=1,nghost; f(:,m1-i,:,j) = f(:,m1+i,:,j) - dy2_bound(-i)*val; enddo !
+
+do i=1,nghost; f(:,m1-i,:,j) = f(:,m1+i,:,j) - dy2_bound(-i)*val; enddo case ('top')
+do i=1,nghost; f(:,m2+i,:,j) = f(:,m2-i,:,j) + dy2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,m2+i,:,j) = f(:,m2-i,:,j) + dy2_bound(i)*val; enddo case default
+do i=1,nghost; f(:,m2+i,:,j) = f(:,m2-i,:,j) + dy2_bound(i)*val; enddo call warning('bc_set_der_y',topbot//" should be 'top' or 'bot'")
+do i=1,nghost; f(:,m2+i,:,j) = f(:,m2-i,:,j) + dy2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,m2+i,:,j) = f(:,m2-i,:,j) + dy2_bound(i)*val; enddo endselect
+do i=1,nghost; f(:,m2+i,:,j) = f(:,m2-i,:,j) + dy2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,m2+i,:,j) = f(:,m2-i,:,j) + dy2_bound(i)*val; enddo endsubroutine bc_set_der_y
+do i=1,nghost; f(:,m2+i,:,j) = f(:,m2-i,:,j) + dy2_bound(i)*val; enddo !***********************************************************************
+
+do i=1,nghost; f(:,m2+i,:,j) = f(:,m2-i,:,j) + dy2_bound(i)*val; enddo subroutine bc_set_der_z(f,topbot,j,val)
+do i=1,nghost; f(:,m2+i,:,j) = f(:,m2-i,:,j) + dy2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,m2+i,:,j) = f(:,m2-i,:,j) + dy2_bound(i)*val; enddo !  Sets the derivative on the boundary to a given value.
+
+do i=1,nghost; f(:,m2+i,:,j) = f(:,m2-i,:,j) + dy2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,m2+i,:,j) = f(:,m2-i,:,j) + dy2_bound(i)*val; enddo !  14-may-2006/tobi: coded
+
+do i=1,nghost; f(:,m2+i,:,j) = f(:,m2-i,:,j) + dy2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,m2+i,:,j) = f(:,m2-i,:,j) + dy2_bound(i)*val; enddo character (len=bclen), intent (in) :: topbot
+do i=1,nghost; f(:,m2+i,:,j) = f(:,m2-i,:,j) + dy2_bound(i)*val; enddo real, dimension (:,:,:,:), intent (inout) :: f
+do i=1,nghost; f(:,m2+i,:,j) = f(:,m2-i,:,j) + dy2_bound(i)*val; enddo integer, intent (in) :: j
+do i=1,nghost; f(:,m2+i,:,j) = f(:,m2-i,:,j) + dy2_bound(i)*val; enddo real, intent (in) :: val
+do i=1,nghost; f(:,m2+i,:,j) = f(:,m2-i,:,j) + dy2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,m2+i,:,j) = f(:,m2-i,:,j) + dy2_bound(i)*val; enddo integer :: i
+do i=1,nghost; f(:,m2+i,:,j) = f(:,m2-i,:,j) + dy2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,m2+i,:,j) = f(:,m2-i,:,j) + dy2_bound(i)*val; enddo select case (topbot)
+do i=1,nghost; f(:,m2+i,:,j) = f(:,m2-i,:,j) + dy2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,m2+i,:,j) = f(:,m2-i,:,j) + dy2_bound(i)*val; enddo case ('bot')
+do i=1,nghost; f(:,:,n1-i,j) = f(:,:,n1+i,j) - dz2_bound(-i)*val; enddo !
+
+do i=1,nghost; f(:,:,n1-i,j) = f(:,:,n1+i,j) - dz2_bound(-i)*val; enddo case ('top')
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo case default
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo call warning('bc_set_der_z',topbot//" should be 'top' or 'bot'")
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo endselect
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo endsubroutine bc_set_der_z
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo !***********************************************************************
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo subroutine bc_set_div_z(f,topbot,j,val)
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo !  Sets the derivative on the boundary to a given value
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo !  17-may-2010/bing: coded
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo character (len=bclen), intent (in) :: topbot
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo real, dimension (:,:,:,:), intent (inout) :: f
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo real, dimension (l2-l1+1,m2-m1+1) :: fac,duz_dz
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo real, intent(in) :: val
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo integer, intent (in) :: j
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo integer :: iref=-1,pos,nxl,nyl
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo if (j/=iuz) call fatal_error_local('bc_set_div_z','please set div for uz only')
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo nxl=l2-l1+1; nyl=m2-m1+1
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo select case (topbot)
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo case ('bot')
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo iref = n1
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo case ('top')
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo iref = n2
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo case default
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo call warning('bc_set_der_x',topbot//" should be 'top' or 'bot'")
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo endselect
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo ! take the x derivative of ux
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo if (nxgrid/=1) then
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo fac=(1./60)*spread(dx_1(l1:l2),2,nyl)
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo duz_dz= fac*(+45.0*(f(l1+1:l2+1,m1:m2,iref,iux)-f(l1-1:l2-1,m1:m2,iref,iux))  - 9.0*(f(l1+2:l2+2,m1:m2,iref,iux)-f(l1-2:l2-2,m1:m2,iref,iux))  +     (f(l1+3:l2+3,m1:m2,iref,iux)-f(l1-3:l2-3,m1:m2,iref,iux)))
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo else
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo if (ip<=5) print*, 'bc_set_div_z: Degenerate case in x-direction'
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo endif
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo ! take the y derivative of uy and add to dux/dx
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo if (nygrid/=1) then
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo fac=(1./60)*spread(dy_1(m1:m2),1,nxl)
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo duz_dz=duz_dz + fac*(+45.0*(f(l1:l2,m1+1:m2+1,iref,iuy)-f(l1:l2,m1-1:m2-1,iref,iuy))  - 9.0*(f(l1:l2,m1+2:m2+2,iref,iuy)-f(l1:l2,m1-2:m2-2,iref,iuy))  +     (f(l1:l2,m1+3:m2+3,iref,iuy)-f(l1:l2,m1-3:m2-3,iref,iuy)))
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo else
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo if (ip<=5) print*, 'bc_set_div_z: Degenerate case in y-direction'
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo endif
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo ! add given number to set div(u)=val; default val=0
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo ! duz/dz = val - dux/dx - duy/dy
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo duz_dz = val - duz_dz
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo ! set the derivative of uz at the boundary
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo select case (topbot)
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo !
+
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo case ('bot')
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo do pos=1,nghost
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo f(l1:l2,m1:m2,n1-pos,j) = f(l1:l2,m1:m2,n1+pos,j) - dz2_bound(-pos)*duz_dz
+do i=1,nghost; f(:,:,n2+i,j) = f(:,:,n2-i,j) + dz2_bound(i)*val; enddo enddo
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); enddo !
+
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); enddo !  upper boundary
+
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); enddo !
+
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); enddo case ('top')
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); enddo select case (force_upper_bound)
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); enddo case ('uxy_sin-cos')
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); enddo call bc_force_uxy_sin_cos(f,n2,j)
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); enddo case ('axy_sin-cos')
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); enddo call bc_force_axy_sin_cos(f,n2,j)
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); enddo case ('uxy_convection')
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); enddo call uu_driver(f)
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); enddo case ('cT')
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); enddo f(:,:,n2,j) = log(cs2top/gamma_m1)
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); enddo case ('vel_time')
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); enddo call bc_force_ux_time(f,n2,j)
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); enddo case default
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); enddo if (lroot) print*, "No such value for force_upper_bound: <",  trim(force_upper_bound),">"
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); enddo call stop_it("")
+do i=1,nghost; f(:,:,n1-i,j)=2*f(:,:,n1,j)+sgn*f(:,:,n1+i,j); enddo endselect
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo case default
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo print*,"bc_force_z: invalid argument topbot=",topbot
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo endselect
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo endsubroutine bc_force_z
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo !***********************************************************************
+
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo subroutine bc_force_x(f, sgn, topbot, j)
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo !  Force values of j-th variable on x-boundaries topbot.
+
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo !  09-mar-2007/dintrans: coded
+
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo use SharedVariables, only : get_shared_variable
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo character (len=bclen) :: topbot
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo real, dimension (:,:,:,:) :: f
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo real, pointer :: ampl_forc, k_forc, w_forc
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo integer :: sgn, i, j
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo select case (topbot)
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo !  lower boundary
+
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo case ('bot')
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo select case (force_lower_bound)
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo case ('vel_time')
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo if (j /= iuy) call stop_it("BC_FORCE_X: only valid for uy")
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo call get_shared_variable('ampl_forc', ampl_forc, caller='bc_force_x')
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo call get_shared_variable('k_forc', k_forc)
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo call get_shared_variable('w_forc', w_forc)
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo if (headtt) print*, 'BC_FORCE_X: ampl_forc, k_forc, w_forc=', ampl_forc, k_forc, w_forc
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo f(l1,:,:,iuy) = spread(ampl_forc*sin(k_forc*y)*cos(w_forc*t), 2, size(f,3))
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo case default
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo if (lroot) print*, "No such value for force_lower_bound: <",  trim(force_lower_bound),">"
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo call stop_it("")
+do i=1,nghost; f(:,:,n2+i,j)=2*f(:,:,n2,j)+sgn*f(:,:,n2-i,j); enddo endselect
+do i=1,nghost; f(l1-i,:,:,j)=2*f(l1,:,:,j)+sgn*f(l1+i,:,:,j); enddo !
+
+do i=1,nghost; f(l1-i,:,:,j)=2*f(l1,:,:,j)+sgn*f(l1+i,:,:,j); enddo !  upper boundary
+
+do i=1,nghost; f(l1-i,:,:,j)=2*f(l1,:,:,j)+sgn*f(l1+i,:,:,j); enddo !
+
+do i=1,nghost; f(l1-i,:,:,j)=2*f(l1,:,:,j)+sgn*f(l1+i,:,:,j); enddo case ('top')
+do i=1,nghost; f(l1-i,:,:,j)=2*f(l1,:,:,j)+sgn*f(l1+i,:,:,j); enddo select case (force_upper_bound)
+do i=1,nghost; f(l1-i,:,:,j)=2*f(l1,:,:,j)+sgn*f(l1+i,:,:,j); enddo case ('vel_time')
+do i=1,nghost; f(l1-i,:,:,j)=2*f(l1,:,:,j)+sgn*f(l1+i,:,:,j); enddo if (j /= iuy) call stop_it("BC_FORCE_X: only valid for uy")
+do i=1,nghost; f(l1-i,:,:,j)=2*f(l1,:,:,j)+sgn*f(l1+i,:,:,j); enddo call get_shared_variable('ampl_forc', ampl_forc, caller='bc_force_x')
+do i=1,nghost; f(l1-i,:,:,j)=2*f(l1,:,:,j)+sgn*f(l1+i,:,:,j); enddo call get_shared_variable('k_forc', k_forc)
+do i=1,nghost; f(l1-i,:,:,j)=2*f(l1,:,:,j)+sgn*f(l1+i,:,:,j); enddo call get_shared_variable('w_forc', w_forc)
+do i=1,nghost; f(l1-i,:,:,j)=2*f(l1,:,:,j)+sgn*f(l1+i,:,:,j); enddo if (headtt) print*, 'BC_FORCE_X: ampl_forc, k_forc, w_forc=', ampl_forc, k_forc, w_forc
+do i=1,nghost; f(l1-i,:,:,j)=2*f(l1,:,:,j)+sgn*f(l1+i,:,:,j); enddo f(l2,:,:,iuy) = spread(ampl_forc*sin(k_forc*y)*cos(w_forc*t), 2, size(f,3))
+do i=1,nghost; f(l1-i,:,:,j)=2*f(l1,:,:,j)+sgn*f(l1+i,:,:,j); enddo case default
+do i=1,nghost; f(l1-i,:,:,j)=2*f(l1,:,:,j)+sgn*f(l1+i,:,:,j); enddo if (lroot) print*, "No such value for force_upper_bound: <",  trim(force_upper_bound),">"
+do i=1,nghost; f(l1-i,:,:,j)=2*f(l1,:,:,j)+sgn*f(l1+i,:,:,j); enddo call stop_it("")
+do i=1,nghost; f(l1-i,:,:,j)=2*f(l1,:,:,j)+sgn*f(l1+i,:,:,j); enddo endselect
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo case default
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo print*,"bc_force_x: invalid argument topbot=",topbot
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo endselect
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo endsubroutine bc_force_x
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !***********************************************************************
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo subroutine bc_force_uxy_sin_cos(f,idz,j)
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !  Set (ux, uy) = (cos y, sin x) in vertical layer
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !  26-apr-2004/wolf: coded
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo real, dimension (:,:,:,:) :: f
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo integer :: idz,j
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo real :: kx,ky
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo if (iuz == 0) call stop_it("BC_FORCE_UXY_SIN_COS: Bad idea...")
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo if (j==iux) then
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo if (Ly>0) then; ky=2*pi/Ly; else; ky=0.; endif
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo f(:,:,idz,j) = spread(cos(ky*y),1,size(f,1))
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo elseif (j==iuy) then
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo if (Lx>0) then; kx=2*pi/Lx; else; kx=0.; endif
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo f(:,:,idz,j) = spread(sin(kx*x),2,size(f,2))
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo elseif (j==iuz) then
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo f(:,:,idz,j) = 0.
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo endif
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo endsubroutine bc_force_uxy_sin_cos
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !***********************************************************************
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo subroutine bc_force_axy_sin_cos(f,idz,j)
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !  Set (ax, ay) = (cos y, sin x) in vertical layer
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !  26-apr-2004/wolf: coded
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !  10-apr-2005/axel: adapted for A
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo real, dimension (:,:,:,:) :: f
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo integer :: idz,j
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo real :: kx,ky
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo if (iaz == 0) call stop_it("BC_FORCE_AXY_SIN_COS: Bad idea...")
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo if (j==iax) then
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo if (Ly>0) then; ky=2*pi/Ly; else; ky=0.; endif
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo f(:,:,idz,j) = spread(cos(ky*y),1,size(f,1))
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo elseif (j==iay) then
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo if (Lx>0) then; kx=2*pi/Lx; else; kx=0.; endif
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo f(:,:,idz,j) = spread(sin(kx*x),2,size(f,2))
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo elseif (j==iaz) then
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo f(:,:,idz,j) = 0.
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo endif
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo endsubroutine bc_force_axy_sin_cos
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !***********************************************************************
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo subroutine bc_one_x(f,topbot,j)
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !  Set bdry values to 1 for debugging purposes
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !  11-jul-02/wolf: coded
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo real, dimension (:,:,:,:) :: f
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo integer :: j
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo character (len=bclen) :: topbot
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo select case (topbot)
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo case ('bot')
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo f(1:l1-1,:,:,j)=1.
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo case ('top')
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo f(l2+1:,:,:,j)=1.
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo case default
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo print*, "bc_one_x: ",topbot, " should be 'top' or 'bot'"
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo endselect
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo endsubroutine bc_one_x
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !***********************************************************************
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo subroutine bc_one_y(f,topbot,j)
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !  Set bdry values to 1 for debugging purposes
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !  11-jul-02/wolf: coded
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo real, dimension (:,:,:,:) :: f
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo integer :: j
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo character (len=bclen) :: topbot
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo select case (topbot)
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo case ('bot')
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo f(:,1:m1-1,:,j)=1.
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo case ('top')
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo f(:,m2+1:,:,j)=1.
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo case default
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo print*, "bc_one_y: ", topbot, " should be 'top' or 'bot'"
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo endselect
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo endsubroutine bc_one_y
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !***********************************************************************
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo subroutine bc_one_z(f,topbot,j)
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !  Set bdry values to 1 for debugging purposes
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !  11-jul-02/wolf: coded
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo real, dimension (:,:,:,:) :: f
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo integer :: j
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo character (len=bclen) :: topbot
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo select case (topbot)
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo case ('bot')
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo f(:,:,1:n1-1,j)=1.
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo case ('top')
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo f(:,:,n2+1:,j)=1.
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo case default
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo print*, "bc_one_z: ", topbot, " should be 'top' or 'bot'"
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo endselect
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo endsubroutine bc_one_z
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !***********************************************************************
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo subroutine bc_freeze_var_x(topbot,j)
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !  Tell other modules that variable with slot j is to be frozen in on
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !  given boundary
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo integer :: j
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo character (len=bclen) :: topbot
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo lfrozen_bcs_x = .true.
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo select case (topbot)
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo case ('bot')
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo lfrozen_bot_var_x(j) = .true.
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo case ('top')
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo lfrozen_top_var_x(j) = .true.
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo case default
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo print*, "bc_freeze_var_x: ", topbot, " should be 'top' or 'bot'"
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo endselect
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo endsubroutine bc_freeze_var_x
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !***********************************************************************
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo subroutine bc_freeze_var_y(topbot,j)
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !  Tell other modules that variable with slot j is to be frozen in on
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !  given boundary
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo integer :: j
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo character (len=bclen) :: topbot
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo lfrozen_bcs_y = .true.
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo select case (topbot)
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo case ('bot')
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo lfrozen_bot_var_y(j) = .true.
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo case ('top')
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo lfrozen_top_var_y(j) = .true.
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo case default
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo print*, "bc_freeze_var_y: ", topbot, " should be 'top' or 'bot'"
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo endselect
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo endsubroutine bc_freeze_var_y
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !***********************************************************************
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo subroutine bc_freeze_var_z(topbot,j)
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !  Tell other modules that variable with slot j is to be frozen in on
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !  given boundary
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo integer :: j
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo character (len=bclen) :: topbot
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo lfrozen_bcs_z = .true.
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo select case (topbot)
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo case ('bot')
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo lfrozen_bot_var_z(j) = .true.
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo case ('top')
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo lfrozen_top_var_z(j) = .true.
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo case default
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo print*, "bc_freeze_var_z: ", topbot, " should be 'top' or 'bot'"
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo endselect
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo endsubroutine bc_freeze_var_z
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !***********************************************************************
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo subroutine uu_driver(f,quenching)
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !  Simulated velocity field used as photospherec motions
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !  Use of velocity field produced by Boris Gudiksen
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !  27-mai-04/bing: coded
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !  11-aug-06/axel: make it compile with nprocx>0, renamed quenching -> quen
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !  18-jun-08/bing: quenching depends on B^2, not only Bz^2
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo use EquationOfState, only : gamma,gamma_m1,gamma1,cs20,lnrho0
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo use File_io, only : file_exists
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo use Mpicomm, only : mpisend_real, mpirecv_real
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo real, dimension (:,:,:,:), intent (inout) :: f
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo logical, optional :: quenching
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo real, dimension (nx,ny), save :: uxl,uxr,uyl,uyr
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo real, dimension (:,:), allocatable :: tmp
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo real, dimension (nx,ny) :: uxd,uyd,quen,pp,betaq,fac,bbx,bby,bbz,bb2
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo integer :: tag_xl=321,tag_yl=322,tag_xr=323,tag_yr=324
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo integer :: tag_tl=345,tag_tr=346,tag_dt=347
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo integer :: lend=0,ierr,frame=0,pos,iref,px,py
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo real, save :: tl=0.,tr=0.,delta_t=0.
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo real  :: zmin
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo logical :: quench
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo character (len=*), parameter :: vel_times_dat = 'driver/vel_times.dat'
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo character (len=*), parameter :: vel_field_dat = 'driver/vel_field.dat'
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo integer :: unit=1
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo if (ldownsampling) then
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo call warning('uu_driver','Not available for downsampling')
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo return
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo endif
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo if (lroot .and. .not. file_exists(vel_times_dat))  call fatal_error_local('uu_driver','Could not find file "'//trim(vel_times_dat)//'"')
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo if (lroot .and. .not. file_exists(vel_field_dat))  call fatal_error_local('uu_driver', 'Could not find file "'//trim(vel_field_dat)//'"')
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo if (present(quenching)) then
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo quench = quenching
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo else
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo quench=.true.
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo endif
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !  Read the time table
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo if ((t*unit_time<tl+delta_t) .or. (t*unit_time>=tr+delta_t)) then
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo if (lroot) then
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo inquire(IOLENGTH=lend) tl
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo open (unit,file=vel_times_dat,form='unformatted',status='unknown',recl=lend,access='direct')
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo ierr = 0
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo frame = 0
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo do while (ierr == 0)
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo frame=frame+1
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo read (unit,rec=frame,iostat=ierr) tl
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo read (unit,rec=frame+1,iostat=ierr) tr
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo if (ierr /= 0) then
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo frame=1
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo delta_t = t*unit_time
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo read (unit,rec=frame,iostat=ierr) tl
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo read (unit,rec=frame+1,iostat=ierr) tr
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo ierr=-1
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo else
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo if (t*unit_time>=tl+delta_t .and. t*unit_time<tr+delta_t) ierr=-1
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo endif
+do i=1,nghost; f(l2+i,:,:,j)=2*f(l2,:,:,j)+sgn*f(l2-i,:,:,j); enddo enddo
+do i=1,nghost; f(ix,iy,n1-i,j)=+f(ix,iy,n1+i,j); enddo else
+do i=1,nghost; f(ix,iy,n1-i,j)=-f(ix,iy,n1+i,j); enddo f(ix,iy,n1,j)=0.0
+do i=1,nghost; f(ix,iy,n1-i,j)=-f(ix,iy,n1+i,j); enddo endif
+do i=1,nghost; f(ix,iy,n1-i,j)=-f(ix,iy,n1+i,j); enddo if (lforce) then
+do i=1,nghost; f(ix,iy,n1-i,j)=-f(ix,iy,n1+i,j); enddo do i = 0, nghost
+do i=1,nghost; f(ix,iy,n1-i,j)=-f(ix,iy,n1+i,j); enddo if (f(ix,iy,n1-i,j) < 0.0) f(ix,iy,n1-i,j) = 0.0
+do i=1,nghost; f(ix,iy,n1-i,j)=-f(ix,iy,n1+i,j); enddo enddo
+do i=1,nghost; f(ix,iy,n2+i,j)=+f(ix,iy,n2-i,j); enddo else
+do i=1,nghost; f(ix,iy,n2+i,j)=-f(ix,iy,n2-i,j); enddo f(ix,iy,n2,j)=0.0
+do i=1,nghost; f(ix,iy,n2+i,j)=-f(ix,iy,n2-i,j); enddo endif
+do i=1,nghost; f(ix,iy,n2+i,j)=-f(ix,iy,n2-i,j); enddo if (lforce) then
+do i=1,nghost; f(ix,iy,n2+i,j)=-f(ix,iy,n2-i,j); enddo do i = 0, nghost
+do i=1,nghost; f(ix,iy,n2+i,j)=-f(ix,iy,n2-i,j); enddo if (f(ix,iy,n2+i,j) > 0.0) f(ix,iy,n2+i,j) = 0.0
+do i=1,nghost; f(ix,iy,n2+i,j)=-f(ix,iy,n2-i,j); enddo enddo
+do i=1,nghost; f(l1-i,iy,iz,j)=+f(l1+i,iy,iz,j); enddo else
+do i=1,nghost; f(l1-i,iy,iz,j)=-f(l1+i,iy,iz,j); enddo f(l1,iy,iz,j)=0.0
+do i=1,nghost; f(l1-i,iy,iz,j)=-f(l1+i,iy,iz,j); enddo endif
+do i=1,nghost; f(l1-i,iy,iz,j)=-f(l1+i,iy,iz,j); enddo if (lforce) then
+do i=1,nghost; f(l1-i,iy,iz,j)=-f(l1+i,iy,iz,j); enddo do i = 0, nghost
+do i=1,nghost; f(l1-i,iy,iz,j)=-f(l1+i,iy,iz,j); enddo if (f(l1-i,iy,iz,j) > 0.0) f(l1-i,iy,iz,j) = 0.0
+do i=1,nghost; f(l1-i,iy,iz,j)=-f(l1+i,iy,iz,j); enddo enddo
+do i=1,nghost; f(l2+i,iy,iz,j)=+f(l2-i,iy,iz,j); enddo else
+do i=1,nghost; f(l2+i,iy,iz,j)=-f(l2-i,iy,iz,j); enddo f(l2,iy,iz,j)=0.0
+do i=1,nghost; f(l2+i,iy,iz,j)=-f(l2-i,iy,iz,j); enddo endif
+do i=1,nghost; f(l2+i,iy,iz,j)=-f(l2-i,iy,iz,j); enddo if (lforce) then
+do i=1,nghost; f(l2+i,iy,iz,j)=-f(l2-i,iy,iz,j); enddo do i = 0, nghost
+do i=1,nghost; f(l2+i,iy,iz,j)=-f(l2-i,iy,iz,j); enddo if (f(l2+i,iy,iz,j) < 0.0) f(l2+i,iy,iz,j) = 0.0
+do i=1,nghost; f(l2+i,iy,iz,j)=-f(l2-i,iy,iz,j); enddo enddo
+do i=1,nghost; f(l1-i,iy,iz,j)=+f(l1+i,iy,iz,j); enddo f(l1-1,iy,iz,j)=0.25*(  9*f(l1,iy,iz,j)- 3*f(l1+1,iy,iz,j)- 5*f(l1+2,iy,iz,j)+ 3*f(l1+3,iy,iz,j))
+do i=1,nghost; f(l1-i,iy,iz,j)=+f(l1+i,iy,iz,j); enddo f(l1-2,iy,iz,j)=0.05*( 81*f(l1,iy,iz,j)-43*f(l1+1,iy,iz,j)-57*f(l1+2,iy,iz,j)+39*f(l1+3,iy,iz,j))
+do i=1,nghost; f(l1-i,iy,iz,j)=+f(l1+i,iy,iz,j); enddo f(l1-3,iy,iz,j)=0.05*(127*f(l1,iy,iz,j)-81*f(l1+1,iy,iz,j)-99*f(l1+2,iy,iz,j)+73*f(l1+3,iy,iz,j))
+do i=1,nghost; f(l1-i,iy,iz,j)=+f(l1+i,iy,iz,j); enddo else
+do i=1,nghost; f(l1-i,iy,iz,j)=-f(l1+i,iy,iz,j); enddo f(l1,iy,iz,j)=0.0
+do i=1,nghost; f(l1-i,iy,iz,j)=-f(l1+i,iy,iz,j); enddo endif
+do i=1,nghost; f(l1-i,iy,iz,j)=-f(l1+i,iy,iz,j); enddo if (lforce) then
+do i=1,nghost; f(l1-i,iy,iz,j)=-f(l1+i,iy,iz,j); enddo do i = 0, nghost
+do i=1,nghost; f(l1-i,iy,iz,j)=-f(l1+i,iy,iz,j); enddo if (f(l1-i,iy,iz,j) > 0.0) f(l1-i,iy,iz,j) = 0.0
+do i=1,nghost; f(l1-i,iy,iz,j)=-f(l1+i,iy,iz,j); enddo enddo
+do i=1,nghost; f(l2+i,iy,iz,j)=-f(l2-i,iy,iz,j); enddo f(l2,iy,iz,j)=0.0
+do i=1,nghost; f(l2+i,iy,iz,j)=-f(l2-i,iy,iz,j); enddo endif
+do i=1,nghost; f(l2+i,iy,iz,j)=-f(l2-i,iy,iz,j); enddo if (lforce) then
+do i=1,nghost; f(l2+i,iy,iz,j)=-f(l2-i,iy,iz,j); enddo do i = 0, nghost
+do i=1,nghost; f(l2+i,iy,iz,j)=-f(l2-i,iy,iz,j); enddo if (f(l2+i,iy,iz,j) < 0.0) f(l2+i,iy,iz,j) = 0.0
+do i=1,nghost; f(l2+i,iy,iz,j)=-f(l2-i,iy,iz,j); enddo enddo
+do i=1,nghost; f(ix,m1-i,iz,j)=+f(ix,m1+i,iz,j); enddo else
+do i=1,nghost; f(ix,m1-i,iz,j)=-f(ix,m1+i,iz,j); enddo f(ix,m1,iz,j)=0.0
+do i=1,nghost; f(ix,m1-i,iz,j)=-f(ix,m1+i,iz,j); enddo endif
+do i=1,nghost; f(ix,m1-i,iz,j)=-f(ix,m1+i,iz,j); enddo if (lforce) then
+do i=1,nghost; f(ix,m1-i,iz,j)=-f(ix,m1+i,iz,j); enddo do i = 0, nghost
+do i=1,nghost; f(ix,m1-i,iz,j)=-f(ix,m1+i,iz,j); enddo if (f(ix,m1-i,iz,j) > 0.0) f(ix,m1-i,iz,j) = 0.0
+do i=1,nghost; f(ix,m1-i,iz,j)=-f(ix,m1+i,iz,j); enddo enddo
+do i=1,nghost; f(ix,m2+i,iz,j)=+f(ix,m2-i,iz,j); enddo else
+do i=1,nghost; f(ix,m2+i,iz,j)=-f(ix,m2-i,iz,j); enddo f(ix,m2,iz,j)=0.0
+do i=1,nghost; f(ix,m2+i,iz,j)=-f(ix,m2-i,iz,j); enddo endif
+do i=1,nghost; f(ix,m2+i,iz,j)=-f(ix,m2-i,iz,j); enddo if (lforce) then
+do i=1,nghost; f(ix,m2+i,iz,j)=-f(ix,m2-i,iz,j); enddo do i = 0, nghost
+do i=1,nghost; f(ix,m2+i,iz,j)=-f(ix,m2-i,iz,j); enddo if (f(ix,m2+i,iz,j) < 0.0) f(ix,m2+i,iz,j) = 0.0
+do i=1,nghost; f(ix,m2+i,iz,j)=-f(ix,m2-i,iz,j); enddo enddo
+do i=1,nghost; f(ix,iy,n1-i,j)=+f(ix,iy,n1+i,j); enddo else
+do i=1,nghost; f(ix,iy,n1-i,j)=-f(ix,iy,n1+i,j); enddo f(ix,iy,n1,j)=0.0
+do i=1,nghost; f(ix,iy,n1-i,j)=-f(ix,iy,n1+i,j); enddo endif
+do i=1,nghost; f(ix,iy,n1-i,j)=-f(ix,iy,n1+i,j); enddo if (lforce) then
+do i=1,nghost; f(ix,iy,n1-i,j)=-f(ix,iy,n1+i,j); enddo do i = 0, nghost
+do i=1,nghost; f(ix,iy,n1-i,j)=-f(ix,iy,n1+i,j); enddo if (f(ix,iy,n1-i,j) > 0.0) f(ix,iy,n1-i,j) = 0.0
+do i=1,nghost; f(ix,iy,n1-i,j)=-f(ix,iy,n1+i,j); enddo enddo
+do i=1,nghost; f(ix,iy,n2+i,j)=+f(ix,iy,n2-i,j); enddo else
+do i=1,nghost; f(ix,iy,n2+i,j)=-f(ix,iy,n2-i,j); enddo f(ix,iy,n2,j)=0.0
+do i=1,nghost; f(ix,iy,n2+i,j)=-f(ix,iy,n2-i,j); enddo endif
+do i=1,nghost; f(ix,iy,n2+i,j)=-f(ix,iy,n2-i,j); enddo if (lforce) then
+do i=1,nghost; f(ix,iy,n2+i,j)=-f(ix,iy,n2-i,j); enddo do i = 0, nghost
+do i=1,nghost; f(ix,iy,n2+i,j)=-f(ix,iy,n2-i,j); enddo if (f(ix,iy,n2+i,j) < 0.0) f(ix,iy,n2+i,j) = 0.0
+do i=1,nghost; f(ix,iy,n2+i,j)=-f(ix,iy,n2-i,j); enddo enddo
+do i=1,nghost; f(ix,iy,n1-i,j)=f(ix,iy,n1,j); enddo else
+do i=1,nghost; f(ix,iy,n1-i,j)=f(ix,iy,n1,j); enddo if (f(ix,iy,n1,j) > f(ix,iy,n1+1,j)) then
+do i=1,nghost; f(ix,iy,n1-i,j)=f(ix,iy,n1,j); enddo f(ix,iy,n1-1,j)=0.5*(f(ix,iy,n1,j)    +f(ix,iy,n1+1,j))
+do i=1,nghost; f(ix,iy,n1-i,j)=f(ix,iy,n1,j); enddo else
+do i=1,nghost; f(ix,iy,n1-i,j)=f(ix,iy,n1,j); enddo f(ix,iy,n1-1,j)=2.0* f(ix,iy,n1,j)    -f(ix,iy,n1+1,j)
+do i=1,nghost; f(ix,iy,n1-i,j)=f(ix,iy,n1,j); enddo endif
+do i=1,nghost; f(ix,iy,n2+i,j)=f(ix,iy,n2,j); enddo else
+do i=1,nghost; f(ix,iy,n2+i,j)=f(ix,iy,n2,j); enddo if (f(ix,iy,n2,j) < f(ix,iy,n2-1,j)) then
+do i=1,nghost; f(ix,iy,n2+i,j)=f(ix,iy,n2,j); enddo f(ix,iy,n2+1,j)=0.5*(f(ix,iy,n2,j)    +f(ix,iy,n2-1,j))
+do i=1,nghost; f(ix,iy,n2+i,j)=f(ix,iy,n2,j); enddo else
+do i=1,nghost; f(ix,iy,n2+i,j)=f(ix,iy,n2,j); enddo f(ix,iy,n2+1,j)=2.0* f(ix,iy,n2,j)    -f(ix,iy,n2-1,j)
+do i=1,nghost; f(ix,iy,n2+i,j)=f(ix,iy,n2,j); enddo endif
+do i=1,nghost; f(l1-i,:,:,j)=f(l1,:,:,j); enddo !
+
+do i=1,nghost; f(l1-i,:,:,j)=f(l1,:,:,j); enddo !  Top boundary.
+
+do i=1,nghost; f(l1-i,:,:,j)=f(l1,:,:,j); enddo !
+
+do i=1,nghost; f(l1-i,:,:,j)=f(l1,:,:,j); enddo case ('top')
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo !  Default.
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo case default
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo print*, "bc_copy_x: ", topbot, " should be 'top' or 'bot'"
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo endselect
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo endsubroutine bc_copy_x
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo !***********************************************************************
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo subroutine bc_copy_y(f,topbot,j)
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo !  Copy value in last grid point to all ghost cells.
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo !  08-june-2010/wlyra: implemented
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo character (len=bclen) :: topbot
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo real, dimension (:,:,:,:) :: f
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo integer :: j
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo integer :: i
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo select case (topbot)
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo !  Bottom boundary.
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo !
+
+do i=1,nghost; f(l2+i,:,:,j)=f(l2,:,:,j); enddo case ('bot')
+do i=1,nghost; f(:,m1-i,:,j)=f(:,m1,:,j); enddo !
+
+do i=1,nghost; f(:,m1-i,:,j)=f(:,m1,:,j); enddo !  Top boundary.
+
+do i=1,nghost; f(:,m1-i,:,j)=f(:,m1,:,j); enddo !
+
+do i=1,nghost; f(:,m1-i,:,j)=f(:,m1,:,j); enddo case ('top')
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo !  Default.
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo case default
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo print*, "bc_copy_y: ", topbot, " should be 'top' or 'bot'"
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo endselect
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo endsubroutine bc_copy_y
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo !***********************************************************************
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo subroutine bc_copy_y_noinflow(f,topbot,j)
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo !  Copy value in last grid point to all ghost cells. Set to zero if
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo !  the sign is wrong. This bc is different from outflow (cop). Outflow
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo !  just copies the last point to the ghost cells, thus permitting both
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo !  outflow (uy pointing out of the box) and inflow (uy pointing back to
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo !  the box). 'c+k' is a no-inflow, purely outflow boundary. It sets the
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo !  velocity to zero if that was pointing back to the box. The 'k' means
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo !  "kill". "copy if outflow, kill if inflow".
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo !  08-june-2010/wlyra: implemented
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo character (len=bclen) :: topbot
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo real, dimension (:,:,:,:) :: f
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo real :: value
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo integer :: j,l,n
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo integer :: i
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo select case (topbot)
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo !  Bottom boundary.
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo !
+
+do i=1,nghost; f(:,m2+i,:,j)=f(:,m2,:,j); enddo case ('bot')
+do i=1,nghost; f(l2+i,m,:,j) = 2*f(l2,m,:,j) - f(l2-i,m,:,j); enddo elseif (j==iuy) then
+do i=1,nghost; f(l2+i,m,:,j) = 2*f(l2,m,:,j) - f(l2-i,m,:,j); enddo f(l2,m,:,j) = -sin(y(m))*val(j)
+do i=1,nghost; f(l2+i,m,:,j) = 2*f(l2,m,:,j) - f(l2-i,m,:,j); enddo elseif ((j==ilnrho) .or. (j==irho)) then
+do i=1,nghost; f(l2+i,m,:,j) = f(l2-i,m,:,j); enddo endif
+do i=1,nghost; f(l2+i,m,:,j) = f(l2-i,m,:,j); enddo !
+
+do i=1,nghost; f(l2+i,m,:,j) = f(l2-i,m,:,j); enddo else
+do i=1,nghost; f(l2+i,m,:,j) = f(l2-i,m,:,j); enddo if (j==iux) then
+do i=1,nghost; f(l2+i,m,:,j) = f(l2-i,m,:,j); enddo elseif (j==iuy) then
+do i=1,nghost; f(l2+i,m,:,j) = f(l2-i,m,:,j); enddo elseif ((j==ilnrho) .or. (j==irho)) then
+do i=1,nghost; f(l2+i,m,:,j) = f(l2-i,m,:,j); enddo f(l2,m,:,j) = val(j)
+do i=1,nghost; f(l2+i,m,:,j) = 2*f(l2,m,:,j) - f(l2-i,m,:,j); enddo endif
+do i=1,nghost; f(l2+i,m,:,j) = 2*f(l2,m,:,j) - f(l2-i,m,:,j); enddo endif
+do i=1,nghost; f(l2+i,m,:,j) = 2*f(l2,m,:,j) - f(l2-i,m,:,j); enddo enddo
+do i=1,nghost; f(:,:,n1-i,j)=f(:,:,n1+i,j); enddo !
+
+do i=1,nghost; f(:,:,n1-i,j)=f(:,:,n1+i,j); enddo !  top (right end of the domain)
+
+do i=1,nghost; f(:,:,n1-i,j)=f(:,:,n1+i,j); enddo case ('top')
+do i=1,nghost; f(:,:,n1-i,j)=f(:,:,n1+i,j); enddo f(:,:,n2,j)=(+18.*f(:,:,n2-1,j)  -9.*f(:,:,n2-2,j)  +2.*f(:,:,n2-3,j))/11.
+do i=1,nghost; f(:,:,n1-i,j)=f(:,:,n1+i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo case default
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo print*, "bc_symset0der_z_v2: ", topbot, " should be 'top' or 'bot'"
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo endselect
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo endsubroutine bc_symset0der_z_v2
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !***********************************************************************
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo subroutine bc_aa_pot_1D(f,topbot)
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !  Computes a potential field extrapolation for a
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !  1D magnetic field boundary with nprocx >= 1
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !  27-Oct-10/bing: coded
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo use Fourier, only: fourier_transform_other, kx_fft
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo real, dimension (:,:,:,:), intent (inout) :: f
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo character (len=bclen), intent (in) :: topbot
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo real, dimension (nxgrid) :: fft_az_r,fft_az_i,A_r,A_i,exp_fact
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo real, dimension (nxgrid) :: iay_global
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo integer :: i,j,ipos,dir
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo if (ldownsampling) then
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo call warning('bc_force_aa_time','Not available downsampling')
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo return
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo endif
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo select case (topbot)
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !  bottom (left end of the domain)
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo case ('bot')
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo ipos = n1
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo dir = -1
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !  top (right end of the domain)
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo case ('top')
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo ipos = n2
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo dir = 1
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo case default
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo print*, "bc_aa_pot_1D: ", topbot, " should be 'top' or 'bot'"
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo ipos=1
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo dir=0
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo endselect
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo if (nygrid>1) call fatal_error('bc_aa_pot_1D','only for nygrid=1')
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo !
+
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo if (iproc==0) then
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo iay_global(1:nx) = f(l1:l2,m1,ipos,iay)
+do i=1,nghost; f(:,:,n2+i,j)=f(:,:,n2-i,j); enddo if (nprocx>1) then
+pnu
+maxdiffus3
+llastpoint
+fatal_errors
+maxsrc
+message_stored
+cs2top
+headtt
+errors
+Hmax
+jdone
+diffus_chi3
+is_vec
+diffus_chi
+advec2_hypermesh
+lfirstpoint
+maxadvec
+maxdiffus
+scaller
+rcool
+advec_uu
+r_int
+phiavg_profile
+diffus_diffrho
+maxdiffus2
+advec2
+Fmax
+diffus_diffrho3
+r_ext
+lcoarse_mn
+advec_cs2
+m
+rcool2
+ss0
+mpoly
+n
+Num of static variables written with full depth 36
+fatal_errors
+maxdiffus3
+n
+errors
+r_ext
+r_int
+headtt
+maxsrc
+advec2
+advec2_hypermesh
+advec_cs2
+is_vec
+maxdiffus2
+diffus_diffrho3
+llastpoint
+Hmax
+diffus_chi
+mpoly
+maxadvec
+message_stored
+phiavg_profile
+scaller
+advec_uu
+maxdiffus
+m
+cs2top
+rcool2
+diffus_diffrho
+ss0
+Fmax
+pnu
+jdone
+diffus_chi3
+lfirstpoint
+lcoarse_mn
+rcool
+Num of static variables written with full depth 36
+scaller
+jdone
+advec2_hypermesh
+pnu
+advec_cs2
+r_int
+lcoarse_mn
+diffus_diffrho3
+headtt
+diffus_diffrho
+llastpoint
+advec2
+advec_uu
+maxdiffus3
+maxdiffus2
 phiavg_profile
 cs2top
-t_vart
-nu_tdep
+Fmax
+is_vec
+diffus_chi3
+rcool
+maxsrc
+mpoly
 n
-Num of static variables written with full depth 10
+maxadvec
+r_ext
+fatal_errors
+rcool2
+Hmax
+message_stored
+m
+maxdiffus
+diffus_chi
+ss0
+lfirstpoint
+errors
+Num of static variables written with full depth 36
+n
+diffus_chi3
+maxdiffus2
+maxdiffus3
+advec2_hypermesh
+rcool2
+maxsrc
+llastpoint
+Hmax
+scaller
+lcoarse_mn
+jdone
+headtt
+diffus_chi
+maxadvec
+advec_cs2
+diffus_diffrho
+cs2top
+maxdiffus
+mpoly
+fatal_errors
+rcool
+message_stored
+ss0
+advec_uu
+m
+advec2
+lfirstpoint
+Fmax
+diffus_diffrho3
+r_ext
+phiavg_profile
+errors
+r_int
+pnu
+is_vec
+Num of static variables written with full depth 36
+advec_cs2
+maxdiffus3
+message_stored
+errors
+m
+scaller
+Hmax
+r_int
+llastpoint
+rcool2
+diffus_diffrho3
+diffus_chi
+maxsrc
+fatal_errors
+cs2top
+Fmax
+ss0
+is_vec
+diffus_chi3
+advec_uu
+rcool
+pnu
+maxdiffus2
+advec2
+jdone
+r_ext
+diffus_diffrho
+lcoarse_mn
+maxadvec
+lfirstpoint
+n
+advec2_hypermesh
+phiavg_profile
+headtt
+mpoly
+maxdiffus
+Num of static variables written with full depth 36
